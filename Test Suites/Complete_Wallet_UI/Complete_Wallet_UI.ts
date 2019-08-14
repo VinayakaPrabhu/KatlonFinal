@@ -16,10 +16,4 @@
       <isRun>true</isRun>
       <testCaseId>Test Cases/Login/AdminLogin_ShouldSucceed</testCaseId>
    </testCaseLink>
-   <testCaseLink>
-      <guid>f263b43f-d2b2-4d57-98f8-b9eabc8d6d78</guid>
-      <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
-      <testCaseId>Test Cases/Configuration/AboutPage/AboutPage_ShouldSucceed</testCaseId>
-   </testCaseLink>
 </TestSuiteEntity>
