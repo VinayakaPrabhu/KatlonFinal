@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Should Update succesfully</description>
+   <name>Edit_ShouldSucceed</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>ae71b834-a5d2-40ae-bce3-7cd9d91d92c6</testCaseGuid>
+</TestCaseEntity>

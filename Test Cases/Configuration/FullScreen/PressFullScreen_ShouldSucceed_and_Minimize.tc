@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>PressFullScreen_ShouldSucceed_and_Minimize</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>877eb587-cbd4-4dd1-9515-a23e3212dd89</testCaseGuid>
+</TestCaseEntity>

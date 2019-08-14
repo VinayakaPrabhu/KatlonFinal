@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Add a role should give Created Role message</description>
+   <name>Add_Role_new_ShoudlSucceed</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>4a12724d-0a39-450d-b801-081ae6e45078</testCaseGuid>
+</TestCaseEntity>

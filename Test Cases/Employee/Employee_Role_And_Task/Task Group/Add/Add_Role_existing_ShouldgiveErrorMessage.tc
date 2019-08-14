@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Should give error message</description>
+   <name>Add_Role_existing_ShouldgiveErrorMessage</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>eccdf15a-9a61-40d3-be51-d1a9a988d785</testCaseGuid>
+</TestCaseEntity>
