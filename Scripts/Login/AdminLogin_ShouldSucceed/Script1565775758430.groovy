@@ -15,7 +15,7 @@ import internal.GlobalVariable as GlobalVariable
 
 WebUI.openBrowser('')
 
-WebUI.navigateToUrl('https://10.2.200.103:8441/login')
+WebUI.navigateToUrl('https://10.2.200.25:8441/login')
 
 WebUI.setText(findTestObject('Object Repository/Login_OR/AdminLogin_ShouldSucceed/Page_Unified Wallet/input_Sign in_mat-input-0'), 
     'admin')

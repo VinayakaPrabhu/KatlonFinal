@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description>Deleting a role should succeed.</description>
-   <name>Delete_Role_ShouldSucceed</name>
-   <tag></tag>
-   <comment></comment>
-   <testCaseGuid>b88f9c47-a4ff-435d-b2c1-a05a803d356a</testCaseGuid>
-</TestCaseEntity>

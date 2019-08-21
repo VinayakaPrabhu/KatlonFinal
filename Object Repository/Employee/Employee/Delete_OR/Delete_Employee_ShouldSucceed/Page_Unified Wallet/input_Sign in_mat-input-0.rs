@@ -3,7 +3,7 @@
    <description></description>
    <name>input_Sign in_mat-input-0</name>
    <tag></tag>
-   <elementGuidId>dcdeb6d6-58fe-4bef-ab18-7d3aab8f9f59</elementGuidId>
+   <elementGuidId>554ac593-e8b7-4e0d-8123-d018920a70f9</elementGuidId>
    <selectorCollection>
       <entry>
          <key>XPATH</key>
@@ -24,7 +24,7 @@
       <matchCondition>equals</matchCondition>
       <name>class</name>
       <type>Main</type>
-      <value>mat-input-element mat-form-field-autofill-control cdk-text-field-autofill-monitored ng-untouched ng-dirty ng-valid</value>
+      <value>mat-input-element mat-form-field-autofill-control cdk-text-field-autofill-monitored ng-touched ng-dirty ng-valid</value>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>

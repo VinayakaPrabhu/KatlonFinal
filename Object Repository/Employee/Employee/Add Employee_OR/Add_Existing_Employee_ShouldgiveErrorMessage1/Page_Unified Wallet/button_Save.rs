@@ -10,28 +10,31 @@
          <value>//button[@id='Done']</value>
       </entry>
       <entry>
+         <key>CSS</key>
+      </entry>
+      <entry>
          <key>BASIC</key>
-         <value>//*[@id = 'save']</value>
+         <value>//*[@id=&quot;save&quot;][count(. | //button[@class = 'nextButton mat-raised-button mat-primary cdk-focused cdk-mouse-focused' and @color = 'primary' and @id = 'save' and (text() = 'Save' or . = 'Save')]) = count(//button[@class = 'nextButton mat-raised-button mat-primary cdk-focused cdk-mouse-focused' and @color = 'primary' and @id = 'save' and (text() = 'Save' or . = 'Save')])]</value>
       </entry>
    </selectorCollection>
-   <selectorMethod>BASIC</selectorMethod>
+   <selectorMethod>XPATH</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
    <webElementProperties>
-      <isSelected>false</isSelected>
+      <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>tag</name>
       <type>Main</type>
       <value>button</value>
    </webElementProperties>
    <webElementProperties>
-      <isSelected>false</isSelected>
+      <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>class</name>
       <type>Main</type>
       <value>nextButton mat-raised-button mat-primary cdk-focused cdk-mouse-focused</value>
    </webElementProperties>
    <webElementProperties>
-      <isSelected>false</isSelected>
+      <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>color</name>
       <type>Main</type>
@@ -45,14 +48,14 @@
       <value>save</value>
    </webElementProperties>
    <webElementProperties>
-      <isSelected>false</isSelected>
+      <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>text</name>
       <type>Main</type>
       <value>Save</value>
    </webElementProperties>
    <webElementProperties>
-      <isSelected>false</isSelected>
+      <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>

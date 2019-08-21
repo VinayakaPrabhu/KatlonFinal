@@ -17,19 +17,19 @@ WebUI.openBrowser('')
 
 WebUI.navigateToUrl('https://10.2.200.25:8441/login')
 
-WebUI.setText(findTestObject('Object Repository/Configuration_OR/FullScreen_OR/PressFullScreen_ShouldSucceed_and_Minimize/Page_Unified Wallet/input_Sign in_mat-input-0'), 
+WebUI.setText(findTestObject('Conf/FullScreen_OR/PressFullScreen_ShouldSucceed_and_Minimize/Page_Unified Wallet/input_Sign in_mat-input-0'), 
     'admin')
 
-WebUI.setEncryptedText(findTestObject('Object Repository/Configuration_OR/FullScreen_OR/PressFullScreen_ShouldSucceed_and_Minimize/Page_Unified Wallet/input_Username_mat-input-1'), 
+WebUI.setEncryptedText(findTestObject('Conf/FullScreen_OR/PressFullScreen_ShouldSucceed_and_Minimize/Page_Unified Wallet/input_Username_mat-input-1'), 
     '4aUHZLRHJF4=')
 
-WebUI.click(findTestObject('Object Repository/Configuration_OR/FullScreen_OR/PressFullScreen_ShouldSucceed_and_Minimize/Page_Unified Wallet/button_Login'))
+WebUI.click(findTestObject('Conf/FullScreen_OR/PressFullScreen_ShouldSucceed_and_Minimize/Page_Unified Wallet/button_Login'))
 
-WebUI.click(findTestObject('Object Repository/Configuration_OR/FullScreen_OR/PressFullScreen_ShouldSucceed_and_Minimize/Page_Unified Wallet/i_fullscreen'))
+WebUI.click(findTestObject('Conf/FullScreen_OR/PressFullScreen_ShouldSucceed_and_Minimize/Page_Unified Wallet/i_fullscreen'))
 
 Thread.sleep(10)
 
-WebUI.click(findTestObject('Object Repository/Configuration_OR/FullScreen_OR/PressFullScreen_ShouldSucceed_and_Minimize/Page_Unified Wallet/i_fullscreen'))
+WebUI.click(findTestObject('Conf/FullScreen_OR/PressFullScreen_ShouldSucceed_and_Minimize/Page_Unified Wallet/i_fullscreen'))
 
 WebUI.closeBrowser()
 
