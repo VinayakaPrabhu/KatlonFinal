@@ -13,25 +13,3 @@ import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
 
-WebUI.openBrowser('')
-
-WebUI.navigateToUrl(GlobalVariable.login_url)
-
-WebUI.click(findTestObject('Conf/Internationalization_OR/Change_Lang_To_Spanish/Page_Unified Wallet/div_Username'))
-
-WebUI.setText(findTestObject('Conf/Internationalization_OR/Change_Lang_To_Spanish/Page_Unified Wallet/input_Sign in_mat-input-0'), 
-    GlobalVariable.username_admin)
-
-WebUI.setEncryptedText(findTestObject('Conf/Internationalization_OR/Change_Lang_To_Spanish/Page_Unified Wallet/input_Username_mat-input-1'), 
-    GlobalVariable.username_admins_Password)
-
-WebUI.click(findTestObject('Conf/Internationalization_OR/Change_Lang_To_Spanish/Page_Unified Wallet/button_Login'))
-
-WebUI.maximizeWindow()
-
-WebUI.click(findTestObject('Conf/Internationalization_OR/Change_Lang_To_Spanish/Page_Unified Wallet/mat-icon_language'))
-
-WebUI.click(findTestObject('Conf/Internationalization_OR/Change_Lang_To_Spanish/Page_Unified Wallet/button_translateSpanish'))
-
-WebUI.closeBrowser()
-

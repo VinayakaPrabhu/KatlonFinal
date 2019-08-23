@@ -13,53 +13,58 @@ import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
 
-WebUI.openBrowser('')
+try {
+    WebUI.openBrowser('')
 
-WebUI.navigateToUrl('https://10.2.200.25:8441/login')
+    WebUI.navigateToUrl(GlobalVariable.login_url)
 
-WebUI.setText(findTestObject('Object Repository/Employee/Employee_Role_And_Task_OR/Task Group_OR/Add_OR/Add_Role_Existing_ShouldgiveErorMessage/input_Sign in_mat-input-0'), 
-    'admin')
+    WebUI.setText(findTestObject('Object Repository/Employee/Employee_Role_And_Task_OR/Task Group_OR/Add_OR/Add_Role_Existing_ShouldgiveErorMessage/input_Sign in_mat-input-0'), 
+        GlobalVariable.username_admin)
 
-WebUI.setEncryptedText(findTestObject('Object Repository/Employee/Employee_Role_And_Task_OR/Task Group_OR/Add_OR/Add_Role_Existing_ShouldgiveErorMessage/input_Username_mat-input-1'), 
-    '4aUHZLRHJF4=')
+    WebUI.setEncryptedText(findTestObject('Object Repository/Employee/Employee_Role_And_Task_OR/Task Group_OR/Add_OR/Add_Role_Existing_ShouldgiveErorMessage/input_Username_mat-input-1'), 
+        GlobalVariable.username_admins_Password)
 
-WebUI.click(findTestObject('Object Repository/Employee/Employee_Role_And_Task_OR/Task Group_OR/Add_OR/Add_Role_Existing_ShouldgiveErorMessage/button_Login'))
+    WebUI.click(findTestObject('Object Repository/Employee/Employee_Role_And_Task_OR/Task Group_OR/Add_OR/Add_Role_Existing_ShouldgiveErorMessage/button_Login'))
 
-WebUI.maximizeWindow()
+    WebUI.maximizeWindow()
 
-WebUI.click(findTestObject('Object Repository/Employee/Employee_Role_And_Task_OR/Task Group_OR/Add_OR/Add_Role_Existing_ShouldgiveErorMessage/div_more_vert_hamburgerWrapper'), 
-    FailureHandling.OPTIONAL)
+    WebUI.click(findTestObject('Object Repository/Employee/Employee_Role_And_Task_OR/Task Group_OR/Add_OR/Add_Role_Existing_ShouldgiveErorMessage/div_more_vert_hamburgerWrapper'), 
+        FailureHandling.OPTIONAL)
 
-WebUI.click(findTestObject('Object Repository/Employee/Employee_Role_And_Task_OR/Task Group_OR/Add_OR/Add_Role_Existing_ShouldgiveErorMessage/a_account_circleEmployee'))
+    WebUI.click(findTestObject('Object Repository/Employee/Employee_Role_And_Task_OR/Task Group_OR/Add_OR/Add_Role_Existing_ShouldgiveErorMessage/a_account_circleEmployee'))
 
-WebUI.click(findTestObject('Object Repository/Employee/Employee_Role_And_Task_OR/Task Group_OR/Add_OR/Add_Role_Existing_ShouldgiveErorMessage/a_assignmentRole And Task'))
+    WebUI.click(findTestObject('Object Repository/Employee/Employee_Role_And_Task_OR/Task Group_OR/Add_OR/Add_Role_Existing_ShouldgiveErorMessage/a_assignmentRole And Task'))
 
-WebUI.click(findTestObject('Object Repository/Employee/Employee_Role_And_Task_OR/Task Group_OR/Add_OR/Add_Role_Existing_ShouldgiveErorMessage/div_Task Group'))
+    WebUI.click(findTestObject('Object Repository/Employee/Employee_Role_And_Task_OR/Task Group_OR/Add_OR/Add_Role_Existing_ShouldgiveErorMessage/div_Task Group'))
 
-WebUI.click(findTestObject('Object Repository/Employee/Employee_Role_And_Task_OR/Task Group_OR/Add_OR/Add_Role_Existing_ShouldgiveErorMessage/i_add'))
+    WebUI.click(findTestObject('Object Repository/Employee/Employee_Role_And_Task_OR/Task Group_OR/Add_OR/Add_Role_Existing_ShouldgiveErorMessage/i_add'))
 
-WebUI.setText(findTestObject('Object Repository/Employee/Employee_Role_And_Task_OR/Task Group_OR/Add_OR/Add_Role_Existing_ShouldgiveErorMessage/input_Create Role_code'), 
-    'CODE-850')
+    WebUI.setText(findTestObject('Object Repository/Employee/Employee_Role_And_Task_OR/Task Group_OR/Add_OR/Add_Role_Existing_ShouldgiveErorMessage/input_Create Role_code'), 
+        GlobalVariable.taskgroup_code)
 
-WebUI.setText(findTestObject('Object Repository/Employee/Employee_Role_And_Task_OR/Task Group_OR/Add_OR/Add_Role_Existing_ShouldgiveErorMessage/input_OrganizationCode_name'), 
-    'TGROUP')
+    WebUI.setText(findTestObject('Object Repository/Employee/Employee_Role_And_Task_OR/Task Group_OR/Add_OR/Add_Role_Existing_ShouldgiveErorMessage/input_OrganizationCode_name'), 
+        GlobalVariable.taskgroup_name)
 
-WebUI.setText(findTestObject('Object Repository/Employee/Employee_Role_And_Task_OR/Task Group_OR/Add_OR/Add_Role_Existing_ShouldgiveErorMessage/input_Name_description'), 
-    'HELLO')
+    WebUI.setText(findTestObject('Object Repository/Employee/Employee_Role_And_Task_OR/Task Group_OR/Add_OR/Add_Role_Existing_ShouldgiveErorMessage/input_Name_description'), 
+        GlobalVariable.taskgroup_description)
 
-WebUI.check(findTestObject('Object Repository/Employee/Employee_Role_And_Task_OR/Task Group_OR/Add_OR/Add_Role_Existing_ShouldgiveErorMessage/div_Search_mat-checkbox-inner-container'))
+    WebUI.check(findTestObject('Object Repository/Employee/Employee_Role_And_Task_OR/Task Group_OR/Add_OR/Add_Role_Existing_ShouldgiveErorMessage/div_Search_mat-checkbox-inner-container'))
 
-WebUI.click(findTestObject('Object Repository/Employee/Employee_Role_And_Task_OR/Task Group_OR/Add_OR/Add_Role_Existing_ShouldgiveErorMessage/button_Proceed'))
+    WebUI.click(findTestObject('Object Repository/Employee/Employee_Role_And_Task_OR/Task Group_OR/Add_OR/Add_Role_Existing_ShouldgiveErorMessage/button_Proceed'))
 
-WebUI.check(findTestObject('Object Repository/Employee/Employee_Role_And_Task_OR/Task Group_OR/Add_OR/Add_Role_Existing_ShouldgiveErorMessage/div_Search_mat-checkbox-inner-container_1'))
+    WebUI.check(findTestObject('Object Repository/Employee/Employee_Role_And_Task_OR/Task Group_OR/Add_OR/Add_Role_Existing_ShouldgiveErorMessage/div_Search_mat-checkbox-inner-container_1'))
 
-WebUI.click(findTestObject('Object Repository/Employee/Employee_Role_And_Task_OR/Task Group_OR/Add_OR/Add_Role_Existing_ShouldgiveErorMessage/button_Save'))
+    WebUI.click(findTestObject('Object Repository/Employee/Employee_Role_And_Task_OR/Task Group_OR/Add_OR/Add_Role_Existing_ShouldgiveErorMessage/button_Save'))
 
-WebUI.verifyTextPresent('Task code already exists', false)
+    WebUI.verifyTextPresent('Task code already exists', false)
 
-WebUI.click(findTestObject('Object Repository/Employee/Employee_Role_And_Task_OR/Task Group_OR/Add_OR/Add_Role_Existing_ShouldgiveErorMessage/button_OK'))
+    WebUI.click(findTestObject('Object Repository/Employee/Employee_Role_And_Task_OR/Task Group_OR/Add_OR/Add_Role_Existing_ShouldgiveErorMessage/button_OK'))
 
-WebUI.click(findTestObject('Object Repository/Employee/Employee_Role_And_Task_OR/Task Group_OR/Add_OR/Add_Role_Existing_ShouldgiveErorMessage/button_Cancel'))
-
-WebUI.closeBrowser()
+    WebUI.click(findTestObject('Object Repository/Employee/Employee_Role_And_Task_OR/Task Group_OR/Add_OR/Add_Role_Existing_ShouldgiveErorMessage/button_Cancel'))
+}
+catch (Exception e) {
+} 
+finally { 
+    WebUI.closeBrowser()
+}
 

@@ -13,17 +13,18 @@ import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
 
+try{
+	
+
 WebUI.openBrowser('')
 
 WebUI.maximizeWindow()
 
-WebUI.navigateToUrl('https://10.2.200.25:8441/login')
+WebUI.navigateToUrl(GlobalVariable.login_url)
 
-WebUI.setText(findTestObject('Employee/Employee/Edit_OR/Page_Unified Wallet/input_Sign in_mat-input-0'), 
-    'admin')
+WebUI.setText(findTestObject('Employee/Employee/Edit_OR/Page_Unified Wallet/input_Sign in_mat-input-0'), GlobalVariable.username_admin)
 
-WebUI.setEncryptedText(findTestObject('Employee/Employee/Edit_OR/Page_Unified Wallet/input_Username_mat-input-1'), 
-    '4aUHZLRHJF4=')
+WebUI.setEncryptedText(findTestObject('Employee/Employee/Edit_OR/Page_Unified Wallet/input_Username_mat-input-1'), GlobalVariable.username_admins_Password)
 
 WebUI.click(findTestObject('Employee/Employee/Edit_OR/Page_Unified Wallet/button_Login'))
 
@@ -35,8 +36,7 @@ WebUI.click(findTestObject('Employee/Employee/Edit_OR/Page_Unified Wallet/mat-ce
 
 WebUI.click(findTestObject('Employee/Employee/Edit_OR/Page_Unified Wallet/i_edit'))
 
-WebUI.setText(findTestObject('Employee/Employee/Edit_OR/Page_Unified Wallet/input_First Name_mat-input-7'), 
-    'GNBC')
+WebUI.setText(findTestObject('Employee/Employee/Edit_OR/Page_Unified Wallet/input_First Name_mat-input-7'), GlobalVariable.existing_employee_last_name)
 
 WebUI.click(findTestObject('Employee/Employee/Edit_OR/Page_Unified Wallet/button_Proceed'))
 
@@ -52,5 +52,11 @@ WebUI.verifyTextPresent(' updated successfully', false)
 
 WebUI.click(findTestObject('Employee/Employee/Edit_OR/Page_Unified Wallet/button_OK (1)'))
 
-WebUI.closeBrowser()
+}
+catch (Exception e) {
+}
+finally {
+	WebUI.closeBrowser()
+}
+
 

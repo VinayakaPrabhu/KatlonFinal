@@ -15,13 +15,13 @@ import internal.GlobalVariable as GlobalVariable
 
 WebUI.openBrowser('')
 
-WebUI.navigateToUrl('https://10.2.200.25:8441/login')
+WebUI.navigateToUrl(GlobalVariable.login_url)
 
 WebUI.setText(findTestObject('Conf/FullScreen_OR/PressFullScreen_ShouldSucceed_and_Minimize/Page_Unified Wallet/input_Sign in_mat-input-0'), 
-    'admin')
+    GlobalVariable.username_admin)
 
 WebUI.setEncryptedText(findTestObject('Conf/FullScreen_OR/PressFullScreen_ShouldSucceed_and_Minimize/Page_Unified Wallet/input_Username_mat-input-1'), 
-    '4aUHZLRHJF4=')
+    GlobalVariable.username_admins_Password)
 
 WebUI.click(findTestObject('Conf/FullScreen_OR/PressFullScreen_ShouldSucceed_and_Minimize/Page_Unified Wallet/button_Login'))
 

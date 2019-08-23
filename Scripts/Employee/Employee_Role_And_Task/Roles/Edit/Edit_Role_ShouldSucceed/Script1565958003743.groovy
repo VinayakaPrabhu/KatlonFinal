@@ -13,17 +13,18 @@ import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
 
+try{
 WebUI.openBrowser('')
 
-WebUI.navigateToUrl('https://10.2.200.25:8441/login')
+WebUI.navigateToUrl(GlobalVariable.login_url)
 
 WebUI.click(findTestObject('Employee/Employee_Role_And_Task_OR/Roles_OR/Edit_OR/Edit_Role_ShouldSucceed/div_Username'))
 
 WebUI.setText(findTestObject('Employee/Employee_Role_And_Task_OR/Roles_OR/Edit_OR/Edit_Role_ShouldSucceed/input_Sign in_mat-input-0'), 
-    'admin')
+    GlobalVariable.username_admin)
 
 WebUI.setEncryptedText(findTestObject('Employee/Employee_Role_And_Task_OR/Roles_OR/Edit_OR/Edit_Role_ShouldSucceed/input_Username_mat-input-1'), 
-    '4aUHZLRHJF4=')
+    GlobalVariable.username_admins_Password)
 
 WebUI.click(findTestObject('Employee/Employee_Role_And_Task_OR/Roles_OR/Edit_OR/Edit_Role_ShouldSucceed/button_Login'))
 
@@ -45,7 +46,7 @@ WebUI.click(findTestObject('Employee/Employee_Role_And_Task_OR/Roles_OR/Edit_OR/
 WebUI.click(findTestObject('Employee/Employee_Role_And_Task_OR/Roles_OR/Edit_OR/Edit_Role_ShouldSucceed/mat-icon_clear'))
 
 WebUI.setText(findTestObject('Employee/Employee_Role_And_Task_OR/Roles_OR/Edit_OR/Edit_Role_ShouldSucceed/input_Code_name'), 
-    'HELLOwerd')
+    GlobalVariable.existing_employee_role_name1)
 
 WebUI.click(findTestObject('Employee/Employee_Role_And_Task_OR/Roles_OR/Edit_OR/Edit_Role_ShouldSucceed/button_Save'))
 
@@ -53,5 +54,11 @@ WebUI.verifyTextPresent('updated successfully', false)
 
 WebUI.click(findTestObject('Employee/Employee_Role_And_Task_OR/Roles_OR/Edit_OR/Edit_Role_ShouldSucceed/button_Cancel'))
 
-WebUI.closeBrowser()
+}
+catch (Exception e) {
+}
+finally {
+	WebUI.closeBrowser()
+}
+
 

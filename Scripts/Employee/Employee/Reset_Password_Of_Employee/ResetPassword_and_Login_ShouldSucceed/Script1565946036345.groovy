@@ -13,15 +13,16 @@ import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
 
+try{
 WebUI.openBrowser('')
 
-WebUI.navigateToUrl('https://10.2.200.25:8441/login')
+WebUI.navigateToUrl(GlobalVariable.login_url)
 
 WebUI.setText(findTestObject('Object Repository/Employee/Employee/Reset_Password_Of_Employee_OR/input_Sign in_mat-input-0'), 
-    'admin')
+    GlobalVariable.username_admins_Password)
 
 WebUI.setEncryptedText(findTestObject('Object Repository/Employee/Employee/Reset_Password_Of_Employee_OR/input_Username_mat-input-1'), 
-    '4aUHZLRHJF4=')
+    GlobalVariable.username_admins_Password)
 
 WebUI.click(findTestObject('Object Repository/Employee/Employee/Reset_Password_Of_Employee_OR/button_Login'))
 
@@ -40,10 +41,10 @@ WebUI.click(findTestObject('Object Repository/Employee/Employee/Reset_Password_O
 WebUI.verifyTextPresent('Reset Password', false)
 
 WebUI.setEncryptedText(findTestObject('Object Repository/Employee/Employee/Reset_Password_Of_Employee_OR/input_Reset Password_mat-input-3'), 
-    'MP/3UNpld4E=')
+    GlobalVariable.password_reset)
 
 WebUI.setEncryptedText(findTestObject('Object Repository/Employee/Employee/Reset_Password_Of_Employee_OR/input_New Password_mat-input-4'), 
-    'MP/3UNpld4E=')
+    GlobalVariable.password_reset)
 
 WebUI.click(findTestObject('Object Repository/Employee/Employee/Reset_Password_Of_Employee_OR/button_Reset'))
 
@@ -59,20 +60,20 @@ WebUI.setText(findTestObject('Object Repository/Employee/Employee/Reset_Password
     'delete')
 
 WebUI.setEncryptedText(findTestObject('Object Repository/Employee/Employee/Reset_Password_Of_Employee_OR/input_Username_mat-input-6'), 
-    'MP/3UNpld4E=')
+    GlobalVariable.password_reset)
 
 WebUI.click(findTestObject('Object Repository/Employee/Employee/Reset_Password_Of_Employee_OR/button_Login'))
 
 WebUI.setEncryptedText(findTestObject('Object Repository/Employee/Employee/Reset_Password_Of_Employee_OR/input_First login after user account creationpassword reset Please change the password_mat-input-7'), 
-    'MP/3UNpld4E=')
+    GlobalVariable.password_reset)
 
 WebUI.verifyTextPresent('Please change the password.', false)
 
 WebUI.setEncryptedText(findTestObject('Object Repository/Employee/Employee/Reset_Password_Of_Employee_OR/input_Old Password_mat-input-8'), 
-    'dOJmxv/IuTU=')
+    GlobalVariable.password_new)
 
 WebUI.setEncryptedText(findTestObject('Object Repository/Employee/Employee/Reset_Password_Of_Employee_OR/input_New Password_mat-input-9'), 
-    'dOJmxv/IuTU=')
+    GlobalVariable.password_new)
 
 WebUI.click(findTestObject('Object Repository/Employee/Employee/Reset_Password_Of_Employee_OR/button_Change'))
 
@@ -81,9 +82,15 @@ WebUI.verifyTextPresent('Password changed successfully', false)
 WebUI.click(findTestObject('Object Repository/Employee/Employee/Reset_Password_Of_Employee_OR/button_Ok'))
 
 WebUI.setEncryptedText(findTestObject('Object Repository/Employee/Employee/Reset_Password_Of_Employee_OR/input_Username_mat-input-6'), 
-    'dOJmxv/IuTU=')
+    GlobalVariable.password_new)
 
 WebUI.click(findTestObject('Object Repository/Employee/Employee/Reset_Password_Of_Employee_OR/button_Login'))
 
-WebUI.closeBrowser()
+}
+catch (Exception e) {
+}
+finally {
+	WebUI.closeBrowser()
+}
+
 

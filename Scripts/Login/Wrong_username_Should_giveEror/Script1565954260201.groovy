@@ -13,24 +13,31 @@ import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
 
-WebUI.openBrowser('')
+try {
+    WebUI.openBrowser('')
 
-WebUI.navigateToUrl('https://10.2.200.25:8441/login')
+    WebUI.navigateToUrl(GlobalVariable.login_url)
 
-WebUI.maximizeWindow()
+    WebUI.maximizeWindow()
 
-WebUI.setText(findTestObject('Object Repository/Login_OR/Wrong_username_ShouldgiveError/input_Sign in_mat-input-0'), 'Helloworld')
+    WebUI.setText(findTestObject('Object Repository/Login_OR/Wrong_username_ShouldgiveError/input_Sign in_mat-input-0'), 
+        GlobalVariable.wrong_username)
 
-WebUI.setEncryptedText(findTestObject('Object Repository/Login_OR/Wrong_username_ShouldgiveError/input_Username_mat-input-1'), 
-    '4aUHZLRHJF4=')
+    WebUI.setEncryptedText(findTestObject('Object Repository/Login_OR/Wrong_username_ShouldgiveError/input_Username_mat-input-1'), 
+        GlobalVariable.username_admins_Password)
 
-WebUI.click(findTestObject('Object Repository/Login_OR/Wrong_username_ShouldgiveError/button_Login'))
+    WebUI.click(findTestObject('Object Repository/Login_OR/Wrong_username_ShouldgiveError/button_Login'))
 
-WebUI.click(findTestObject('Object Repository/Login_OR/Wrong_username_ShouldgiveError/div_Invalid username'))
+    WebUI.click(findTestObject('Object Repository/Login_OR/Wrong_username_ShouldgiveError/div_Invalid username'))
 
-WebUI.verifyTextPresent(' Invalid username ', false)
+    WebUI.verifyTextPresent(' Invalid username ', false)
 
-WebUI.click(findTestObject('Object Repository/Login_OR/Wrong_username_ShouldgiveError/button_OK'))
-
-WebUI.closeBrowser()
+    WebUI.click(findTestObject('Object Repository/Login_OR/Wrong_username_ShouldgiveError/button_OK'))
+}
+catch (Exception e) {
+    WebUI.closeBrowser()
+} 
+finally { 
+    WebUI.closeBrowser()
+}
 

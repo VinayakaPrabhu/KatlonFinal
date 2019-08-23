@@ -15,11 +15,11 @@ import internal.GlobalVariable as GlobalVariable
 
 WebUI.openBrowser('')
 
-WebUI.navigateToUrl('https://10.2.200.25:8441/login')
+WebUI.navigateToUrl(GlobalVariable.login_url)
 
-WebUI.setText(findTestObject('Object Repository/Conf/AboutPage/AboutPage/input_Sign in_mat-input-0'), 'admin')
+WebUI.setText(findTestObject('Object Repository/Conf/AboutPage/AboutPage/input_Sign in_mat-input-0'), GlobalVariable.username_admin)
 
-WebUI.setEncryptedText(findTestObject('Object Repository/Conf/AboutPage/AboutPage/input_Username_mat-input-1'), '4aUHZLRHJF4=')
+WebUI.setEncryptedText(findTestObject('Object Repository/Conf/AboutPage/AboutPage/input_Username_mat-input-1'), GlobalVariable.username_admins_Password)
 
 WebUI.click(findTestObject('Object Repository/Conf/AboutPage/AboutPage/button_Login'))
 

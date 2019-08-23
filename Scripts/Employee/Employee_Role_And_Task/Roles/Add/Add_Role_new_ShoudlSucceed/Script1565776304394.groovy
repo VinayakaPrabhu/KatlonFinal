@@ -13,45 +13,50 @@ import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
 
-WebUI.openBrowser('')
+try {
+    WebUI.openBrowser('')
 
-WebUI.navigateToUrl('https://10.2.200.25:8441/login')
+    WebUI.navigateToUrl(GlobalVariable.login_url)
 
-WebUI.setText(findTestObject('Object Repository/Employee/Employee_Role_And_Task_OR/Roles_OR/Add_OR/Add_Role_new_Shouldsucceed/input_Sign in_mat-input-0'), 
-    'admin')
+    WebUI.setText(findTestObject('Object Repository/Employee/Employee_Role_And_Task_OR/Roles_OR/Add_OR/Add_Role_new_Shouldsucceed/input_Sign in_mat-input-0'), 
+        GlobalVariable.username_admin)
 
-WebUI.setEncryptedText(findTestObject('Object Repository/Employee/Employee_Role_And_Task_OR/Roles_OR/Add_OR/Add_Role_new_Shouldsucceed/input_Username_mat-input-1'), 
-    '4aUHZLRHJF4=')
+    WebUI.setEncryptedText(findTestObject('Object Repository/Employee/Employee_Role_And_Task_OR/Roles_OR/Add_OR/Add_Role_new_Shouldsucceed/input_Username_mat-input-1'), 
+        GlobalVariable.username_admins_Password)
 
-WebUI.click(findTestObject('Object Repository/Employee/Employee_Role_And_Task_OR/Roles_OR/Add_OR/Add_Role_new_Shouldsucceed/button_Login'))
+    WebUI.click(findTestObject('Object Repository/Employee/Employee_Role_And_Task_OR/Roles_OR/Add_OR/Add_Role_new_Shouldsucceed/button_Login'))
 
-WebUI.maximizeWindow()
+    WebUI.maximizeWindow()
 
-WebUI.click(findTestObject('Object Repository/Employee/Employee_Role_And_Task_OR/Roles_OR/Add_OR/Add_Role_new_Shouldsucceed/div_more_vert_hamburgerWrapper'), 
-    FailureHandling.OPTIONAL)
+    WebUI.click(findTestObject('Object Repository/Employee/Employee_Role_And_Task_OR/Roles_OR/Add_OR/Add_Role_new_Shouldsucceed/div_more_vert_hamburgerWrapper'), 
+        FailureHandling.OPTIONAL)
 
-WebUI.click(findTestObject('Object Repository/Employee/Employee_Role_And_Task_OR/Roles_OR/Add_OR/Add_Role_new_Shouldsucceed/a_account_circleEmployee'))
+    WebUI.click(findTestObject('Object Repository/Employee/Employee_Role_And_Task_OR/Roles_OR/Add_OR/Add_Role_new_Shouldsucceed/a_account_circleEmployee'))
 
-WebUI.click(findTestObject('Object Repository/Employee/Employee_Role_And_Task_OR/Roles_OR/Add_OR/Add_Role_new_Shouldsucceed/a_assignmentRole And Task'))
+    WebUI.click(findTestObject('Object Repository/Employee/Employee_Role_And_Task_OR/Roles_OR/Add_OR/Add_Role_new_Shouldsucceed/a_assignmentRole And Task'))
 
-WebUI.click(findTestObject('Object Repository/Employee/Employee_Role_And_Task_OR/Roles_OR/Add_OR/Add_Role_new_Shouldsucceed/i_add'))
+    WebUI.click(findTestObject('Object Repository/Employee/Employee_Role_And_Task_OR/Roles_OR/Add_OR/Add_Role_new_Shouldsucceed/i_add'))
 
-WebUI.setText(findTestObject('Object Repository/Employee/Employee_Role_And_Task_OR/Roles_OR/Add_OR/Add_Role_new_Shouldsucceed/input_Add Role_code'), 
-    '1112')
+    WebUI.setText(findTestObject('Object Repository/Employee/Employee_Role_And_Task_OR/Roles_OR/Add_OR/Add_Role_new_Shouldsucceed/input_Add Role_code'), 
+        GlobalVariable.role_code)
 
-WebUI.setText(findTestObject('Object Repository/Employee/Employee_Role_And_Task_OR/Roles_OR/Add_OR/Add_Role_new_Shouldsucceed/input_Code_name'), 
-    'HelloWorld')
+    WebUI.setText(findTestObject('Object Repository/Employee/Employee_Role_And_Task_OR/Roles_OR/Add_OR/Add_Role_new_Shouldsucceed/input_Code_name'), 
+        GlobalVariable.role_name)
 
-WebUI.setText(findTestObject('Object Repository/Employee/Employee_Role_And_Task_OR/Roles_OR/Add_OR/Add_Role_new_Shouldsucceed/input_Name_description'), 
-    'Helloworld')
+    WebUI.setText(findTestObject('Object Repository/Employee/Employee_Role_And_Task_OR/Roles_OR/Add_OR/Add_Role_new_Shouldsucceed/input_Name_description'), 
+        GlobalVariable.role_description)
 
-WebUI.check(findTestObject('Object Repository/Employee/Employee_Role_And_Task_OR/Roles_OR/Add_OR/Add_Role_new_Shouldsucceed/div_Search_mat-checkbox-inner-container'))
+    WebUI.check(findTestObject('Object Repository/Employee/Employee_Role_And_Task_OR/Roles_OR/Add_OR/Add_Role_new_Shouldsucceed/div_Search_mat-checkbox-inner-container'))
 
-WebUI.click(findTestObject('Object Repository/Employee/Employee_Role_And_Task_OR/Roles_OR/Add_OR/Add_Role_new_Shouldsucceed/button_Save'))
+    WebUI.click(findTestObject('Object Repository/Employee/Employee_Role_And_Task_OR/Roles_OR/Add_OR/Add_Role_new_Shouldsucceed/button_Save'))
 
-WebUI.verifyTextPresent('created successfully', false)
+    WebUI.verifyTextPresent('created successfully', false)
 
-WebUI.click(findTestObject('Object Repository/Employee/Employee_Role_And_Task_OR/Roles_OR/Add_OR/Add_Role_new_Shouldsucceed/button_Cancel'))
-
-WebUI.closeBrowser()
+    WebUI.click(findTestObject('Object Repository/Employee/Employee_Role_And_Task_OR/Roles_OR/Add_OR/Add_Role_new_Shouldsucceed/button_Cancel'))
+}
+catch (Exception e) {
+} 
+finally { 
+    WebUI.closeBrowser()
+}
 
