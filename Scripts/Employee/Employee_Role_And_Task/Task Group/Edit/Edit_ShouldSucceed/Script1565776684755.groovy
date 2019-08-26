@@ -13,54 +13,41 @@ import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
 
-try {
-    WebUI.openBrowser('')
+WebUI.openBrowser('')
 
-    WebUI.navigateToUrl(GlobalVariable.login_url)
+WebUI.navigateToUrl(GlobalVariable.login_url)
 
-    WebUI.setText(findTestObject('Object Repository/Employee/Employee_Role_And_Task_OR/Task Group_OR/Edit_OR/input_Sign in_mat-input-0'), 
-        GlobalVariable.username_admin)
+WebUI.setText(findTestObject('Object Repository/Employee/Employee_Role_And_Task_OR/Task Group_OR/Edit_OR/Edit_Roles_in_Taskgroup_ShouldSucced_OR/input_Sign in_mat-input-0'), 
+    GlobalVariable.username_admin)
 
-    WebUI.setEncryptedText(findTestObject('Object Repository/Employee/Employee_Role_And_Task_OR/Task Group_OR/Edit_OR/input_Username_mat-input-1'), 
-        GlobalVariable.username_admins_Password)
+WebUI.setEncryptedText(findTestObject('Object Repository/Employee/Employee_Role_And_Task_OR/Task Group_OR/Edit_OR/Edit_Roles_in_Taskgroup_ShouldSucced_OR/input_Username_mat-input-1'), 
+    GlobalVariable.username_admins_Password)
 
-    WebUI.click(findTestObject('Object Repository/Employee/Employee_Role_And_Task_OR/Task Group_OR/Edit_OR/button_Login'))
+WebUI.click(findTestObject('Object Repository/Employee/Employee_Role_And_Task_OR/Task Group_OR/Edit_OR/Edit_Roles_in_Taskgroup_ShouldSucced_OR/button_Login'))
 
-    WebUI.maximizeWindow()
+WebUI.maximizeWindow()
 
-    WebUI.click(findTestObject('Object Repository/Employee/Employee_Role_And_Task_OR/Task Group_OR/Edit_OR/div_more_vert_hamburgerWrapper'), 
-        FailureHandling.OPTIONAL)
+WebUI.click(findTestObject('Object Repository/Employee/Employee_Role_And_Task_OR/Task Group_OR/Edit_OR/Edit_Roles_in_Taskgroup_ShouldSucced_OR/div_more_vert_hamburgerWrapper'))
 
-    WebUI.click(findTestObject('Object Repository/Employee/Employee_Role_And_Task_OR/Task Group_OR/Edit_OR/a_account_circleEmployee'))
+WebUI.click(findTestObject('Object Repository/Employee/Employee_Role_And_Task_OR/Task Group_OR/Edit_OR/Edit_Roles_in_Taskgroup_ShouldSucced_OR/i_account_circle'))
 
-    WebUI.click(findTestObject('Object Repository/Employee/Employee_Role_And_Task_OR/Task Group_OR/Edit_OR/a_assignmentRole And Task'))
+WebUI.click(findTestObject('Object Repository/Employee/Employee_Role_And_Task_OR/Task Group_OR/Edit_OR/Edit_Roles_in_Taskgroup_ShouldSucced_OR/a_assignmentRole And Task'))
 
-    WebUI.click(findTestObject('Object Repository/Employee/Employee_Role_And_Task_OR/Task Group_OR/Edit_OR/div_Task Group'))
+WebUI.click(findTestObject('Object Repository/Employee/Employee_Role_And_Task_OR/Task Group_OR/Edit_OR/Edit_Roles_in_Taskgroup_ShouldSucced_OR/div_Task Group'))
 
-    WebUI.check(findTestObject('Object Repository/Employee/Employee_Role_And_Task_OR/Task Group_OR/Edit_OR/mat-cell_CODE-1118'))
+WebUI.click(findTestObject('Object Repository/Employee/Employee_Role_And_Task_OR/Task Group_OR/Edit_OR/Edit_Roles_in_Taskgroup_ShouldSucced_OR/mat-cell_TVINC'))
 
-    WebUI.click(findTestObject('Object Repository/Employee/Employee_Role_And_Task_OR/Task Group_OR/Edit_OR/i_edit'))
+WebUI.click(findTestObject('Object Repository/Employee/Employee_Role_And_Task_OR/Task Group_OR/Edit_OR/Edit_Roles_in_Taskgroup_ShouldSucced_OR/i_edit'))
 
-    WebUI.setText(findTestObject('Object Repository/Employee/Employee_Role_And_Task_OR/Task Group_OR/Edit_OR/input_OrganizationCode_name'), 
-        GlobalVariable.edit_existing_role)
+WebUI.click(findTestObject('Object Repository/Employee/Employee_Role_And_Task_OR/Task Group_OR/Edit_OR/Edit_Roles_in_Taskgroup_ShouldSucced_OR/mat-step-header_2Create Role'))
 
-    WebUI.click(findTestObject('Object Repository/Employee/Employee_Role_And_Task_OR/Task Group_OR/Edit_OR/mat-icon_clear'))
+WebUI.click(findTestObject('Object Repository/Employee/Employee_Role_And_Task_OR/Task Group_OR/Edit_OR/Edit_Roles_in_Taskgroup_ShouldSucced_OR/div_Search_mat-checkbox-inner-container'))
 
-    WebUI.click(findTestObject('Object Repository/Employee/Employee_Role_And_Task_OR/Task Group_OR/Edit_OR/button_Proceed'))
+WebUI.click(findTestObject('Object Repository/Employee/Employee_Role_And_Task_OR/Task Group_OR/Edit_OR/Edit_Roles_in_Taskgroup_ShouldSucced_OR/button_Save'))
 
-    WebUI.check(findTestObject('Object Repository/Employee/Employee_Role_And_Task_OR/Task Group_OR/Edit_OR/mat-icon_clear'))
+WebUI.verifyTextPresent('updated successfully', false)
 
-    WebUI.click(findTestObject('Object Repository/Employee/Employee_Role_And_Task_OR/Task Group_OR/Edit_OR/button_Save'))
+WebUI.click(findTestObject('Object Repository/Employee/Employee_Role_And_Task_OR/Task Group_OR/Edit_OR/Edit_Roles_in_Taskgroup_ShouldSucced_OR/button_Ok'))
 
-    WebUI.verifyTextPresent('updated successfully', false)
-
-    WebUI.click(findTestObject('Object Repository/Employee/Employee_Role_And_Task_OR/Task Group_OR/Edit_OR/div_TaskGroup CODEZXYZSS updated successfully'))
-
-    WebUI.click(findTestObject('Object Repository/Employee/Employee_Role_And_Task_OR/Task Group_OR/Edit_OR/button_Ok'))
-}
-catch (Exception e) {
-} 
-finally { 
-    WebUI.closeBrowser()
-}
+WebUI.closeBrowser()
 

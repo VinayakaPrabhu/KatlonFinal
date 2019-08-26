@@ -13,7 +13,7 @@ import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
 
-try {
+
 	
 WebUI.openBrowser('')
 
@@ -29,10 +29,4 @@ WebUI.setEncryptedText(findTestObject('Object Repository/Login_OR/AdminLogin_Sho
 
 WebUI.click(findTestObject('Object Repository/Login_OR/AdminLogin_ShouldSucceed/Page_Unified Wallet/button_Login'))
 
-}
-catch (Exception e) {
-
-}
-finally {
-	WebUI.closeBrowser()
-}
+WebUI.closeBrowser()

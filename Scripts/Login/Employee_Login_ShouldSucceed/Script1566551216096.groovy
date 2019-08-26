@@ -1,7 +1,3 @@
-import static com.kms.katalon.core.checkpoint.CheckpointFactory.findCheckpoint
-import static com.kms.katalon.core.testcase.TestCaseFactory.findTestCase
-import static com.kms.katalon.core.testdata.TestDataFactory.findTestData
-import static com.kms.katalon.core.testobject.ObjectRepository.findTestObject
 import com.kms.katalon.core.checkpoint.Checkpoint as Checkpoint
 import com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords as CucumberKW
 import com.kms.katalon.core.mobile.keyword.MobileBuiltInKeywords as Mobile
@@ -12,4 +8,55 @@ import com.kms.katalon.core.testobject.TestObject as TestObject
 import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
+import static com.kms.katalon.core.checkpoint.CheckpointFactory.findCheckpoint
+import static com.kms.katalon.core.testcase.TestCaseFactory.findTestCase
+import static com.kms.katalon.core.testdata.TestDataFactory.findTestData
+import static com.kms.katalon.core.testobject.ObjectRepository.findTestObject
+import com.kms.katalon.core.checkpoint.CheckpointFactory as CheckpointFactory
+import com.kms.katalon.core.mobile.keyword.MobileBuiltInKeywords as MobileBuiltInKeywords
+import com.kms.katalon.core.testcase.TestCaseFactory as TestCaseFactory
+import com.kms.katalon.core.testdata.TestDataFactory as TestDataFactory
+import com.kms.katalon.core.testobject.ObjectRepository as ObjectRepository
+import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WSBuiltInKeywords
+import com.kms.katalon.core.webui.driver.DriverFactory as DriverFactory
+import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUiBuiltInKeywords
+import com.thoughtworks.selenium.Selenium as Selenium
+import org.openqa.selenium.firefox.FirefoxDriver as FirefoxDriver
+import org.openqa.selenium.WebDriver as WebDriver
+import com.thoughtworks.selenium.webdriven.WebDriverBackedSelenium as WebDriverBackedSelenium
+import static org.junit.Assert.*
+import java.util.regex.Pattern as Pattern
+import static org.apache.commons.lang3.StringUtils.join
+
+
+WebUI.openBrowser('')
+
+WebUI.navigateToUrl(GlobalVariable.login_url)
+
+WebUI.maximizeWindow()
+
+WebUI.setText(findTestObject('Object Repository/Login_OR/employee_login/input_Sign in_mat-input-0'), GlobalVariable.employee_login_name)
+
+WebUI.setEncryptedText(findTestObject('Object Repository/Login_OR/employee_login/input_Username_mat-input-1'), GlobalVariable.username_admins_Password)
+
+WebUI.click(findTestObject('Object Repository/Login_OR/employee_login/button_Login'))
+
+WebUI.setEncryptedText(findTestObject('Object Repository/Login_OR/employee_login/input_First login after user account creationpassword reset Please change the password_mat-input-2'), 
+    GlobalVariable.username_admins_Password)
+
+WebUI.setEncryptedText(findTestObject('Object Repository/Login_OR/employee_login/input_Old Password_mat-input-3'), GlobalVariable.employee_new_password)
+
+WebUI.setEncryptedText(findTestObject('Object Repository/Login_OR/employee_login/input_New Password_mat-input-4'), GlobalVariable.employee_new_password)
+
+WebUI.click(findTestObject('Object Repository/Login_OR/employee_login/button_Change'))
+
+WebUI.verifyTextPresent('Password changed successfully', false)
+
+WebUI.click(findTestObject('Object Repository/Login_OR/employee_login/button_Ok'))
+
+WebUI.setEncryptedText(findTestObject('Object Repository/Login_OR/employee_login/input_Username_mat-input-1'), GlobalVariable.employee_new_password)
+
+WebUI.click(findTestObject('Object Repository/Login_OR/employee_login/button_Login'))
+
+WebUI.closeBrowser()
 

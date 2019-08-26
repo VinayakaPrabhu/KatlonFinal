@@ -13,43 +13,38 @@ import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
 
-try {
-    WebUI.openBrowser('')
+WebUI.openBrowser('')
 
-    WebUI.navigateToUrl(GlobalVariable.login_url)
+WebUI.navigateToUrl(GlobalVariable.login_url)
 
-    WebUI.setText(findTestObject('Object Repository/Employee/Employee_Role_And_Task_OR/Roles_OR/Delete_OR/input_Sign in_mat-input-0'), 
-        GlobalVariable.username_admin)
+WebUI.setText(findTestObject('Object Repository/Employee/Employee_Role_And_Task_OR/Roles_OR/Delete_OR/input_Sign in_mat-input-0'), 
+    GlobalVariable.username_admin)
 
-    WebUI.setEncryptedText(findTestObject('Object Repository/Employee/Employee_Role_And_Task_OR/Roles_OR/Delete_OR/input_Username_mat-input-1'), 
-        GlobalVariable.username_admins_Password)
+WebUI.setEncryptedText(findTestObject('Object Repository/Employee/Employee_Role_And_Task_OR/Roles_OR/Delete_OR/input_Username_mat-input-1'), 
+    GlobalVariable.username_admins_Password)
 
-    WebUI.click(findTestObject('Object Repository/Employee/Employee_Role_And_Task_OR/Roles_OR/Delete_OR/button_Login'))
+WebUI.click(findTestObject('Object Repository/Employee/Employee_Role_And_Task_OR/Roles_OR/Delete_OR/button_Login'))
 
-    WebUI.maximizeWindow()
+WebUI.maximizeWindow()
 
-    WebUI.click(findTestObject('Object Repository/Employee/Employee_Role_And_Task_OR/Roles_OR/Delete_OR/div_more_vert_hamburgerWrapper'), 
-        FailureHandling.OPTIONAL)
+WebUI.click(findTestObject('Object Repository/Employee/Employee_Role_And_Task_OR/Roles_OR/Delete_OR/div_more_vert_hamburgerWrapper'), 
+    FailureHandling.OPTIONAL)
 
-    WebUI.click(findTestObject('Object Repository/Employee/Employee_Role_And_Task_OR/Roles_OR/Delete_OR/a_account_circleEmployee'))
+WebUI.click(findTestObject('Object Repository/Employee/Employee_Role_And_Task_OR/Roles_OR/Delete_OR/a_account_circleEmployee'))
 
-    WebUI.click(findTestObject('Object Repository/Employee/Employee_Role_And_Task_OR/Roles_OR/Delete_OR/a_assignmentRole And Task'))
+WebUI.click(findTestObject('Object Repository/Employee/Employee_Role_And_Task_OR/Roles_OR/Delete_OR/a_assignmentRole And Task'))
 
-    WebUI.click(findTestObject('Object Repository/Employee/Employee_Role_And_Task_OR/Roles_OR/Delete_OR/mat-cell_1112'))
+WebUI.click(findTestObject('Object Repository/Employee/Employee_Role_And_Task_OR/Roles_OR/Delete_OR/mat-cell_1112'))
 
-    WebUI.click(findTestObject('Object Repository/Employee/Employee_Role_And_Task_OR/Roles_OR/Delete_OR/i_delete'))
+WebUI.click(findTestObject('Object Repository/Employee/Employee_Role_And_Task_OR/Roles_OR/Delete_OR/i_delete'))
 
-    WebUI.verifyTextPresent('Do you want to delete', false)
+WebUI.verifyTextPresent('Do you want to delete', false)
 
-    WebUI.click(findTestObject('Object Repository/Employee/Employee_Role_And_Task_OR/Roles_OR/Delete_OR/button_Ok'))
+WebUI.click(findTestObject('Object Repository/Employee/Employee_Role_And_Task_OR/Roles_OR/Delete_OR/button_Ok'))
 
-    WebUI.verifyTextPresent('deleted successfully', false)
+WebUI.verifyTextPresent('deleted successfully', false)
 
-    WebUI.click(findTestObject('Object Repository/Employee/Employee_Role_And_Task_OR/Roles_OR/Delete_OR/button_OK (1)'))
-}
-catch (Exception e) {
-} 
-finally { 
-    WebUI.closeBrowser()
-}
+WebUI.click(findTestObject('Object Repository/Employee/Employee_Role_And_Task_OR/Roles_OR/Delete_OR/button_OK (1)'))
+
+WebUI.closeBrowser()
 

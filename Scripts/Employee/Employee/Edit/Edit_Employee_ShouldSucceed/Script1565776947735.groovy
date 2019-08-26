@@ -13,50 +13,45 @@ import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
 
-try{
-	
-
 WebUI.openBrowser('')
-
-WebUI.maximizeWindow()
 
 WebUI.navigateToUrl(GlobalVariable.login_url)
 
-WebUI.setText(findTestObject('Employee/Employee/Edit_OR/Page_Unified Wallet/input_Sign in_mat-input-0'), GlobalVariable.username_admin)
+WebUI.click(findTestObject('Object Repository/Employee/Employee/Edit_OR/div_Username'))
 
-WebUI.setEncryptedText(findTestObject('Employee/Employee/Edit_OR/Page_Unified Wallet/input_Username_mat-input-1'), GlobalVariable.username_admins_Password)
+WebUI.setText(findTestObject('Object Repository/Employee/Employee/Edit_OR/input_Sign in_mat-input-0'), GlobalVariable.username_admin)
 
-WebUI.click(findTestObject('Employee/Employee/Edit_OR/Page_Unified Wallet/button_Login'))
+WebUI.setEncryptedText(findTestObject('Object Repository/Employee/Employee/Edit_OR/input_Username_mat-input-1'), GlobalVariable.username_admins_Password)
 
-WebUI.click(findTestObject('Employee/Employee/Edit_OR/Page_Unified Wallet/i_account_circle'))
+WebUI.click(findTestObject('Object Repository/Employee/Employee/Edit_OR/button_Login'))
 
-WebUI.click(findTestObject('Employee/Employee/Edit_OR/Page_Unified Wallet/a_account_circleEmployee'))
+WebUI.maximizeWindow()
 
-WebUI.click(findTestObject('Employee/Employee/Edit_OR/Page_Unified Wallet/mat-cell_213'))
+WebUI.click(findTestObject('Object Repository/Employee/Employee/Edit_OR/div_more_vert_hamburgerWrapper'), FailureHandling.OPTIONAL)
 
-WebUI.click(findTestObject('Employee/Employee/Edit_OR/Page_Unified Wallet/i_edit'))
+WebUI.click(findTestObject('Object Repository/Employee/Employee/Edit_OR/i_account_circle'))
 
-WebUI.setText(findTestObject('Employee/Employee/Edit_OR/Page_Unified Wallet/input_First Name_mat-input-7'), GlobalVariable.existing_employee_last_name)
+WebUI.click(findTestObject('Object Repository/Employee/Employee/Edit_OR/a_account_circleEmployee'))
 
-WebUI.click(findTestObject('Employee/Employee/Edit_OR/Page_Unified Wallet/button_Proceed'))
+WebUI.click(findTestObject('Object Repository/Employee/Employee/Edit_OR/mat-cell_1000'))
 
-WebUI.waitForElementVisible(findTestObject('Employee/Employee/Edit_OR/Page_Unified Wallet/button_Save'), 2)
+WebUI.click(findTestObject('Object Repository/Employee/Employee/Edit_OR/i_edit'))
 
-WebUI.click(findTestObject('Employee/Employee/Edit_OR/Page_Unified Wallet/button_Save'))
+WebUI.click(findTestObject('Object Repository/Employee/Employee/Edit_OR/button_Proceed'))
+
+WebUI.click(findTestObject('Object Repository/Employee/Employee/Edit_OR/div_Search_mat-checkbox-inner-container'))
+
+WebUI.click(findTestObject('Object Repository/Employee/Employee/Edit_OR/div_RVINN'))
+
+WebUI.click(findTestObject('Object Repository/Employee/Employee/Edit_OR/button_Save'))
 
 WebUI.verifyTextPresent('will be updated. Do you want to proceed?', false)
 
-WebUI.click(findTestObject('Employee/Employee/Edit_OR/Page_Unified Wallet/button_Ok'))
+WebUI.click(findTestObject('Object Repository/Employee/Employee/Edit_OR/button_Ok'))
 
-WebUI.verifyTextPresent(' updated successfully', false)
+WebUI.verifyTextPresent('updated successfully', false)
 
-WebUI.click(findTestObject('Employee/Employee/Edit_OR/Page_Unified Wallet/button_OK (1)'))
+WebUI.click(findTestObject('Object Repository/Employee/Employee/Edit_OR/button_OK (1)'))
 
-}
-catch (Exception e) {
-}
-finally {
-	WebUI.closeBrowser()
-}
-
+WebUI.closeBrowser()
 

@@ -86,12 +86,22 @@
    </GlobalVariableEntity>
    <GlobalVariableEntity>
       <description></description>
-      <initValue>'Wrong'</initValue>
+      <initValue>'o6CDTymj93o='</initValue>
       <name>wrong_password</name>
    </GlobalVariableEntity>
    <GlobalVariableEntity>
       <description></description>
       <initValue>'qwerty'</initValue>
       <name>wrong_username</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description>Abc@123</description>
+      <initValue>'vfe9bu3EvbE='</initValue>
+      <name>employee_resetPassword</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description>Qwe@123</description>
+      <initValue>'K9jKjsEuRpA='</initValue>
+      <name>employee_last_password</name>
    </GlobalVariableEntity>
 </GlobalVariableEntities>

@@ -13,7 +13,7 @@ import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
 
-try {
+
     WebUI.openBrowser('')
 
     WebUI.navigateToUrl(GlobalVariable.login_url)
@@ -55,10 +55,5 @@ try {
     WebUI.click(findTestObject('Object Repository/Employee/Employee_Role_And_Task_OR/Roles_OR/Add_OR/Add_Role_existing_ShouldgiveerrorMessage/button_OK'))
 
     WebUI.click(findTestObject('Object Repository/Employee/Employee_Role_And_Task_OR/Roles_OR/Add_OR/Add_Role_existing_ShouldgiveerrorMessage/button_Cancel'))
-}
-catch (Exception e) {
-} 
-finally { 
-    WebUI.closeBrowser()
-}
+	WebUI.closeBrowser()
 

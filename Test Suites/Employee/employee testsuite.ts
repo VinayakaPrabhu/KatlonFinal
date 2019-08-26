@@ -142,7 +142,7 @@ delete taskgroup : tvinn verify  message</description>
    <testCaseLink>
       <guid>166e60b6-1e09-4c64-9654-60573ee33e30</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>false</isRun>
+      <isRun>true</isRun>
       <testCaseId>Test Cases/Employee/Employee/Reset_Password_Of_Employee/ResetPassword_and_Login_ShouldSucceed</testCaseId>
    </testCaseLink>
    <testCaseLink>

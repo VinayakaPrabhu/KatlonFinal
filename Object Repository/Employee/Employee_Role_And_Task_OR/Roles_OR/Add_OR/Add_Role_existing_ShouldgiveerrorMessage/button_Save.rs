@@ -66,7 +66,7 @@
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='TGROUP113'])[3]/following::button[3]</value>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='TGROUP813'])[3]/following::button[3]</value>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>

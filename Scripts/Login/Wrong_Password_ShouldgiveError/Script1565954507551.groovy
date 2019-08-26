@@ -13,12 +13,11 @@ import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
 
-try {
     WebUI.openBrowser('')
 
     WebUI.navigateToUrl(GlobalVariable.login_url)
 
-    WebUI.maximizeWindow()
+    not_run: WebUI.maximizeWindow()
 
     WebUI.setText(findTestObject('Object Repository/Login_OR/Wrong_Password_ShouldgiveError/input_Sign in_mat-input-0'), 
         GlobalVariable.username_admin)
@@ -31,11 +30,4 @@ try {
     WebUI.verifyTextPresent(' Invalid password ', false)
 
     WebUI.click(findTestObject('Object Repository/Login_OR/Wrong_Password_ShouldgiveError/button_OK'))
-}
-catch (Exception e) {
-    WebUI.closeBrowser()
-} 
-finally { 
-    WebUI.closeBrowser()
-}
-
+	WebUI.closeBrowser()

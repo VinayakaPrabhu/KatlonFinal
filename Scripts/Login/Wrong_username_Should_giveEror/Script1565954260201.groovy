@@ -13,7 +13,7 @@ import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
 
-try {
+
     WebUI.openBrowser('')
 
     WebUI.navigateToUrl(GlobalVariable.login_url)
@@ -33,11 +33,4 @@ try {
     WebUI.verifyTextPresent(' Invalid username ', false)
 
     WebUI.click(findTestObject('Object Repository/Login_OR/Wrong_username_ShouldgiveError/button_OK'))
-}
-catch (Exception e) {
-    WebUI.closeBrowser()
-} 
-finally { 
-    WebUI.closeBrowser()
-}
-
+	WebUI.closeBrowser()

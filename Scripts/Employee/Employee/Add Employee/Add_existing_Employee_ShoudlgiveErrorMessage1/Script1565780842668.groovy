@@ -13,7 +13,7 @@ import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
 
-try {
+
     WebUI.openBrowser('')
 
     WebUI.navigateToUrl(GlobalVariable.login_url)
@@ -72,10 +72,4 @@ try {
     WebUI.click(findTestObject('Object Repository/Employee/Employee/Add Employee_OR/Add_Existing_Employee_ShouldgiveErrorMessage1/Page_Unified Wallet/button_OK'))
 
     WebUI.click(findTestObject('Object Repository/Employee/Employee/Add Employee_OR/Add_Existing_Employee_ShouldgiveErrorMessage1/Page_Unified Wallet/button_Cancel'))
-}
-catch (Exception e) {
-} 
-finally { 
-    WebUI.closeBrowser()
-}
-
+WebUI.closeBrowser()

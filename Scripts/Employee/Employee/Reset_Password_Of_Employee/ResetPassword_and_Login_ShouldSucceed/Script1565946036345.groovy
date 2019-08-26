@@ -13,84 +13,76 @@ import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
 
-try{
-WebUI.openBrowser('')
 
-WebUI.navigateToUrl(GlobalVariable.login_url)
+    WebUI.openBrowser('')
 
-WebUI.setText(findTestObject('Object Repository/Employee/Employee/Reset_Password_Of_Employee_OR/input_Sign in_mat-input-0'), 
-    GlobalVariable.username_admins_Password)
+    WebUI.navigateToUrl(GlobalVariable.login_url)
 
-WebUI.setEncryptedText(findTestObject('Object Repository/Employee/Employee/Reset_Password_Of_Employee_OR/input_Username_mat-input-1'), 
-    GlobalVariable.username_admins_Password)
+    WebUI.setText(findTestObject('Object Repository/Employee/Employee/Reset_Password_Of_Employee_OR/input_Sign in_mat-input-0'), 
+        GlobalVariable.username_admin)
 
-WebUI.click(findTestObject('Object Repository/Employee/Employee/Reset_Password_Of_Employee_OR/button_Login'))
+    WebUI.setEncryptedText(findTestObject('Object Repository/Employee/Employee/Reset_Password_Of_Employee_OR/input_Username_mat-input-1'), 
+        GlobalVariable.username_admins_Password)
 
-WebUI.maximizeWindow()
+    WebUI.click(findTestObject('Object Repository/Employee/Employee/Reset_Password_Of_Employee_OR/button_Login'))
 
-WebUI.click(findTestObject('Object Repository/Employee/Employee/Reset_Password_Of_Employee_OR/div_more_vert_hamburgerWrapper'))
+    WebUI.maximizeWindow()
 
-WebUI.click(findTestObject('Object Repository/Employee/Employee/Reset_Password_Of_Employee_OR/a_account_circleEmployee'))
+    WebUI.click(findTestObject('Object Repository/Employee/Employee/Reset_Password_Of_Employee_OR/div_more_vert_hamburgerWrapper'))
 
-WebUI.click(findTestObject('Object Repository/Employee/Employee/Reset_Password_Of_Employee_OR/a_account_circleEmployee_1'))
+    WebUI.click(findTestObject('Object Repository/Employee/Employee/Reset_Password_Of_Employee_OR/a_account_circleEmployee'))
 
-WebUI.click(findTestObject('Object Repository/Employee/Employee/Reset_Password_Of_Employee_OR/mat-cell_0001'))
+    WebUI.click(findTestObject('Object Repository/Employee/Employee/Reset_Password_Of_Employee_OR/a_account_circleEmployee_1'))
 
-WebUI.click(findTestObject('Object Repository/Employee/Employee/Reset_Password_Of_Employee_OR/i_pages'))
+    WebUI.click(findTestObject('Object Repository/Employee/Employee/Reset_Password_Of_Employee_OR/mat-cell_0001'))
 
-WebUI.verifyTextPresent('Reset Password', false)
+    WebUI.click(findTestObject('Object Repository/Employee/Employee/Reset_Password_Of_Employee_OR/i_pages'))
 
-WebUI.setEncryptedText(findTestObject('Object Repository/Employee/Employee/Reset_Password_Of_Employee_OR/input_Reset Password_mat-input-3'), 
-    GlobalVariable.password_reset)
+    WebUI.verifyTextPresent('Reset Password', false)
 
-WebUI.setEncryptedText(findTestObject('Object Repository/Employee/Employee/Reset_Password_Of_Employee_OR/input_New Password_mat-input-4'), 
-    GlobalVariable.password_reset)
+    WebUI.setEncryptedText(findTestObject('Object Repository/Employee/Employee/Reset_Password_Of_Employee_OR/input_Reset Password_mat-input-3'), 
+        GlobalVariable.employee_resetPassword)
 
-WebUI.click(findTestObject('Object Repository/Employee/Employee/Reset_Password_Of_Employee_OR/button_Reset'))
+    WebUI.setEncryptedText(findTestObject('Object Repository/Employee/Employee/Reset_Password_Of_Employee_OR/input_New Password_mat-input-4'), 
+        GlobalVariable.employee_resetPassword)
 
-WebUI.verifyTextPresent('Password reset successfully', false)
+    WebUI.click(findTestObject('Object Repository/Employee/Employee/Reset_Password_Of_Employee_OR/button_Reset'))
 
-WebUI.click(findTestObject('Object Repository/Employee/Employee/Reset_Password_Of_Employee_OR/button_Cancel'))
+    WebUI.verifyTextPresent('Password reset successfully', false)
 
-WebUI.click(findTestObject('Object Repository/Employee/Employee/Reset_Password_Of_Employee_OR/i_person'))
+    WebUI.click(findTestObject('Object Repository/Employee/Employee/Reset_Password_Of_Employee_OR/button_Cancel'))
 
-WebUI.click(findTestObject('Object Repository/Employee/Employee/Reset_Password_Of_Employee_OR/button_Logout'))
+    WebUI.click(findTestObject('Object Repository/Employee/Employee/Reset_Password_Of_Employee_OR/i_person'))
 
-WebUI.setText(findTestObject('Object Repository/Employee/Employee/Reset_Password_Of_Employee_OR/input_Sign in_mat-input-5'), 
-    'delete')
+    WebUI.click(findTestObject('Object Repository/Employee/Employee/Reset_Password_Of_Employee_OR/button_Logout'))
 
-WebUI.setEncryptedText(findTestObject('Object Repository/Employee/Employee/Reset_Password_Of_Employee_OR/input_Username_mat-input-6'), 
-    GlobalVariable.password_reset)
+    WebUI.setText(findTestObject('Object Repository/Employee/Employee/Reset_Password_Of_Employee_OR/input_Sign in_mat-input-5'), 
+        GlobalVariable.employee_login_name)
 
-WebUI.click(findTestObject('Object Repository/Employee/Employee/Reset_Password_Of_Employee_OR/button_Login'))
+    WebUI.setEncryptedText(findTestObject('Object Repository/Employee/Employee/Reset_Password_Of_Employee_OR/input_Username_mat-input-6'), 
+        GlobalVariable.employee_resetPassword)
 
-WebUI.setEncryptedText(findTestObject('Object Repository/Employee/Employee/Reset_Password_Of_Employee_OR/input_First login after user account creationpassword reset Please change the password_mat-input-7'), 
-    GlobalVariable.password_reset)
+    WebUI.click(findTestObject('Object Repository/Employee/Employee/Reset_Password_Of_Employee_OR/button_Login'))
 
-WebUI.verifyTextPresent('Please change the password.', false)
+    WebUI.setEncryptedText(findTestObject('Object Repository/Employee/Employee/Reset_Password_Of_Employee_OR/input_First login after user account creationpassword reset Please change the password_mat-input-7'), 
+        GlobalVariable.employee_resetPassword)
 
-WebUI.setEncryptedText(findTestObject('Object Repository/Employee/Employee/Reset_Password_Of_Employee_OR/input_Old Password_mat-input-8'), 
-    GlobalVariable.password_new)
+    WebUI.verifyTextPresent('Please change the password.', false)
 
-WebUI.setEncryptedText(findTestObject('Object Repository/Employee/Employee/Reset_Password_Of_Employee_OR/input_New Password_mat-input-9'), 
-    GlobalVariable.password_new)
+    WebUI.setEncryptedText(findTestObject('Object Repository/Employee/Employee/Reset_Password_Of_Employee_OR/input_Old Password_mat-input-8'), 
+        GlobalVariable.employee_last_password)
 
-WebUI.click(findTestObject('Object Repository/Employee/Employee/Reset_Password_Of_Employee_OR/button_Change'))
+    WebUI.setEncryptedText(findTestObject('Object Repository/Employee/Employee/Reset_Password_Of_Employee_OR/input_New Password_mat-input-9'), 
+        GlobalVariable.employee_last_password)
 
-WebUI.verifyTextPresent('Password changed successfully', false)
+    WebUI.click(findTestObject('Object Repository/Employee/Employee/Reset_Password_Of_Employee_OR/button_Change'))
 
-WebUI.click(findTestObject('Object Repository/Employee/Employee/Reset_Password_Of_Employee_OR/button_Ok'))
+    WebUI.verifyTextPresent('Password changed successfully', false)
 
-WebUI.setEncryptedText(findTestObject('Object Repository/Employee/Employee/Reset_Password_Of_Employee_OR/input_Username_mat-input-6'), 
-    GlobalVariable.password_new)
+    WebUI.click(findTestObject('Object Repository/Employee/Employee/Reset_Password_Of_Employee_OR/button_Ok'))
 
-WebUI.click(findTestObject('Object Repository/Employee/Employee/Reset_Password_Of_Employee_OR/button_Login'))
+    WebUI.setEncryptedText(findTestObject('Object Repository/Employee/Employee/Reset_Password_Of_Employee_OR/input_Username_mat-input-6'), 
+        GlobalVariable.employee_last_password)
 
-}
-catch (Exception e) {
-}
-finally {
+    WebUI.click(findTestObject('Object Repository/Employee/Employee/Reset_Password_Of_Employee_OR/button_Login'))
 	WebUI.closeBrowser()
-}
-
-
