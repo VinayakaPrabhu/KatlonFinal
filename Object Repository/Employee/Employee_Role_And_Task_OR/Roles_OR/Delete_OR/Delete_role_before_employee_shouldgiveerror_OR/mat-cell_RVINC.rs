@@ -4,6 +4,12 @@
    <name>mat-cell_RVINC</name>
    <tag></tag>
    <elementGuidId>a0ef7cd8-8ad9-43b7-8460-d4c386f25671</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>BASIC</key>
+         <value>id(&quot;mat-tab-content-0-0&quot;)/div[@class=&quot;mat-tab-body-content ng-trigger ng-trigger-translateTab&quot;]/app-role-details[@class=&quot;ng-tns-c15-6 ng-star-inserted&quot;]/div[@class=&quot;contentArea childScrollOn&quot;]/div[@class=&quot;scrollWithSubHeader roleTaskWrapper&quot;]/mat-table[@class=&quot;mat-responsive mat-expansion-grid mat-table&quot;]/mat-row[@class=&quot;mat-row ng-tns-c15-6 example-expanded-row ng-star-inserted&quot;]/mat-cell[@class=&quot;mat-cell cdk-column-code mat-column-code ng-tns-c15-6 ng-star-inserted&quot;][count(. | //mat-cell[@class = 'mat-cell cdk-column-code mat-column-code ng-tns-c15-6 ng-star-inserted' and @datalabel = 'Code' and @role = 'gridcell']) = count(//mat-cell[@class = 'mat-cell cdk-column-code mat-column-code ng-tns-c15-6 ng-star-inserted' and @datalabel = 'Code' and @role = 'gridcell'])]</value>
+      </entry>
+   </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
    <webElementProperties>
@@ -14,35 +20,35 @@
       <value>mat-cell</value>
    </webElementProperties>
    <webElementProperties>
-      <isSelected>false</isSelected>
+      <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>class</name>
       <type>Main</type>
       <value>mat-cell cdk-column-code mat-column-code ng-tns-c15-6 ng-star-inserted</value>
    </webElementProperties>
    <webElementProperties>
-      <isSelected>false</isSelected>
+      <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>datalabel</name>
       <type>Main</type>
       <value>Code</value>
    </webElementProperties>
    <webElementProperties>
-      <isSelected>false</isSelected>
+      <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>role</name>
       <type>Main</type>
       <value>gridcell</value>
    </webElementProperties>
    <webElementProperties>
-      <isSelected>true</isSelected>
+      <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>text</name>
       <type>Main</type>
       <value> RVINC </value>
    </webElementProperties>
    <webElementProperties>
-      <isSelected>false</isSelected>
+      <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>

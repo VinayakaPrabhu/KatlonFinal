@@ -1,0 +1,91 @@
+[ {
+  "Suite/Test/Step Name" : "employee testsuite",
+  "Browser" : "Chrome 76.0.3809.100",
+  "Description" : "Hello world",
+  "Tag" : "",
+  "Start time" : "2019-08-28 15:44:11",
+  "End time" : "2019-08-28 15:44:32",
+  "Duration" : "21.067s",
+  "Status" : "INCOMPLETE"
+}, {
+  "Suite/Test/Step Name" : "",
+  "Browser" : "",
+  "Description" : "",
+  "Tag" : "",
+  "Start time" : "",
+  "End time" : "",
+  "Duration" : "",
+  "Status" : ""
+}, {
+  "Suite/Test/Step Name" : "Test Cases/Login/AdminLogin_ShouldSucceed",
+  "Browser" : "Chrome 76.0.3809.100",
+  "Description" : "Logs in to the machine and closes the browser.",
+  "Tag" : "login",
+  "Start time" : "2019-08-28 15:44:11",
+  "End time" : "2019-08-28 15:44:32",
+  "Duration" : "20.917s",
+  "Status" : "PASSED"
+}, {
+  "Suite/Test/Step Name" : "openBrowser(\"\")",
+  "Browser" : "Chrome 76.0.3809.100",
+  "Description" : "",
+  "Tag" : "",
+  "Start time" : "2019-08-28 15:44:11",
+  "End time" : "2019-08-28 15:44:17",
+  "Duration" : "5.449s",
+  "Status" : "PASSED"
+}, {
+  "Suite/Test/Step Name" : "maximizeWindow()",
+  "Browser" : "Chrome 76.0.3809.100",
+  "Description" : "",
+  "Tag" : "",
+  "Start time" : "2019-08-28 15:44:17",
+  "End time" : "2019-08-28 15:44:19",
+  "Duration" : "2.136s",
+  "Status" : "PASSED"
+}, {
+  "Suite/Test/Step Name" : "navigateToUrl(login_url)",
+  "Browser" : "Chrome 76.0.3809.100",
+  "Description" : "",
+  "Tag" : "",
+  "Start time" : "2019-08-28 15:44:19",
+  "End time" : "2019-08-28 15:44:22",
+  "Duration" : "2.871s",
+  "Status" : "PASSED"
+}, {
+  "Suite/Test/Step Name" : "setText(findTestObject(\"Object Repository/Login_OR/AdminLogin_ShouldSucceed/Page_Unified Wallet/input_Sign in_mat-input-0\"), username_admin)",
+  "Browser" : "Chrome 76.0.3809.100",
+  "Description" : "",
+  "Tag" : "",
+  "Start time" : "2019-08-28 15:44:22",
+  "End time" : "2019-08-28 15:44:25",
+  "Duration" : "3.130s",
+  "Status" : "PASSED"
+}, {
+  "Suite/Test/Step Name" : "setEncryptedText(findTestObject(\"Object Repository/Login_OR/AdminLogin_ShouldSucceed/Page_Unified Wallet/input_Username_mat-input-1\"), username_admins_Password)",
+  "Browser" : "Chrome 76.0.3809.100",
+  "Description" : "",
+  "Tag" : "",
+  "Start time" : "2019-08-28 15:44:25",
+  "End time" : "2019-08-28 15:44:28",
+  "Duration" : "3.129s",
+  "Status" : "PASSED"
+}, {
+  "Suite/Test/Step Name" : "click(findTestObject(\"Object Repository/Login_OR/AdminLogin_ShouldSucceed/Page_Unified Wallet/button_Login\"))",
+  "Browser" : "Chrome 76.0.3809.100",
+  "Description" : "",
+  "Tag" : "",
+  "Start time" : "2019-08-28 15:44:28",
+  "End time" : "2019-08-28 15:44:30",
+  "Duration" : "2.085s",
+  "Status" : "PASSED"
+}, {
+  "Suite/Test/Step Name" : "closeBrowser()",
+  "Browser" : "Chrome 76.0.3809.100",
+  "Description" : "",
+  "Tag" : "",
+  "Start time" : "2019-08-28 15:44:30",
+  "End time" : "2019-08-28 15:44:32",
+  "Duration" : "1.942s",
+  "Status" : "PASSED"
+} ]

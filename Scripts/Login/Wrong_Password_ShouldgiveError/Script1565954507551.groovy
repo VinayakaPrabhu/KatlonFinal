@@ -13,21 +13,22 @@ import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
 
-    WebUI.openBrowser('')
+WebUI.openBrowser('')
 
-    WebUI.navigateToUrl(GlobalVariable.login_url)
+WebUI.navigateToUrl(GlobalVariable.login_url)
 
-    not_run: WebUI.maximizeWindow()
+not_run: WebUI.maximizeWindow()
 
-    WebUI.setText(findTestObject('Object Repository/Login_OR/Wrong_Password_ShouldgiveError/input_Sign in_mat-input-0'), 
-        GlobalVariable.username_admin)
+WebUI.setText(findTestObject('Object Repository/Login_OR/Wrong_Password_ShouldgiveError/input_Sign in_mat-input-0'), GlobalVariable.employee_login_name)
 
-    WebUI.setEncryptedText(findTestObject('Object Repository/Login_OR/Wrong_Password_ShouldgiveError/input_Username_mat-input-1'), 
-        GlobalVariable.wrong_password)
+WebUI.setEncryptedText(findTestObject('Object Repository/Login_OR/Wrong_Password_ShouldgiveError/input_Username_mat-input-1'), 
+    GlobalVariable.wrong_password)
 
-    WebUI.click(findTestObject('Object Repository/Login_OR/Wrong_Password_ShouldgiveError/button_Login'))
+WebUI.click(findTestObject('Object Repository/Login_OR/Wrong_Password_ShouldgiveError/button_Login'))
 
-    WebUI.verifyTextPresent(' Invalid password ', false)
+WebUI.verifyTextPresent(' Invalid password ', false)
 
-    WebUI.click(findTestObject('Object Repository/Login_OR/Wrong_Password_ShouldgiveError/button_OK'))
-	WebUI.closeBrowser()
+WebUI.click(findTestObject('Object Repository/Login_OR/Wrong_Password_ShouldgiveError/button_OK'))
+
+WebUI.closeBrowser()
+

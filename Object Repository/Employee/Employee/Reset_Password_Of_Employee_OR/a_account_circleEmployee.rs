@@ -10,7 +10,7 @@
          <value>//ul[@id='menu']/li/a</value>
       </entry>
    </selectorCollection>
-   <selectorMethod>XPATH</selectorMethod>
+   <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -31,7 +31,7 @@
       <matchCondition>equals</matchCondition>
       <name>href</name>
       <type>Main</type>
-      <value>/dashboard</value>
+      <value>/employee</value>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -45,41 +45,41 @@
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>id(&quot;menu&quot;)/li[@class=&quot;sg-menu-item root sg-menu-item-0 subparentmenu up ng-star-inserted&quot;]/a[@class=&quot;sg-menu-item-wrapper&quot;]</value>
+      <value>id(&quot;menu&quot;)/li[@class=&quot;sg-menu-item root sg-menu-item-0 subparentmenu ng-star-inserted&quot;]/ul[@class=&quot;sg-submenu-wrapper sg-menu-items ng-star-inserted&quot;]/li[@class=&quot;sg-menu-item sg-submenu-item sg-menu-item-0-1 ng-star-inserted&quot;]/a[@class=&quot;sg-menu-item-wrapper&quot;]</value>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:idRelative</name>
       <type>Main</type>
-      <value>//ul[@id='menu']/li/a</value>
+      <value>//ul[@id='menu']/li/ul/li[2]/a</value>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='more_vert'])[1]/following::a[1]</value>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Role And Task'])[1]/following::a[1]</value>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Logout'])[1]/following::a[2]</value>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='assignment'])[1]/following::a[1]</value>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:href</name>
       <type>Main</type>
-      <value>//a[contains(@href, '/dashboard')]</value>
+      <value>//a[contains(@href, '/employee')]</value>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:position</name>
       <type>Main</type>
-      <value>//sg-menu/div/ul/li/a</value>
+      <value>//li/ul/li[2]/a</value>
    </webElementXpaths>
 </WebElementEntity>

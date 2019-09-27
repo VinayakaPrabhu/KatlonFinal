@@ -6,7 +6,7 @@
    <defaultProfile>true</defaultProfile>
    <GlobalVariableEntity>
       <description></description>
-      <initValue>'https://10.2.200.25:8441/login'</initValue>
+      <initValue>'https://10.2.200.37:8441/login'</initValue>
       <name>login_url</name>
    </GlobalVariableEntity>
    <GlobalVariableEntity>
@@ -103,5 +103,10 @@
       <description>Qwe@123</description>
       <initValue>'K9jKjsEuRpA='</initValue>
       <name>employee_last_password</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'https://10.2.200.25:8441/dashboard'</initValue>
+      <name>dashboard_url</name>
    </GlobalVariableEntity>
 </GlobalVariableEntities>

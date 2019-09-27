@@ -1,0 +1,11 @@
+Suite/Test/Step Name,Browser,Description,Tag,Start time,End time,Duration,Status
+employee testsuite,Chrome 76.0.3809.100,Hello world,,2019-08-28 15:44:11,2019-08-28 15:44:32,21.067s,INCOMPLETE
+,,,,,,,
+Test Cases/Login/AdminLogin_ShouldSucceed,Chrome 76.0.3809.100,Logs in to the machine and closes the browser.,login,2019-08-28 15:44:11,2019-08-28 15:44:32,20.917s,PASSED
+"openBrowser("""")",Chrome 76.0.3809.100,,,2019-08-28 15:44:11,2019-08-28 15:44:17,5.449s,PASSED
+maximizeWindow(),Chrome 76.0.3809.100,,,2019-08-28 15:44:17,2019-08-28 15:44:19,2.136s,PASSED
+navigateToUrl(login_url),Chrome 76.0.3809.100,,,2019-08-28 15:44:19,2019-08-28 15:44:22,2.871s,PASSED
+"setText(findTestObject(""Object Repository/Login_OR/AdminLogin_ShouldSucceed/Page_Unified Wallet/input_Sign in_mat-input-0""), username_admin)",Chrome 76.0.3809.100,,,2019-08-28 15:44:22,2019-08-28 15:44:25,3.130s,PASSED
+"setEncryptedText(findTestObject(""Object Repository/Login_OR/AdminLogin_ShouldSucceed/Page_Unified Wallet/input_Username_mat-input-1""), username_admins_Password)",Chrome 76.0.3809.100,,,2019-08-28 15:44:25,2019-08-28 15:44:28,3.129s,PASSED
+"click(findTestObject(""Object Repository/Login_OR/AdminLogin_ShouldSucceed/Page_Unified Wallet/button_Login""))",Chrome 76.0.3809.100,,,2019-08-28 15:44:28,2019-08-28 15:44:30,2.085s,PASSED
+closeBrowser(),Chrome 76.0.3809.100,,,2019-08-28 15:44:30,2019-08-28 15:44:32,1.942s,PASSED

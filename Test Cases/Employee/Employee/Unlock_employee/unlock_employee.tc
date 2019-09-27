@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
    <description></description>
-   <name>Employee_Login_ShouldSucceed</name>
+   <name>unlock_employee</name>
    <tag></tag>
    <comment></comment>
-   <testCaseGuid>6fdf5511-3576-4c39-8dd0-eed73f82ee70</testCaseGuid>
+   <testCaseGuid>8106e336-4f3e-4aa7-bad7-f136b4492639</testCaseGuid>
 </TestCaseEntity>

@@ -4,6 +4,12 @@
    <name>mat-cell_1000</name>
    <tag></tag>
    <elementGuidId>74133f8c-71ac-4aca-bf6b-1cb93a562c89</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>BASIC</key>
+         <value>id(&quot;result&quot;)/div[@class=&quot;sgContentWrapper&quot;]/app-employee[@class=&quot;ng-tns-c13-4 ng-star-inserted&quot;]/div[@class=&quot;contentPad&quot;]/div[@class=&quot;contentWrap&quot;]/div[@class=&quot;contentWithAction&quot;]/div[@class=&quot;contentArea&quot;]/mat-table[@class=&quot;mat-responsive mat-expansion-grid mat-table&quot;]/mat-row[@class=&quot;mat-row ng-tns-c13-4 example-expanded-row ng-star-inserted&quot;]/mat-cell[@class=&quot;mat-cell cdk-column-employeeId mat-column-employeeId ng-tns-c13-4 ng-star-inserted&quot;][count(. | //mat-cell[@class = 'mat-cell cdk-column-employeeId mat-column-employeeId ng-tns-c13-4 ng-star-inserted' and @datalabel = 'Login ID' and @mattooltipclass = 'mat-custom-tooltip' and @mattooltipposition = 'below' and @role = 'gridcell' and @aria-describedby = 'cdk-describedby-message-10']) = count(//mat-cell[@class = 'mat-cell cdk-column-employeeId mat-column-employeeId ng-tns-c13-4 ng-star-inserted' and @datalabel = 'Login ID' and @mattooltipclass = 'mat-custom-tooltip' and @mattooltipposition = 'below' and @role = 'gridcell' and @aria-describedby = 'cdk-describedby-message-10'])]</value>
+      </entry>
+   </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
    <webElementProperties>
@@ -14,56 +20,56 @@
       <value>mat-cell</value>
    </webElementProperties>
    <webElementProperties>
-      <isSelected>false</isSelected>
+      <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>class</name>
       <type>Main</type>
       <value>mat-cell cdk-column-employeeId mat-column-employeeId ng-tns-c13-4 ng-star-inserted</value>
    </webElementProperties>
    <webElementProperties>
-      <isSelected>false</isSelected>
+      <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>datalabel</name>
       <type>Main</type>
       <value>Login ID</value>
    </webElementProperties>
    <webElementProperties>
-      <isSelected>false</isSelected>
+      <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>mattooltipclass</name>
       <type>Main</type>
       <value>mat-custom-tooltip</value>
    </webElementProperties>
    <webElementProperties>
-      <isSelected>false</isSelected>
+      <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>mattooltipposition</name>
       <type>Main</type>
       <value>below</value>
    </webElementProperties>
    <webElementProperties>
-      <isSelected>false</isSelected>
+      <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>role</name>
       <type>Main</type>
       <value>gridcell</value>
    </webElementProperties>
    <webElementProperties>
-      <isSelected>false</isSelected>
+      <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>aria-describedby</name>
       <type>Main</type>
       <value>cdk-describedby-message-10</value>
    </webElementProperties>
    <webElementProperties>
-      <isSelected>true</isSelected>
+      <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>text</name>
       <type>Main</type>
       <value> 1000</value>
    </webElementProperties>
    <webElementProperties>
-      <isSelected>false</isSelected>
+      <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
