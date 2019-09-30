@@ -13,3 +13,34 @@ import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
 
+WebUI.callTestCase(findTestCase('Login/AdminLogin_ShouldSucceed'), [:], FailureHandling.STOP_ON_FAILURE)
+
+WebUI.navigateToUrl(GlobalVariable.dashboard_url)
+
+WebUI.click(findTestObject('Object Repository/Account/Wallet/Edit/Active_locked_account_should_succeed/div_more_vert_hamburgerWrapper'), 
+    FailureHandling.OPTIONAL)
+
+WebUI.click(findTestObject('Object Repository/Account/Wallet/Edit/Active_locked_account_should_succeed/a_workAccount'))
+
+WebUI.click(findTestObject('Object Repository/Account/Wallet/Edit/Active_locked_account_should_succeed/a_account_balance_walletWallet'))
+
+WebUI.click(findTestObject('Object Repository/Account/Wallet/Edit/Active_locked_account_should_succeed/mat-cell_1000010000000023'))
+
+WebUI.click(findTestObject('Object Repository/Account/Wallet/Edit/Active_locked_account_should_succeed/i_edit'))
+
+WebUI.click(findTestObject('Object Repository/Account/Wallet/Edit/Active_locked_account_should_succeed/div_Lock'))
+
+WebUI.click(findTestObject('Object Repository/Account/Wallet/Edit/Active_locked_account_should_succeed/span_Active'))
+
+WebUI.click(findTestObject('Object Repository/Account/Wallet/Edit/Active_locked_account_should_succeed/button_Save'))
+
+WebUI.verifyTextPresent('Do you want to change the Wallet status to ACTIVE. Do you want to proceed?', false)
+
+WebUI.click(findTestObject('Object Repository/Account/Wallet/Edit/Active_locked_account_should_succeed/button_Ok'))
+
+WebUI.verifyTextPresent('Wallet updated successfully', false)
+
+WebUI.click(findTestObject('Object Repository/Account/Wallet/Edit/Active_locked_account_should_succeed/button_Ok'))
+
+WebUI.closeBrowser()
+

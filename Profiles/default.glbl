@@ -106,7 +106,37 @@
    </GlobalVariableEntity>
    <GlobalVariableEntity>
       <description></description>
-      <initValue>'https://10.2.200.25:8441/dashboard'</initValue>
+      <initValue>'https://10.2.200.37:8441/dashboard'</initValue>
       <name>dashboard_url</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'100'</initValue>
+      <name>cash1</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'50000'</initValue>
+      <name>cash2</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'C_CODE'</initValue>
+      <name>corporate_code</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'P_CODE'</initValue>
+      <name>property_code</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'0006'</initValue>
+      <name>patron_id</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'100000'</initValue>
+      <name>cash_adjust</name>
    </GlobalVariableEntity>
 </GlobalVariableEntities>

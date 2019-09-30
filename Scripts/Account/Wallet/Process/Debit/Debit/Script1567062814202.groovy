@@ -13,3 +13,42 @@ import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
 
+WebUI.openBrowser('')
+
+WebUI.navigateToUrl(GlobalVariable.login_url)
+
+WebUI.setText(findTestObject('Object Repository/Account/Wallet/Process/Debit/input_Sign in_mat-input-0'), GlobalVariable.username_admin)
+
+WebUI.setEncryptedText(findTestObject('Object Repository/Account/Wallet/Process/Debit/input_Username_mat-input-1'), GlobalVariable.username_admins_Password)
+
+WebUI.click(findTestObject('Object Repository/Account/Wallet/Process/Debit/button_Login'))
+
+WebUI.maximizeWindow()
+
+WebUI.click(findTestObject('Object Repository/Account/Wallet/Process/Debit/div_more_vert_hamburgerWrapper'), FailureHandling.OPTIONAL)
+
+WebUI.click(findTestObject('Object Repository/Account/Wallet/Process/Debit/a_workAccount'))
+
+WebUI.click(findTestObject('Object Repository/Account/Wallet/Process/Debit/a_account_balance_walletWallet'))
+
+WebUI.click(findTestObject('Object Repository/Account/Wallet/Process/Debit/mat-cell_1000010000000023'))
+
+WebUI.click(findTestObject('Object Repository/Account/Wallet/Process/Debit/i_pages'))
+
+WebUI.click(findTestObject('Object Repository/Account/Wallet/Process/Debit/div_Debit'))
+
+WebUI.setText(findTestObject('Object Repository/Account/Wallet/Process/Debit/input_Recent Five Transactions_mat-input-11'), 
+    GlobalVariable.cash1)
+
+WebUI.click(findTestObject('Object Repository/Account/Wallet/Process/Debit/span_Fund Type'))
+
+WebUI.click(findTestObject('Object Repository/Account/Wallet/Process/Debit/span_Cash'))
+
+WebUI.click(findTestObject('Object Repository/Account/Wallet/Process/Debit/button_Submit'))
+
+WebUI.verifyTextPresent('Transaction debited successfully', false)
+
+WebUI.click(findTestObject('Object Repository/Account/Wallet/Process/Debit/button_Ok'))
+
+WebUI.closeBrowser()
+

@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description></description>
-   <name>process_tab_inactive_for_locked_account</name>
-   <tag></tag>
-   <comment></comment>
-   <testCaseGuid>98b08fd2-0779-44a8-866c-7e2678b61192</testCaseGuid>
-</TestCaseEntity>
