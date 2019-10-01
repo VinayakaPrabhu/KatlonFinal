@@ -3,7 +3,7 @@
    <description></description>
    <name>a_account_balance_walletWallet</name>
    <tag></tag>
-   <elementGuidId>e0b1b484-6802-4293-b862-b0df216807f4</elementGuidId>
+   <elementGuidId>d9829c11-b960-41ed-a51e-0774e2786c34</elementGuidId>
    <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
    <webElementProperties>

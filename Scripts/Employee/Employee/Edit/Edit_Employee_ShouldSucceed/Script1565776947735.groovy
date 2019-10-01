@@ -13,19 +13,7 @@ import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
 
-WebUI.openBrowser('')
-
-WebUI.navigateToUrl(GlobalVariable.login_url)
-
-WebUI.click(findTestObject('Object Repository/Employee/Employee/Edit_OR/div_Username'))
-
-WebUI.setText(findTestObject('Object Repository/Employee/Employee/Edit_OR/input_Sign in_mat-input-0'), GlobalVariable.username_admin)
-
-WebUI.setEncryptedText(findTestObject('Object Repository/Employee/Employee/Edit_OR/input_Username_mat-input-1'), GlobalVariable.username_admins_Password)
-
-WebUI.click(findTestObject('Object Repository/Employee/Employee/Edit_OR/button_Login'))
-
-WebUI.maximizeWindow()
+WebUI.callTestCase(findTestCase('Login/AdminLogin_ShouldSucceed'), [:], FailureHandling.STOP_ON_FAILURE)
 
 WebUI.click(findTestObject('Object Repository/Employee/Employee/Edit_OR/div_more_vert_hamburgerWrapper'), FailureHandling.OPTIONAL)
 

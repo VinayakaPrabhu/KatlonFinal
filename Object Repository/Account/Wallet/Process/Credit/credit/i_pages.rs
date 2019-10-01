@@ -3,7 +3,7 @@
    <description></description>
    <name>i_pages</name>
    <tag></tag>
-   <elementGuidId>04ec7e3b-04a9-49aa-996a-204f50f87b3d</elementGuidId>
+   <elementGuidId>22329a5a-349f-44fb-8a2f-15a88a6ad85d</elementGuidId>
    <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
    <webElementProperties>

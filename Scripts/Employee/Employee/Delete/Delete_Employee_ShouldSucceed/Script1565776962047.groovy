@@ -13,37 +13,26 @@ import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
 
+WebUI.callTestCase(findTestCase('Login/AdminLogin_ShouldSucceed'), [:], FailureHandling.STOP_ON_FAILURE)
 
-    WebUI.openBrowser('')
+WebUI.click(findTestObject('Object Repository/Employee/Employee/Delete_OR/Delete_Employee_ShouldSucceed/Page_Unified Wallet/div_more_vert_hamburgerWrapper'), 
+    FailureHandling.OPTIONAL)
 
-    WebUI.navigateToUrl(GlobalVariable.login_url)
+WebUI.click(findTestObject('Object Repository/Employee/Employee/Delete_OR/Delete_Employee_ShouldSucceed/Page_Unified Wallet/a_account_circleEmployee'))
 
-    WebUI.setText(findTestObject('Object Repository/Employee/Employee/Delete_OR/Delete_Employee_ShouldSucceed/Page_Unified Wallet/input_Sign in_mat-input-0'), 
-        GlobalVariable.username_admin)
+WebUI.click(findTestObject('Object Repository/Employee/Employee/Delete_OR/Delete_Employee_ShouldSucceed/Page_Unified Wallet/a_account_circleEmployee_1'))
 
-    WebUI.setEncryptedText(findTestObject('Object Repository/Employee/Employee/Delete_OR/Delete_Employee_ShouldSucceed/Page_Unified Wallet/input_Username_mat-input-1'), 
-        GlobalVariable.username_admins_Password)
+WebUI.click(findTestObject('Object Repository/Employee/Employee/Delete_OR/Delete_Employee_ShouldSucceed/Page_Unified Wallet/mat-cell_0001'))
 
-    WebUI.click(findTestObject('Object Repository/Employee/Employee/Delete_OR/Delete_Employee_ShouldSucceed/Page_Unified Wallet/button_Login'))
+WebUI.click(findTestObject('Object Repository/Employee/Employee/Delete_OR/Delete_Employee_ShouldSucceed/Page_Unified Wallet/i_delete'))
 
-    WebUI.maximizeWindow()
+WebUI.verifyTextPresent('will be deleted. Do you want to proceed?', false)
 
-    WebUI.click(findTestObject('Object Repository/Employee/Employee/Delete_OR/Delete_Employee_ShouldSucceed/Page_Unified Wallet/div_more_vert_hamburgerWrapper'), 
-        FailureHandling.OPTIONAL)
+WebUI.click(findTestObject('Object Repository/Employee/Employee/Delete_OR/Delete_Employee_ShouldSucceed/Page_Unified Wallet/button_Ok'))
 
-    WebUI.click(findTestObject('Object Repository/Employee/Employee/Delete_OR/Delete_Employee_ShouldSucceed/Page_Unified Wallet/a_account_circleEmployee'))
+WebUI.verifyTextPresent('deleted successfully', false)
 
-    WebUI.click(findTestObject('Object Repository/Employee/Employee/Delete_OR/Delete_Employee_ShouldSucceed/Page_Unified Wallet/a_account_circleEmployee_1'))
+WebUI.click(findTestObject('Object Repository/Employee/Employee/Delete_OR/Delete_Employee_ShouldSucceed/Page_Unified Wallet/button_Ok'))
 
-    WebUI.click(findTestObject('Object Repository/Employee/Employee/Delete_OR/Delete_Employee_ShouldSucceed/Page_Unified Wallet/mat-cell_0001'))
+WebUI.closeBrowser()
 
-    WebUI.click(findTestObject('Object Repository/Employee/Employee/Delete_OR/Delete_Employee_ShouldSucceed/Page_Unified Wallet/i_delete'))
-
-    WebUI.verifyTextPresent('will be deleted. Do you want to proceed?', false)
-
-    WebUI.click(findTestObject('Object Repository/Employee/Employee/Delete_OR/Delete_Employee_ShouldSucceed/Page_Unified Wallet/button_Ok'))
-
-    WebUI.verifyTextPresent('deleted successfully', false)
-
-    WebUI.click(findTestObject('Object Repository/Employee/Employee/Delete_OR/Delete_Employee_ShouldSucceed/Page_Unified Wallet/button_Ok'))
-	WebUI.closeBrowser()

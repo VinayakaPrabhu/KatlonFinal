@@ -3,7 +3,7 @@
    <description></description>
    <name>a_workAccount</name>
    <tag></tag>
-   <elementGuidId>f481fff5-3b49-4d6b-acaa-c889f2ccedc4</elementGuidId>
+   <elementGuidId>2e236aab-8f3f-43c2-bf66-8ae2fdf296ef</elementGuidId>
    <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
    <webElementProperties>

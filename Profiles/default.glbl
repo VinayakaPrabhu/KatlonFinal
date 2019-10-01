@@ -130,8 +130,8 @@
       <name>property_code</name>
    </GlobalVariableEntity>
    <GlobalVariableEntity>
-      <description></description>
-      <initValue>'0006'</initValue>
+      <description>if this value is changed then change the REST api value as well manually</description>
+      <initValue>'0001'</initValue>
       <name>patron_id</name>
    </GlobalVariableEntity>
    <GlobalVariableEntity>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>debit_insufficient_balance</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>c70bb563-4304-4adc-bbee-8ef0de689886</testCaseGuid>
+</TestCaseEntity>

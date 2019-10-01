@@ -3,7 +3,7 @@
    <description></description>
    <name>i_edit</name>
    <tag></tag>
-   <elementGuidId>181a5c0b-0de1-4200-89c4-093ecf9c2836</elementGuidId>
+   <elementGuidId>5fd8d744-9e69-4c19-a3af-7d6d8a3f32c1</elementGuidId>
    <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
    <webElementProperties>

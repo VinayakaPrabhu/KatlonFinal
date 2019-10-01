@@ -3,7 +3,7 @@
    <description></description>
    <name>button_Ok</name>
    <tag></tag>
-   <elementGuidId>74ea2d11-afd6-4711-b614-a6ab1167b121</elementGuidId>
+   <elementGuidId>c9d7bfd6-cbb0-4e81-bb0d-2e9e21562c46</elementGuidId>
    <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
    <webElementProperties>
@@ -25,7 +25,7 @@
       <matchCondition>equals</matchCondition>
       <name>class</name>
       <type>Main</type>
-      <value>mat-raised-button ng-star-inserted cdk-focused cdk-program-focused</value>
+      <value>mat-raised-button ng-star-inserted cdk-focused cdk-mouse-focused</value>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -46,7 +46,7 @@
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>id(&quot;mat-dialog-1&quot;)/sg-web-dialog[@class=&quot;ng-star-inserted&quot;]/div[@class=&quot;ng-star-inserted&quot;]/mat-dialog-actions[@class=&quot;mat-dialog-actions ng-star-inserted&quot;]/button[@class=&quot;mat-raised-button ng-star-inserted cdk-focused cdk-program-focused&quot;]</value>
+      <value>id(&quot;mat-dialog-1&quot;)/sg-web-dialog[@class=&quot;ng-star-inserted&quot;]/div[@class=&quot;ng-star-inserted&quot;]/mat-dialog-actions[@class=&quot;mat-dialog-actions ng-star-inserted&quot;]/button[@class=&quot;mat-raised-button ng-star-inserted cdk-focused cdk-mouse-focused&quot;]</value>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>

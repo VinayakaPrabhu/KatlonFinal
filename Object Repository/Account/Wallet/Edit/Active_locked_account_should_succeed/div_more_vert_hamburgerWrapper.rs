@@ -3,7 +3,7 @@
    <description></description>
    <name>div_more_vert_hamburgerWrapper</name>
    <tag></tag>
-   <elementGuidId>f56bc413-04b4-4916-8d8b-7f972989aa85</elementGuidId>
+   <elementGuidId>d794c642-47f1-4722-b241-b60ed620628d</elementGuidId>
    <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
    <webElementProperties>

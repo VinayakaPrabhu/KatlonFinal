@@ -3,7 +3,7 @@
    <description></description>
    <name>button_Ok</name>
    <tag></tag>
-   <elementGuidId>c5c3864e-8c52-4a95-8208-59fae0459938</elementGuidId>
+   <elementGuidId>e4a4a6e8-971b-413c-9a8b-a89437c55bc1</elementGuidId>
    <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
    <webElementProperties>
@@ -25,7 +25,7 @@
       <matchCondition>equals</matchCondition>
       <name>class</name>
       <type>Main</type>
-      <value>mat-raised-button mat-primary ng-star-inserted cdk-focused cdk-mouse-focused</value>
+      <value>mat-raised-button ng-star-inserted cdk-focused cdk-program-focused</value>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -46,41 +46,41 @@
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>id(&quot;mat-dialog-1&quot;)/sg-web-dialog[@class=&quot;ng-star-inserted&quot;]/div[@class=&quot;ng-star-inserted&quot;]/mat-dialog-actions[@class=&quot;mat-dialog-actions ng-star-inserted&quot;]/button[@class=&quot;mat-raised-button mat-primary ng-star-inserted cdk-focused cdk-mouse-focused&quot;]</value>
+      <value>id(&quot;mat-dialog-2&quot;)/sg-web-dialog[@class=&quot;ng-star-inserted&quot;]/div[@class=&quot;ng-star-inserted&quot;]/mat-dialog-actions[@class=&quot;mat-dialog-actions ng-star-inserted&quot;]/button[@class=&quot;mat-raised-button ng-star-inserted cdk-focused cdk-program-focused&quot;]</value>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:attributes</name>
       <type>Main</type>
-      <value>(//button[@type='button'])[12]</value>
+      <value>(//button[@type='button'])[10]</value>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:idRelative</name>
       <type>Main</type>
-      <value>//mat-dialog-container[@id='mat-dialog-1']/sg-web-dialog/div/mat-dialog-actions/button[2]</value>
+      <value>//mat-dialog-container[@id='mat-dialog-2']/sg-web-dialog/div/mat-dialog-actions/button</value>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Cancel'])[2]/following::button[1]</value>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Wallet updated successfully'])[1]/following::button[1]</value>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Do you want to change the Wallet status to ACTIVE. Do you want to proceed?'])[1]/following::button[2]</value>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Edit Wallet'])[1]/following::button[1]</value>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:position</name>
       <type>Main</type>
-      <value>//div/mat-dialog-actions/button[2]</value>
+      <value>//mat-dialog-actions/button</value>
    </webElementXpaths>
 </WebElementEntity>

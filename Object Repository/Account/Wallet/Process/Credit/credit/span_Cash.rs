@@ -3,7 +3,7 @@
    <description></description>
    <name>span_Cash</name>
    <tag></tag>
-   <elementGuidId>83dc20e9-22b3-414a-b404-0a8c2b01d5a8</elementGuidId>
+   <elementGuidId>2cad1861-f104-48d1-bb72-23c27c424fb3</elementGuidId>
    <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
    <webElementProperties>
@@ -32,14 +32,14 @@
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>id(&quot;mat-option-5&quot;)/span[@class=&quot;mat-option-text&quot;]</value>
+      <value>id(&quot;mat-option-4&quot;)/span[@class=&quot;mat-option-text&quot;]</value>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:idRelative</name>
       <type>Main</type>
-      <value>//mat-option[@id='mat-option-5']/span</value>
+      <value>//mat-option[@id='mat-option-4']/span</value>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>

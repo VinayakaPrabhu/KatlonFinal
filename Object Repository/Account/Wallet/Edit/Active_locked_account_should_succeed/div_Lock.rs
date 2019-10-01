@@ -3,7 +3,7 @@
    <description></description>
    <name>div_Lock</name>
    <tag></tag>
-   <elementGuidId>674e5856-1975-4d5e-a5eb-1a49d86ff4ce</elementGuidId>
+   <elementGuidId>6c8de9f9-4dc4-4777-8937-45e0f51cd5e7</elementGuidId>
    <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
    <webElementProperties>

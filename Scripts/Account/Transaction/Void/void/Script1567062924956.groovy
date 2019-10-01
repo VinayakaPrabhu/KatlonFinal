@@ -13,3 +13,7 @@ import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
 
+response = WS.sendRequest(findTestObject('Rest_api/Account/Pending_Transaction/Reserve_money_for_patron'))
+
+WS.verifyResponseStatusCode(response, 200)
+

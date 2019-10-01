@@ -3,7 +3,7 @@
    <description></description>
    <name>input_Sign in_mat-input-0</name>
    <tag></tag>
-   <elementGuidId>f0a0f5fa-6a9c-499d-af9e-9dba8750d2c8</elementGuidId>
+   <elementGuidId>28a89ae7-3555-4887-bbe8-71f4f70e3bfc</elementGuidId>
    <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
    <webElementProperties>
@@ -18,7 +18,7 @@
       <matchCondition>equals</matchCondition>
       <name>class</name>
       <type>Main</type>
-      <value>mat-input-element mat-form-field-autofill-control cdk-text-field-autofill-monitored ng-untouched ng-dirty ng-valid</value>
+      <value>mat-input-element mat-form-field-autofill-control cdk-text-field-autofill-monitored ng-touched ng-dirty ng-valid</value>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>

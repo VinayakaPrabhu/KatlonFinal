@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>Adjust_zero_should_give_error</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>cd336ddb-1854-46fe-9f9f-6f542a7ddacc</testCaseGuid>
+</TestCaseEntity>

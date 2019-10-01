@@ -3,7 +3,7 @@
    <description></description>
    <name>span_Fund Type</name>
    <tag></tag>
-   <elementGuidId>665357af-e1e6-499f-8f25-7e07a8e6bb16</elementGuidId>
+   <elementGuidId>db3156ce-2758-45fb-876b-8e4e97ca6154</elementGuidId>
    <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
    <webElementProperties>
@@ -18,7 +18,7 @@
       <matchCondition>equals</matchCondition>
       <name>class</name>
       <type>Main</type>
-      <value>mat-select-placeholder ng-tns-c23-27 ng-star-inserted</value>
+      <value>mat-select-placeholder ng-tns-c23-28 ng-star-inserted</value>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -32,7 +32,7 @@
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>id(&quot;mat-select-1&quot;)/div[@class=&quot;mat-select-trigger&quot;]/div[@class=&quot;mat-select-value&quot;]/span[@class=&quot;mat-select-placeholder ng-tns-c23-27 ng-star-inserted&quot;]</value>
+      <value>id(&quot;mat-select-1&quot;)/div[@class=&quot;mat-select-trigger&quot;]/div[@class=&quot;mat-select-value&quot;]/span[@class=&quot;mat-select-placeholder ng-tns-c23-28 ng-star-inserted&quot;]</value>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
