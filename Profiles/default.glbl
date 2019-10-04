@@ -139,4 +139,19 @@
       <initValue>'100000'</initValue>
       <name>cash_adjust</name>
    </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'TEST_COMMENT'</initValue>
+      <name>Comment</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description>Used in api calling</description>
+      <initValue>0</initValue>
+      <name>Account_n</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'1'</initValue>
+      <name>balance</name>
+   </GlobalVariableEntity>
 </GlobalVariableEntities>

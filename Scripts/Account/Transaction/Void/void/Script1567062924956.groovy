@@ -12,8 +12,36 @@ import com.kms.katalon.core.testobject.TestObject as TestObject
 import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
+import org.openqa.selenium.Keys as Keys
 
-response = WS.sendRequest(findTestObject('Rest_api/Account/Pending_Transaction/Reserve_money_for_patron'))
+WebUI.callTestCase(findTestCase('Account/Wallet/Fetch_account_no'), [:], FailureHandling.STOP_ON_FAILURE)
 
-WS.verifyResponseStatusCode(response, 200)
+WebUI.callTestCase(findTestCase('Login/AdminLogin_ShouldSucceed'), [:], FailureHandling.STOP_ON_FAILURE)
+
+WebUI.click(findTestObject('Object Repository/Account/Transaction/Vodi_transaction/div_more_vert_hamburgerWrapper'))
+
+WebUI.click(findTestObject('Object Repository/Account/Transaction/Vodi_transaction/a_workAccount'))
+
+WebUI.click(findTestObject('Object Repository/Account/Transaction/Vodi_transaction/a_compare_arrowsTransactions'))
+
+println('vlaue :...................... ' + GlobalVariable.Account_n)
+
+WebUI.setText(findTestObject('Account/Transaction/Vodi_transaction/input_Search_mat-input-2'), GlobalVariable.Account_n)
+
+WebUI.click(findTestObject('Object Repository/Account/Transaction/Vodi_transaction/button_Search'))
+
+WebUI.click(findTestObject('Object Repository/Account/Transaction/Vodi_transaction/mat-cell_0001'))
+
+WebUI.click(findTestObject('Object Repository/Account/Transaction/Vodi_transaction/i_pages'))
+
+WebUI.setText(findTestObject('Object Repository/Account/Transaction/Vodi_transaction/input_Transaction Id 1000011 will be voided Do you want to proceed_mat-input-9'), 
+    GlobalVariable.Comment)
+
+WebUI.click(findTestObject('Object Repository/Account/Transaction/Vodi_transaction/button_Yes'))
+
+WebUI.click(findTestObject('Object Repository/Account/Transaction/Vodi_transaction/div_Transaction is voided successfully'))
+
+WebUI.click(findTestObject('Object Repository/Account/Transaction/Vodi_transaction/button_Cancel'))
+
+WebUI.closeBrowser()
 

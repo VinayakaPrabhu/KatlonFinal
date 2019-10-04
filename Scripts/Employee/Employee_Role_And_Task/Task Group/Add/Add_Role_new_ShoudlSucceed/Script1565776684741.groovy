@@ -26,6 +26,8 @@ WebUI.click(findTestObject('Object Repository/Employee/Employee_Role_And_Task_OR
 
 WebUI.click(findTestObject('Object Repository/Employee/Employee_Role_And_Task_OR/Task Group_OR/Add_OR/Add_Role_new_shouldSucceed/Add_new_Tgroup/div_Task Group_1'))
 
+Thread.sleep(2)
+
 WebUI.click(findTestObject('Object Repository/Employee/Employee_Role_And_Task_OR/Task Group_OR/Add_OR/Add_Role_new_shouldSucceed/Add_new_Tgroup/i_add'))
 
 WebUI.setText(findTestObject('Object Repository/Employee/Employee_Role_And_Task_OR/Task Group_OR/Add_OR/Add_Role_new_shouldSucceed/Add_new_Tgroup/input_Create Role_code'), 

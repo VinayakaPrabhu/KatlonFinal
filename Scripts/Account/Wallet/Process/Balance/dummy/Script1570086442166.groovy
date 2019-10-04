@@ -17,7 +17,7 @@ response = WS.sendRequest(findTestObject('Rest_api/Get_wallet_for_patron'))
 
 def slurper = new groovy.json.JsonSlurper()
 def result = slurper.parseText(response.getResponseBodyContent())
-def value = result.walletId
+def value1 = result.fundBalances[0].value
 
-GlobalVariable.Account_n = value
-println("vlaue :...................... " +GlobalVariable.Account_n)
+
+println("vlaue :...................... " +value1)
