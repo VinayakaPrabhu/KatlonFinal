@@ -19,9 +19,15 @@ WebUI.click(findTestObject('Object Repository/Account/Wallet/Add/Ad_new_final/di
 
 WebUI.click(findTestObject('Object Repository/Account/Wallet/Add/Ad_new_final/a_workAccount'))
 
+WebUI.delay(1)
+
 WebUI.click(findTestObject('Object Repository/Account/Wallet/Add/Ad_new_final/a_account_balance_walletWallet'))
 
+WebUI.delay(1)
+
 WebUI.click(findTestObject('Object Repository/Account/Wallet/Add/Ad_new_final/i_add'))
+
+WebUI.delay(1)
 
 WebUI.setText(findTestObject('Object Repository/Account/Wallet/Add/Ad_new_final/input_Add Wallet_mat-input-9'), GlobalVariable.corporate_code)
 
@@ -29,9 +35,15 @@ WebUI.setText(findTestObject('Object Repository/Account/Wallet/Add/Ad_new_final/
 
 WebUI.setText(findTestObject('Object Repository/Account/Wallet/Add/Ad_new_final/input_Property Code_mat-input-11'), GlobalVariable.patron_id)
 
+WebUI.delay(1)
+
 WebUI.click(findTestObject('Object Repository/Account/Wallet/Add/Ad_new_final/button_Save'))
 
+WebUI.delay(1)
+
 WebUI.click(findTestObject('Object Repository/Account/Wallet/Add/Ad_new_final/div_Wallet created successfully'))
+
+WebUI.delay(1)
 
 WebUI.click(findTestObject('Object Repository/Account/Wallet/Add/Ad_new_final/button_Ok'))
 

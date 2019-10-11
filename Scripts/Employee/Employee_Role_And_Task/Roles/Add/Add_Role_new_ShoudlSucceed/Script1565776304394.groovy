@@ -22,6 +22,8 @@ WebUI.click(findTestObject('Object Repository/Employee/Employee_Role_And_Task_OR
 
 WebUI.click(findTestObject('Object Repository/Employee/Employee_Role_And_Task_OR/Roles_OR/Add_OR/Add_Role_new_Shouldsucceed/Add_new_role/a_assignmentRole And Task'))
 
+WebUI.delay(1)
+
 WebUI.click(findTestObject('Object Repository/Employee/Employee_Role_And_Task_OR/Roles_OR/Add_OR/Add_Role_new_Shouldsucceed/Add_new_role/i_add'))
 
 WebUI.setText(findTestObject('Object Repository/Employee/Employee_Role_And_Task_OR/Roles_OR/Add_OR/Add_Role_new_Shouldsucceed/Add_new_role/input_Add Role_code'), 
@@ -33,11 +35,19 @@ WebUI.setText(findTestObject('Object Repository/Employee/Employee_Role_And_Task_
 WebUI.setText(findTestObject('Object Repository/Employee/Employee_Role_And_Task_OR/Roles_OR/Add_OR/Add_Role_new_Shouldsucceed/Add_new_role/input_Name_description'), 
     GlobalVariable.role_description)
 
+WebUI.delay(1)
+
 WebUI.click(findTestObject('Object Repository/Employee/Employee_Role_And_Task_OR/Roles_OR/Add_OR/Add_Role_new_Shouldsucceed/Add_new_role/div_Search_mat-checkbox-inner-container'))
+
+WebUI.delay(1)
 
 WebUI.click(findTestObject('Object Repository/Employee/Employee_Role_And_Task_OR/Roles_OR/Add_OR/Add_Role_new_Shouldsucceed/Add_new_role/button_Save'))
 
+WebUI.delay(1)
+
 WebUI.verifyTextPresent('created successfully', false)
+
+WebUI.delay(1)
 
 WebUI.click(findTestObject('Object Repository/Employee/Employee_Role_And_Task_OR/Roles_OR/Add_OR/Add_Role_new_Shouldsucceed/Add_new_role/button_Cancel'))
 

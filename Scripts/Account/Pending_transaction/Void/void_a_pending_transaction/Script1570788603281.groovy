@@ -17,24 +17,36 @@ WS.sendRequest(findTestObject('Rest_api/Account/Pending_Transaction/Reserve_mone
 
 WebUI.callTestCase(findTestCase('Login/AdminLogin_ShouldSucceed'), [:], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.click(findTestObject('Object Repository/Account/Transaction/Void/div_more_vert_hamburgerWrapper'))
+WebUI.click(findTestObject('Object Repository/Account/Wallet/Pending_transaction/void_a_transaction/div_more_vert_hamburgerWrapper'))
 
-WebUI.click(findTestObject('Object Repository/Account/Transaction/Void/a_workAccount'))
+WebUI.click(findTestObject('Object Repository/Account/Wallet/Pending_transaction/void_a_transaction/a_workAccount'))
 
-WebUI.click(findTestObject('Object Repository/Account/Transaction/Void/span_Pending Transactions'))
+WebUI.click(findTestObject('Object Repository/Account/Wallet/Pending_transaction/void_a_transaction/span_Pending Transactions'))
 
-WebUI.click(findTestObject('Object Repository/Account/Transaction/Void/mat-cell_0001'))
+WebUI.delay(1)
 
-WebUI.click(findTestObject('Object Repository/Account/Transaction/Void/i_pages'))
+WebUI.click(findTestObject('Object Repository/Account/Wallet/Pending_transaction/void_a_transaction/mat-cell_0001'))
 
-WebUI.setText(findTestObject('Object Repository/Account/Transaction/Void/input_Transaction Id 10000212 will be committed Do you want to proceed_mat-input-9'), 
-    'ABC')
+WebUI.delay(1)
 
-WebUI.click(findTestObject('Object Repository/Account/Transaction/Void/button_Yes'))
+WebUI.click(findTestObject('Account/Wallet/Pending_transaction/void_a_transaction/i_pages'))
 
-WebUI.verifyTextPresent('Transaction is committed successfully', false)
+WebUI.delay(1)
 
-WebUI.click(findTestObject('Object Repository/Account/Transaction/Void/button_Cancel'))
+WebUI.setText(findTestObject('Object Repository/Account/Wallet/Pending_transaction/void_a_transaction/input_Transaction Id 1000025 will be voided Do you want to proceed_mat-input-9'), 
+    GlobalVariable.Comment)
+
+WebUI.delay(1)
+
+WebUI.click(findTestObject('Object Repository/Account/Wallet/Pending_transaction/void_a_transaction/button_Yes'))
+
+WebUI.delay(1)
+
+WebUI.verifyTextPresent('Transaction is voided successfully', false)
+
+WebUI.delay(1)
+
+WebUI.click(findTestObject('Object Repository/Account/Wallet/Pending_transaction/void_a_transaction/button_Cancel'))
 
 WebUI.closeBrowser()
 

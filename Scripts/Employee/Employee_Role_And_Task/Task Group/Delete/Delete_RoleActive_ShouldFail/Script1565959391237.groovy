@@ -24,19 +24,27 @@ WebUI.click(findTestObject('Object Repository/Employee/Employee_Role_And_Task_OR
 
 WebUI.click(findTestObject('Object Repository/Employee/Employee_Role_And_Task_OR/Task Group_OR/Delete_OR/Delete_RoleActive_ShouldGiveErrorMessage/div_Task Group'))
 
+WebUI.delay(1)
+
 WebUI.click(findTestObject('Object Repository/Employee/Employee_Role_And_Task_OR/Task Group_OR/Delete_OR/Delete_RoleActive_ShouldGiveErrorMessage/p_CODE-1118'))
+
+WebUI.delay(1)
 
 WebUI.click(findTestObject('Object Repository/Employee/Employee_Role_And_Task_OR/Task Group_OR/Delete_OR/Delete_RoleActive_ShouldGiveErrorMessage/i_delete'))
 
-WebUI.click(findTestObject('Object Repository/Employee/Employee_Role_And_Task_OR/Task Group_OR/Delete_OR/Delete_RoleActive_ShouldGiveErrorMessage/div_Do you want to delete CODEZXYZ Task Group'))
+WebUI.delay(1)
 
 WebUI.verifyTextPresent('Do you want to delete', false)
 
+WebUI.delay(1)
+
 WebUI.click(findTestObject('Object Repository/Employee/Employee_Role_And_Task_OR/Task Group_OR/Delete_OR/Delete_RoleActive_ShouldGiveErrorMessage/button_Ok'))
 
-WebUI.click(findTestObject('Object Repository/Employee/Employee_Role_And_Task_OR/Task Group_OR/Delete_OR/Delete_RoleActive_ShouldGiveErrorMessage/div_Cannot delete a task group associated with an active role'))
+WebUI.delay(1)
 
 WebUI.verifyTextPresent('Cannot delete a task group associated with an active role', false)
+
+WebUI.delay(1)
 
 WebUI.click(findTestObject('Object Repository/Employee/Employee_Role_And_Task_OR/Task Group_OR/Delete_OR/Delete_RoleActive_ShouldGiveErrorMessage/button_OK (1)'))
 

@@ -22,15 +22,27 @@ WebUI.click(findTestObject('Object Repository/Employee/Employee/Inactive_Employe
 
 WebUI.click(findTestObject('Object Repository/Employee/Employee/Inactive_Employee/Inactive_an_employee_Shouldsucceed/Page_Unified Wallet/a_account_circleEmployee_1'))
 
+WebUI.delay(1)
+
 WebUI.click(findTestObject('Object Repository/Employee/Employee/Inactive_Employee/Inactive_an_employee_Shouldsucceed/Page_Unified Wallet/mat-cell_0001'))
+
+WebUI.delay(1)
 
 WebUI.click(findTestObject('Object Repository/Employee/Employee/Inactive_Employee/Inactive_an_employee_Shouldsucceed/Page_Unified Wallet/i_block'))
 
+WebUI.delay(1)
+
 WebUI.verifyTextPresent(' will be changed to InActive. Do you want to proceed?', false)
+
+WebUI.delay(1)
 
 WebUI.click(findTestObject('Object Repository/Employee/Employee/Inactive_Employee/Inactive_an_employee_Shouldsucceed/Page_Unified Wallet/button_Ok'))
 
+WebUI.delay(1)
+
 WebUI.verifyTextPresent('updated successfully', false)
+
+WebUI.delay(1)
 
 WebUI.click(findTestObject('Object Repository/Employee/Employee/Inactive_Employee/Inactive_an_employee_Shouldsucceed/Page_Unified Wallet/button_Ok'))
 

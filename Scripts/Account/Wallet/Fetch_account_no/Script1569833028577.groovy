@@ -16,8 +16,20 @@ import internal.GlobalVariable as GlobalVariable
 response = WS.sendRequest(findTestObject('Rest_api/Get_wallet_for_patron'))
 
 def slurper = new groovy.json.JsonSlurper()
+
+WebUI.delay(1)
+
 def result = slurper.parseText(response.getResponseBodyContent())
+
+WebUI.delay(1)
+
 def value = result.walletId
 
+WebUI.delay(1)
+
 GlobalVariable.Account_n = value
-println("vlaue :...................... " +GlobalVariable.Account_n)
+
+WebUI.delay(1)
+
+println('vlaue :...................... ' + GlobalVariable.Account_n)
+

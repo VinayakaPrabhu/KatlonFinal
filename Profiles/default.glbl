@@ -146,7 +146,7 @@
    </GlobalVariableEntity>
    <GlobalVariableEntity>
       <description>Used in api calling</description>
-      <initValue>0</initValue>
+      <initValue>'1000010000000015'</initValue>
       <name>Account_n</name>
    </GlobalVariableEntity>
    <GlobalVariableEntity>

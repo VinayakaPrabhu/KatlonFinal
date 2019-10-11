@@ -5,4 +5,11 @@
    <tag></tag>
    <comment></comment>
    <testCaseGuid>cd336ddb-1854-46fe-9f9f-6f542a7ddacc</testCaseGuid>
+   <variable>
+      <defaultValue>0</defaultValue>
+      <description>for adjusting the fund balance to 0</description>
+      <id>a080448c-2593-4c4f-bdfb-df43a6fc3367</id>
+      <masked>false</masked>
+      <name>variable</name>
+   </variable>
 </TestCaseEntity>

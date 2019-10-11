@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
    <description></description>
-   <name>void</name>
+   <name>commit_a_pending_transaction</name>
    <tag></tag>
    <comment></comment>
-   <testCaseGuid>f40ad46a-17de-4032-bb4b-ccd37971b83c</testCaseGuid>
+   <testCaseGuid>077ac72b-b52d-4c0d-80fe-de270d65991b</testCaseGuid>
 </TestCaseEntity>

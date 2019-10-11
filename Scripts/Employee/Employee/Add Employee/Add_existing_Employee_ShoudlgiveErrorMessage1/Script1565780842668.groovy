@@ -15,14 +15,15 @@ import internal.GlobalVariable as GlobalVariable
 
 WebUI.callTestCase(findTestCase('Login/AdminLogin_ShouldSucceed'), [:], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.waitForElementVisible(findTestObject('Employee/Employee/Add Employee_OR/Add_Existing_Employee_ShouldgiveErrorMessage1/Page_Unified Wallet/i_account_circle'), 
-    2)
-
 WebUI.click(findTestObject('Object Repository/Employee/Employee/Add Employee_OR/Add_Existing_Employee_ShouldgiveErrorMessage1/Page_Unified Wallet/i_account_circle'))
 
 WebUI.click(findTestObject('Object Repository/Employee/Employee/Add Employee_OR/Add_Existing_Employee_ShouldgiveErrorMessage1/Page_Unified Wallet/a_account_circleEmployee'))
 
+WebUI.delay(1)
+
 WebUI.click(findTestObject('Object Repository/Employee/Employee/Add Employee_OR/Add_Existing_Employee_ShouldgiveErrorMessage1/Page_Unified Wallet/i_add'))
+
+WebUI.delay(1)
 
 WebUI.setText(findTestObject('Object Repository/Employee/Employee/Add Employee_OR/Add_Existing_Employee_ShouldgiveErrorMessage1/Page_Unified Wallet/input_Employee Access_mat-input-3'), 
     GlobalVariable.employee_id)
@@ -39,24 +40,27 @@ WebUI.setText(findTestObject('Object Repository/Employee/Employee/Add Employee_O
 WebUI.setText(findTestObject('Object Repository/Employee/Employee/Add Employee_OR/Add_Existing_Employee_ShouldgiveErrorMessage1/Page_Unified Wallet/input_Middle Name_mat-input-8'), 
     GlobalVariable.employee_m_name)
 
+WebUI.delay(1)
+
 WebUI.click(findTestObject('Object Repository/Employee/Employee/Add Employee_OR/Add_Existing_Employee_ShouldgiveErrorMessage1/Page_Unified Wallet/button_Proceed'))
 
-WebUI.waitForElementVisible(findTestObject('Employee/Employee/Add Employee_OR/Add_Existing_Employee_ShouldgiveErrorMessage1/Page_Unified Wallet/div_Search_mat-checkbox-inner-container'), 
-    2)
+WebUI.delay(1)
 
 WebUI.check(findTestObject('Employee/Employee/Add Employee_OR/Add_Existing_Employee_ShouldgiveErrorMessage1/Page_Unified Wallet/div_Search_mat-checkbox-inner-container'))
 
-WebUI.waitForElementVisible(findTestObject('Employee/Employee/Add Employee_OR/Add_Existing_Employee_ShouldgiveErrorMessage1/Page_Unified Wallet/button_Save'), 
-    2)
+WebUI.delay(1)
 
 WebUI.click(findTestObject('Employee/Employee/Add Employee_OR/Add_Existing_Employee_ShouldgiveErrorMessage1/Page_Unified Wallet/button_Save'))
 
-WebUI.waitForElementVisible(findTestObject('Object Repository/Employee/Employee/Add Employee_OR/Add_Existing_Employee_ShouldgiveErrorMessage1/Page_Unified Wallet/button_OK'), 
-    2)
+WebUI.delay(1)
 
 WebUI.verifyTextPresent('Employee ID already exists ', false)
 
+WebUI.delay(1)
+
 WebUI.click(findTestObject('Object Repository/Employee/Employee/Add Employee_OR/Add_Existing_Employee_ShouldgiveErrorMessage1/Page_Unified Wallet/button_OK'))
+
+WebUI.delay(1)
 
 WebUI.click(findTestObject('Object Repository/Employee/Employee/Add Employee_OR/Add_Existing_Employee_ShouldgiveErrorMessage1/Page_Unified Wallet/button_Cancel'))
 

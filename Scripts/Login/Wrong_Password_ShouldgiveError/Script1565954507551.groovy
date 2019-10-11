@@ -17,7 +17,7 @@ WebUI.openBrowser('')
 
 WebUI.navigateToUrl(GlobalVariable.login_url)
 
-not_run: WebUI.maximizeWindow()
+WebUI.maximizeWindow()
 
 WebUI.setText(findTestObject('Object Repository/Login_OR/Wrong_Password_ShouldgiveError/input_Sign in_mat-input-0'), GlobalVariable.employee_login_name)
 
@@ -26,7 +26,11 @@ WebUI.setEncryptedText(findTestObject('Object Repository/Login_OR/Wrong_Password
 
 WebUI.click(findTestObject('Object Repository/Login_OR/Wrong_Password_ShouldgiveError/button_Login'))
 
+WebUI.delay(2)
+
 WebUI.verifyTextPresent(' Invalid password ', false)
+
+WebUI.delay(1)
 
 WebUI.click(findTestObject('Object Repository/Login_OR/Wrong_Password_ShouldgiveError/button_OK'))
 

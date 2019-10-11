@@ -21,11 +21,19 @@ WebUI.click(findTestObject('Object Repository/Employee/Employee/Edit_OR/i_accoun
 
 WebUI.click(findTestObject('Object Repository/Employee/Employee/Edit_OR/a_account_circleEmployee'))
 
+WebUI.delay(1)
+
 WebUI.click(findTestObject('Object Repository/Employee/Employee/Edit_OR/mat-cell_1000'))
+
+WebUI.delay(1)
 
 WebUI.click(findTestObject('Object Repository/Employee/Employee/Edit_OR/i_edit'))
 
+WebUI.delay(1)
+
 WebUI.click(findTestObject('Object Repository/Employee/Employee/Edit_OR/button_Proceed'))
+
+WebUI.delay(1)
 
 WebUI.click(findTestObject('Object Repository/Employee/Employee/Edit_OR/div_Search_mat-checkbox-inner-container'))
 
@@ -33,11 +41,19 @@ WebUI.click(findTestObject('Object Repository/Employee/Employee/Edit_OR/div_RVIN
 
 WebUI.click(findTestObject('Object Repository/Employee/Employee/Edit_OR/button_Save'))
 
+WebUI.delay(1)
+
 WebUI.verifyTextPresent('will be updated. Do you want to proceed?', false)
+
+WebUI.delay(1)
 
 WebUI.click(findTestObject('Object Repository/Employee/Employee/Edit_OR/button_Ok'))
 
+WebUI.delay(1)
+
 WebUI.verifyTextPresent('updated successfully', false)
+
+WebUI.delay(1)
 
 WebUI.click(findTestObject('Object Repository/Employee/Employee/Edit_OR/button_OK (1)'))
 

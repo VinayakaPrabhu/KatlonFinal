@@ -23,25 +23,27 @@ WebUI.click(findTestObject('Object Repository/Employee/Employee_Role_And_Task_OR
 
 WebUI.click(findTestObject('Object Repository/Employee/Employee_Role_And_Task_OR/Task Group_OR/Delete_OR/Delete_RoleInactive_ShouldSucceed/div_Task Group'))
 
+WebUI.delay(1)
+
 WebUI.click(findTestObject('Object Repository/Employee/Employee_Role_And_Task_OR/Task Group_OR/Delete_OR/Delete_RoleInactive_ShouldSucceed/mat-cell_TVINC'))
 
-not_run: WebUI.click(findTestObject('Object Repository/Employee/Employee_Role_And_Task_OR/Task Group_OR/Delete_OR/Delete_RoleInactive_ShouldSucceed/i_edit'))
-
-not_run: WebUI.click(findTestObject('Object Repository/Employee/Employee_Role_And_Task_OR/Task Group_OR/Delete_OR/Delete_RoleInactive_ShouldSucceed/mat-step-header_2Create Role'))
-
-not_run: WebUI.click(findTestObject('Object Repository/Employee/Employee_Role_And_Task_OR/Task Group_OR/Delete_OR/Delete_RoleInactive_ShouldSucceed/div_Search_mat-checkbox-inner-container'))
-
-not_run: WebUI.click(findTestObject('Object Repository/Employee/Employee_Role_And_Task_OR/Task Group_OR/Delete_OR/Delete_RoleInactive_ShouldSucceed/button_Save'))
-
-not_run: WebUI.click(findTestObject('Object Repository/Employee/Employee_Role_And_Task_OR/Task Group_OR/Delete_OR/Delete_RoleInactive_ShouldSucceed/button_Ok'))
+WebUI.delay(1)
 
 WebUI.click(findTestObject('Object Repository/Employee/Employee_Role_And_Task_OR/Task Group_OR/Delete_OR/Delete_RoleInactive_ShouldSucceed/i_delete'))
 
+WebUI.delay(1)
+
 WebUI.verifyTextPresent('Do you want to delete', false)
+
+WebUI.delay(1)
 
 WebUI.click(findTestObject('Object Repository/Employee/Employee_Role_And_Task_OR/Task Group_OR/Delete_OR/Delete_RoleInactive_ShouldSucceed/button_Ok'))
 
+WebUI.delay(1)
+
 WebUI.verifyTextPresent('deleted successfully', false)
+
+WebUI.delay(1)
 
 WebUI.click(findTestObject('Object Repository/Employee/Employee_Role_And_Task_OR/Task Group_OR/Delete_OR/Delete_RoleInactive_ShouldSucceed/button_Ok'))
 

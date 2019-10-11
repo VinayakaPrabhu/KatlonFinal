@@ -27,3 +27,5 @@ WebUI.setEncryptedText(findTestObject('Object Repository/Login_OR/AdminLogin_Sho
 
 WebUI.click(findTestObject('Object Repository/Login_OR/AdminLogin_ShouldSucceed/Page_Unified Wallet/button_Login'))
 
+WebUI.delay(2)
+

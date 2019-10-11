@@ -23,7 +23,11 @@ WebUI.click(findTestObject('Object Repository/Account/Wallet/Add/Add_existing_sh
 
 WebUI.click(findTestObject('Object Repository/Account/Wallet/Add/Add_existing_should_fail/a_account_balance_walletWallet'))
 
+WebUI.delay(1)
+
 WebUI.click(findTestObject('Object Repository/Account/Wallet/Add/Add_existing_should_fail/i_add'))
+
+WebUI.delay(1)
 
 WebUI.setText(findTestObject('Object Repository/Account/Wallet/Add/Add_existing_should_fail/input_Add Wallet_mat-input-9'), 
     GlobalVariable.corporate_code)
@@ -34,11 +38,19 @@ WebUI.setText(findTestObject('Object Repository/Account/Wallet/Add/Add_existing_
 WebUI.setText(findTestObject('Object Repository/Account/Wallet/Add/Add_existing_should_fail/input_Property Code_mat-input-11'), 
     GlobalVariable.patron_id)
 
+WebUI.delay(1)
+
 WebUI.click(findTestObject('Object Repository/Account/Wallet/Add/Add_existing_should_fail/button_Save'))
+
+WebUI.delay(1)
 
 WebUI.click(findTestObject('Object Repository/Account/Wallet/Add/Add_existing_should_fail/div_Patron ID already exists'))
 
+WebUI.delay(1)
+
 WebUI.verifyTextPresent('Patron ID already exists', false)
+
+WebUI.delay(1)
 
 WebUI.click(findTestObject('Object Repository/Account/Wallet/Add/Add_existing_should_fail/button_OK'))
 

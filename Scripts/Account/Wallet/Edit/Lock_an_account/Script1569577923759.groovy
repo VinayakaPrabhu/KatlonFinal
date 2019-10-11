@@ -21,21 +21,39 @@ WebUI.click(findTestObject('Object Repository/Account/Wallet/Edit/lock/a_workAcc
 
 WebUI.click(findTestObject('Object Repository/Account/Wallet/Edit/lock/a_account_balance_walletWallet'))
 
+WebUI.delay(1)
+
 WebUI.click(findTestObject('Object Repository/Account/Wallet/Edit/lock/mat-cell_ACTIVE'))
+
+WebUI.delay(1)
 
 WebUI.click(findTestObject('Object Repository/Account/Wallet/Edit/lock/i_edit'))
 
+WebUI.delay(1)
+
 WebUI.click(findTestObject('Object Repository/Account/Wallet/Edit/lock/div_Active'))
+
+WebUI.delay(1)
 
 WebUI.click(findTestObject('Object Repository/Account/Wallet/Edit/lock/span_Lock'))
 
+WebUI.delay(1)
+
 WebUI.click(findTestObject('Object Repository/Account/Wallet/Edit/lock/button_Save'))
+
+WebUI.delay(1)
 
 WebUI.verifyTextPresent('Do you want to change the Wallet status to LOCKED. Do you want to proceed', false)
 
+WebUI.delay(1)
+
 WebUI.click(findTestObject('Object Repository/Account/Wallet/Edit/lock/button_Ok'))
 
+WebUI.delay(1)
+
 WebUI.verifyTextPresent('Wallet updated successfully', false)
+
+WebUI.delay(1)
 
 WebUI.click(findTestObject('Object Repository/Account/Wallet/Edit/lock/button_Ok'))
 

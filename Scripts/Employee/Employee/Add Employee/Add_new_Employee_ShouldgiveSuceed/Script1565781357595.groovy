@@ -15,13 +15,18 @@ import internal.GlobalVariable as GlobalVariable
 
 WebUI.callTestCase(findTestCase('Login/AdminLogin_ShouldSucceed'), [:], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.click(findTestObject('Object Repository/Employee/Employee/Add Employee_OR/Add_new_Employee_ShouldSucceed/div_more_vert_hamburgerWrapper'))
+WebUI.click(findTestObject('Object Repository/Employee/Employee/Add Employee_OR/Add_new_Employee_ShouldSucceed/div_more_vert_hamburgerWrapper'), 
+    FailureHandling.OPTIONAL)
 
 WebUI.click(findTestObject('Object Repository/Employee/Employee/Add Employee_OR/Add_new_Employee_ShouldSucceed/i_account_circle'))
 
 WebUI.click(findTestObject('Object Repository/Employee/Employee/Add Employee_OR/Add_new_Employee_ShouldSucceed/a_account_circleEmployee'))
 
+WebUI.delay(1)
+
 WebUI.click(findTestObject('Object Repository/Employee/Employee/Add Employee_OR/Add_new_Employee_ShouldSucceed/i_add'))
+
+WebUI.delay(1)
 
 WebUI.setText(findTestObject('Object Repository/Employee/Employee/Add Employee_OR/Add_new_Employee_ShouldSucceed/input_Employee Access_mat-input-3'), 
     GlobalVariable.employee_id)
@@ -41,13 +46,23 @@ WebUI.setText(findTestObject('Object Repository/Employee/Employee/Add Employee_O
 WebUI.setText(findTestObject('Object Repository/Employee/Employee/Add Employee_OR/Add_new_Employee_ShouldSucceed/input_Middle Name_mat-input-8'), 
     GlobalVariable.employee_l_name)
 
+WebUI.delay(1)
+
 WebUI.click(findTestObject('Object Repository/Employee/Employee/Add Employee_OR/Add_new_Employee_ShouldSucceed/button_Proceed'))
+
+WebUI.delay(1)
 
 WebUI.click(findTestObject('Object Repository/Employee/Employee/Add Employee_OR/Add_new_Employee_ShouldSucceed/div_Search_mat-checkbox-inner-container'))
 
+WebUI.delay(1)
+
 WebUI.click(findTestObject('Object Repository/Employee/Employee/Add Employee_OR/Add_new_Employee_ShouldSucceed/button_Save'))
 
+WebUI.delay(1)
+
 WebUI.verifyTextPresent('saved successfully', false)
+
+WebUI.delay(1)
 
 WebUI.click(findTestObject('Object Repository/Employee/Employee/Add Employee_OR/Add_new_Employee_ShouldSucceed/button_Ok'))
 

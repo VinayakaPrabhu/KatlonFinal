@@ -13,23 +13,25 @@ import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
 
+WebUI.openBrowser('')
 
-    WebUI.openBrowser('')
+WebUI.navigateToUrl(GlobalVariable.login_url)
 
-    WebUI.navigateToUrl(GlobalVariable.login_url)
+WebUI.maximizeWindow()
 
-    WebUI.maximizeWindow()
+WebUI.setText(findTestObject('Object Repository/Login_OR/Employee_Inactive_Login_ShouldGiveErrormessage_OR/Page_Unified Wallet/input_Sign in_mat-input-0'), 
+    GlobalVariable.employee_login_name)
 
-    WebUI.setText(findTestObject('Object Repository/Login_OR/Employee_Inactive_Login_ShouldGiveErrormessage_OR/Page_Unified Wallet/input_Sign in_mat-input-0'), 
-        GlobalVariable.employee_login_name)
+WebUI.setEncryptedText(findTestObject('Object Repository/Login_OR/Employee_Inactive_Login_ShouldGiveErrormessage_OR/Page_Unified Wallet/input_Username_mat-input-1'), 
+    GlobalVariable.employee_new_password)
 
-    WebUI.setEncryptedText(findTestObject('Object Repository/Login_OR/Employee_Inactive_Login_ShouldGiveErrormessage_OR/Page_Unified Wallet/input_Username_mat-input-1'), 
-        GlobalVariable.employee_new_password)
+WebUI.click(findTestObject('Object Repository/Login_OR/Employee_Inactive_Login_ShouldGiveErrormessage_OR/Page_Unified Wallet/button_Login'))
 
-    WebUI.click(findTestObject('Object Repository/Login_OR/Employee_Inactive_Login_ShouldGiveErrormessage_OR/Page_Unified Wallet/button_Login'))
+WebUI.delay(2)
 
-    WebUI.verifyTextPresent('User is inactive ', false)
+WebUI.verifyTextPresent('User is inactive ', false)
 
-    WebUI.click(findTestObject('Object Repository/Login_OR/Employee_Inactive_Login_ShouldGiveErrormessage_OR/Page_Unified Wallet/button_OK'))
-	WebUI.closeBrowser()
+WebUI.click(findTestObject('Object Repository/Login_OR/Employee_Inactive_Login_ShouldGiveErrormessage_OR/Page_Unified Wallet/button_OK'))
+
+WebUI.closeBrowser()
 

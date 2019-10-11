@@ -22,15 +22,27 @@ WebUI.click(findTestObject('Object Repository/Employee/Employee_Role_And_Task_OR
 
 WebUI.click(findTestObject('Object Repository/Employee/Employee_Role_And_Task_OR/Roles_OR/Delete_OR/Delete_role_before_employee_shouldgiveerror_OR/a_assignmentRole And Task'))
 
+WebUI.delay(1)
+
 WebUI.click(findTestObject('Object Repository/Employee/Employee_Role_And_Task_OR/Roles_OR/Delete_OR/Delete_role_before_employee_shouldgiveerror_OR/mat-cell_RVINC'))
+
+WebUI.delay(1)
 
 WebUI.click(findTestObject('Object Repository/Employee/Employee_Role_And_Task_OR/Roles_OR/Delete_OR/Delete_role_before_employee_shouldgiveerror_OR/i_delete'))
 
+WebUI.delay(1)
+
 WebUI.verifyTextPresent('Do you want to delete RVINN Role?', false)
+
+WebUI.delay(1)
 
 WebUI.click(findTestObject('Object Repository/Employee/Employee_Role_And_Task_OR/Roles_OR/Delete_OR/Delete_role_before_employee_shouldgiveerror_OR/button_Ok'))
 
+WebUI.delay(1)
+
 WebUI.verifyTextPresent('Cannot delete a role associated with employees', false)
+
+WebUI.delay(1)
 
 WebUI.click(findTestObject('Object Repository/Employee/Employee_Role_And_Task_OR/Roles_OR/Delete_OR/Delete_role_before_employee_shouldgiveerror_OR/button_OK (1)'))
 

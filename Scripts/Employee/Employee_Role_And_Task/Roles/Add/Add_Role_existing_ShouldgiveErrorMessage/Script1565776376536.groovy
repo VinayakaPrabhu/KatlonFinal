@@ -22,6 +22,8 @@ WebUI.click(findTestObject('Object Repository/Employee/Employee_Role_And_Task_OR
 
 WebUI.click(findTestObject('Object Repository/Employee/Employee_Role_And_Task_OR/Roles_OR/Add_OR/Add_Role_existing_ShouldgiveerrorMessage/a_assignmentRole And Task'))
 
+WebUI.delay(1)
+
 WebUI.click(findTestObject('Object Repository/Employee/Employee_Role_And_Task_OR/Roles_OR/Add_OR/Add_Role_existing_ShouldgiveerrorMessage/i_add'))
 
 WebUI.setText(findTestObject('Object Repository/Employee/Employee_Role_And_Task_OR/Roles_OR/Add_OR/Add_Role_existing_ShouldgiveerrorMessage/input_Add Role_code'), 
@@ -33,13 +35,23 @@ WebUI.setText(findTestObject('Object Repository/Employee/Employee_Role_And_Task_
 WebUI.setText(findTestObject('Object Repository/Employee/Employee_Role_And_Task_OR/Roles_OR/Add_OR/Add_Role_existing_ShouldgiveerrorMessage/input_Name_description'), 
     GlobalVariable.role_description)
 
+WebUI.delay(1)
+
 WebUI.check(findTestObject('Object Repository/Employee/Employee_Role_And_Task_OR/Roles_OR/Add_OR/Add_Role_existing_ShouldgiveerrorMessage/div_Search_mat-checkbox-inner-container'))
+
+WebUI.delay(1)
 
 WebUI.click(findTestObject('Object Repository/Employee/Employee_Role_And_Task_OR/Roles_OR/Add_OR/Add_Role_existing_ShouldgiveerrorMessage/button_Save'))
 
+WebUI.delay(1)
+
 WebUI.verifyTextPresent('Role code already exists ', false)
 
+WebUI.delay(1)
+
 WebUI.click(findTestObject('Object Repository/Employee/Employee_Role_And_Task_OR/Roles_OR/Add_OR/Add_Role_existing_ShouldgiveerrorMessage/button_OK'))
+
+WebUI.delay(1)
 
 WebUI.click(findTestObject('Object Repository/Employee/Employee_Role_And_Task_OR/Roles_OR/Add_OR/Add_Role_existing_ShouldgiveerrorMessage/button_Cancel'))
 

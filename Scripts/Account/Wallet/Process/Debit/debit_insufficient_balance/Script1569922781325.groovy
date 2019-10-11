@@ -21,24 +21,44 @@ WebUI.click(findTestObject('Object Repository/Account/Wallet/Process/Debit/debit
 
 WebUI.click(findTestObject('Object Repository/Account/Wallet/Process/Debit/debit/a_account_balance_walletWallet'))
 
+WebUI.delay(1)
+
 WebUI.click(findTestObject('Object Repository/Account/Wallet/Process/Debit/debit/mat-cell_0001'))
+
+WebUI.delay(1)
 
 WebUI.click(findTestObject('Object Repository/Account/Wallet/Process/Debit/debit/i_pages'))
 
+WebUI.delay(1)
+
 WebUI.click(findTestObject('Object Repository/Account/Wallet/Process/Debit/debit/div_Debit'))
 
+WebUI.delay(1)
+
 WebUI.click(findTestObject('Object Repository/Account/Wallet/Process/Debit/debit/div_Amount()'))
+
+WebUI.delay(1)
 
 WebUI.setText(findTestObject('Object Repository/Account/Wallet/Process/Debit/debit/input_Recent Five Transactions_mat-input-11'), 
     GlobalVariable.cash1)
 
+WebUI.delay(1)
+
 WebUI.click(findTestObject('Object Repository/Account/Wallet/Process/Debit/debit/span_Fund Type'))
+
+WebUI.delay(1)
 
 WebUI.click(findTestObject('Object Repository/Account/Wallet/Process/Debit/debit/span_Cash'))
 
+WebUI.delay(1)
+
 WebUI.click(findTestObject('Object Repository/Account/Wallet/Process/Debit/debit/button_Submit'))
 
+WebUI.delay(1)
+
 WebUI.verifyTextPresent('Operation failed due to insufficient balance', false)
+
+WebUI.delay(1)
 
 WebUI.click(findTestObject('Object Repository/Account/Wallet/Process/Debit/debit/button_Ok'))
 

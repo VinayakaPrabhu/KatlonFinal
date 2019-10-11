@@ -22,17 +22,31 @@ WebUI.click(findTestObject('Object Repository/Employee/Employee_Role_And_Task_OR
 
 WebUI.click(findTestObject('Object Repository/Employee/Employee_Role_And_Task_OR/Roles_OR/Edit_OR/Edit_Role_ShouldSucceed/edit_role/a_assignmentRole And Task'))
 
+WebUI.delay(1)
+
 WebUI.click(findTestObject('Object Repository/Employee/Employee_Role_And_Task_OR/Roles_OR/Edit_OR/Edit_Role_ShouldSucceed/edit_role/mat-cell_RVINC'))
+
+WebUI.delay(1)
 
 WebUI.click(findTestObject('Object Repository/Employee/Employee_Role_And_Task_OR/Roles_OR/Edit_OR/Edit_Role_ShouldSucceed/edit_role/i_edit'))
 
+WebUI.delay(1)
+
 WebUI.click(findTestObject('Object Repository/Employee/Employee_Role_And_Task_OR/Roles_OR/Edit_OR/Edit_Role_ShouldSucceed/edit_role/div_Search_mat-checkbox-inner-container'))
+
+WebUI.delay(1)
 
 WebUI.check(findTestObject('Employee/Employee_Role_And_Task_OR/Roles_OR/Edit_OR/Edit_Role_ShouldSucceed/edit_role/mat-pseudo-checkbox_Selected 0_mat-pseudo-checkbox'))
 
+WebUI.delay(1)
+
 WebUI.click(findTestObject('Object Repository/Employee/Employee_Role_And_Task_OR/Roles_OR/Edit_OR/Edit_Role_ShouldSucceed/edit_role/button_Save'))
 
+WebUI.delay(1)
+
 WebUI.verifyTextPresent('updated successfully', false)
+
+WebUI.delay(1)
 
 WebUI.click(findTestObject('Object Repository/Employee/Employee_Role_And_Task_OR/Roles_OR/Edit_OR/Edit_Role_ShouldSucceed/edit_role/button_Cancel'))
 

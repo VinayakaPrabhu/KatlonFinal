@@ -21,22 +21,40 @@ WebUI.click(findTestObject('Object Repository/Account/Wallet/Process/Credit/cred
 
 WebUI.click(findTestObject('Object Repository/Account/Wallet/Process/Credit/credit/a_account_balance_walletWallet'))
 
+WebUI.delay(1)
+
 WebUI.click(findTestObject('Object Repository/Account/Wallet/Process/Credit/credit/mat-cell_0001'))
+
+WebUI.delay(1)
 
 WebUI.click(findTestObject('Object Repository/Account/Wallet/Process/Credit/credit/i_pages'))
 
+WebUI.delay(1)
+
 WebUI.click(findTestObject('Object Repository/Account/Wallet/Process/Credit/credit/div_Amount()'))
+
+WebUI.delay(1)
 
 WebUI.setText(findTestObject('Object Repository/Account/Wallet/Process/Credit/credit/input_Recent Five Transactions_mat-input-9'), 
     GlobalVariable.cash1)
 
+WebUI.delay(1)
+
 WebUI.click(findTestObject('Object Repository/Account/Wallet/Process/Credit/credit/span_Fund Type'))
+
+WebUI.delay(1)
 
 WebUI.click(findTestObject('Object Repository/Account/Wallet/Process/Credit/credit/span_Cash'))
 
+WebUI.delay(1)
+
 WebUI.click(findTestObject('Object Repository/Account/Wallet/Process/Credit/credit/button_Submit'))
 
+WebUI.delay(1)
+
 WebUI.verifyTextPresent('Transaction credited successfully', false)
+
+WebUI.delay(1)
 
 WebUI.click(findTestObject('Object Repository/Account/Wallet/Process/Credit/credit/button_Ok'))
 

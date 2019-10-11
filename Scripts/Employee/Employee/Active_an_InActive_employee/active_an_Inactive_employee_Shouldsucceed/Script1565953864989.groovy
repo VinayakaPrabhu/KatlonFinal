@@ -22,15 +22,27 @@ WebUI.click(findTestObject('Object Repository/Employee/Employee/Active_an_Inacti
 
 WebUI.click(findTestObject('Object Repository/Employee/Employee/Active_an_Inactive_employee_OR/Inactive_employee_activationShouldsucceed_OR/Page_Unified Wallet/a_account_circleEmployee_1'))
 
+WebUI.delay(1)
+
 WebUI.click(findTestObject('Object Repository/Employee/Employee/Active_an_Inactive_employee_OR/Inactive_employee_activationShouldsucceed_OR/Page_Unified Wallet/mat-cell_0001'))
+
+WebUI.delay(1)
 
 WebUI.click(findTestObject('Object Repository/Employee/Employee/Active_an_Inactive_employee_OR/Inactive_employee_activationShouldsucceed_OR/Page_Unified Wallet/i_block'))
 
+WebUI.delay(1)
+
 WebUI.verifyTextPresent('will be changed to Active. Do you want to proceed?', false)
+
+WebUI.delay(1)
 
 WebUI.click(findTestObject('Object Repository/Employee/Employee/Active_an_Inactive_employee_OR/Inactive_employee_activationShouldsucceed_OR/Page_Unified Wallet/button_Ok'))
 
+WebUI.delay(1)
+
 WebUI.verifyTextPresent('updated successfully', false)
+
+WebUI.delay(1)
 
 WebUI.click(findTestObject('Object Repository/Employee/Employee/Active_an_Inactive_employee_OR/Inactive_employee_activationShouldsucceed_OR/Page_Unified Wallet/button_Ok'))
 

@@ -26,20 +26,36 @@ WebUI.click(findTestObject('Object Repository/Account/Transaction/Vodi_transacti
 
 println('vlaue :...................... ' + GlobalVariable.Account_n)
 
-WebUI.setText(findTestObject('Account/Transaction/Vodi_transaction/input_Search_mat-input-2'), GlobalVariable.Account_n)
+WebUI.delay(1)
+
+WebUI.setText(findTestObject('Account/Transaction/Vodi_transaction/input_Search_mat-input-2'), '1000010000000015')
+
+WebUI.delay(1)
 
 WebUI.click(findTestObject('Object Repository/Account/Transaction/Vodi_transaction/button_Search'))
 
+WebUI.delay(1)
+
 WebUI.click(findTestObject('Object Repository/Account/Transaction/Vodi_transaction/mat-cell_0001'))
 
+WebUI.delay(1)
+
 WebUI.click(findTestObject('Object Repository/Account/Transaction/Vodi_transaction/i_pages'))
+
+WebUI.delay(1)
 
 WebUI.setText(findTestObject('Object Repository/Account/Transaction/Vodi_transaction/input_Transaction Id 1000011 will be voided Do you want to proceed_mat-input-9'), 
     GlobalVariable.Comment)
 
+WebUI.delay(1)
+
 WebUI.click(findTestObject('Object Repository/Account/Transaction/Vodi_transaction/button_Yes'))
 
+WebUI.delay(1)
+
 WebUI.click(findTestObject('Object Repository/Account/Transaction/Vodi_transaction/div_Transaction is voided successfully'))
+
+WebUI.delay(1)
 
 WebUI.click(findTestObject('Object Repository/Account/Transaction/Vodi_transaction/button_Cancel'))
 

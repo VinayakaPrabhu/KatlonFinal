@@ -28,7 +28,6 @@ import static org.junit.Assert.*
 import java.util.regex.Pattern as Pattern
 import static org.apache.commons.lang3.StringUtils.join
 
-
 WebUI.openBrowser('')
 
 WebUI.navigateToUrl(GlobalVariable.login_url)
@@ -41,6 +40,8 @@ WebUI.setEncryptedText(findTestObject('Object Repository/Login_OR/employee_login
 
 WebUI.click(findTestObject('Object Repository/Login_OR/employee_login/button_Login'))
 
+WebUI.delay(1)
+
 WebUI.setEncryptedText(findTestObject('Object Repository/Login_OR/employee_login/input_First login after user account creationpassword reset Please change the password_mat-input-2'), 
     GlobalVariable.username_admins_Password)
 
@@ -48,15 +49,23 @@ WebUI.setEncryptedText(findTestObject('Object Repository/Login_OR/employee_login
 
 WebUI.setEncryptedText(findTestObject('Object Repository/Login_OR/employee_login/input_New Password_mat-input-4'), GlobalVariable.employee_new_password)
 
+WebUI.delay(1)
+
 WebUI.click(findTestObject('Object Repository/Login_OR/employee_login/button_Change'))
+
+WebUI.delay(1)
 
 WebUI.verifyTextPresent('Password changed successfully', false)
 
 WebUI.click(findTestObject('Object Repository/Login_OR/employee_login/button_Ok'))
 
+WebUI.delay(1)
+
 WebUI.setEncryptedText(findTestObject('Object Repository/Login_OR/employee_login/input_Username_mat-input-1'), GlobalVariable.employee_new_password)
 
 WebUI.click(findTestObject('Object Repository/Login_OR/employee_login/button_Login'))
+
+WebUI.delay(1)
 
 WebUI.closeBrowser()
 

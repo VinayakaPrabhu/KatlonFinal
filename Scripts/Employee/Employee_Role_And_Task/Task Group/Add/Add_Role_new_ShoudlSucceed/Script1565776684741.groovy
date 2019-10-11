@@ -15,7 +15,8 @@ import internal.GlobalVariable as GlobalVariable
 
 WebUI.callTestCase(findTestCase('Login/AdminLogin_ShouldSucceed'), [:], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.click(findTestObject('Object Repository/Employee/Employee_Role_And_Task_OR/Task Group_OR/Add_OR/Add_Role_new_shouldSucceed/Add_new_Tgroup/div_more_vert_hamburgerWrapper'))
+WebUI.click(findTestObject('Object Repository/Employee/Employee_Role_And_Task_OR/Task Group_OR/Add_OR/Add_Role_new_shouldSucceed/Add_new_Tgroup/div_more_vert_hamburgerWrapper'), 
+    FailureHandling.OPTIONAL)
 
 WebUI.click(findTestObject('Object Repository/Employee/Employee_Role_And_Task_OR/Task Group_OR/Add_OR/Add_Role_new_shouldSucceed/Add_new_Tgroup/i_account_circle'))
 
@@ -26,7 +27,7 @@ WebUI.click(findTestObject('Object Repository/Employee/Employee_Role_And_Task_OR
 
 WebUI.click(findTestObject('Object Repository/Employee/Employee_Role_And_Task_OR/Task Group_OR/Add_OR/Add_Role_new_shouldSucceed/Add_new_Tgroup/div_Task Group_1'))
 
-Thread.sleep(2)
+WebUI.delay(1)
 
 WebUI.click(findTestObject('Object Repository/Employee/Employee_Role_And_Task_OR/Task Group_OR/Add_OR/Add_Role_new_shouldSucceed/Add_new_Tgroup/i_add'))
 
@@ -42,6 +43,8 @@ WebUI.setText(findTestObject('Object Repository/Employee/Employee_Role_And_Task_
 WebUI.click(findTestObject('Object Repository/Employee/Employee_Role_And_Task_OR/Task Group_OR/Add_OR/Add_Role_new_shouldSucceed/Add_new_Tgroup/div_Search_mat-checkbox-inner-container'))
 
 WebUI.click(findTestObject('Object Repository/Employee/Employee_Role_And_Task_OR/Task Group_OR/Add_OR/Add_Role_new_shouldSucceed/Add_new_Tgroup/button_Proceed'))
+
+WebUI.delay(1)
 
 WebUI.click(findTestObject('Object Repository/Employee/Employee_Role_And_Task_OR/Task Group_OR/Add_OR/Add_Role_new_shouldSucceed/Add_new_Tgroup/div_Search_mat-checkbox-inner-container_1'))
 

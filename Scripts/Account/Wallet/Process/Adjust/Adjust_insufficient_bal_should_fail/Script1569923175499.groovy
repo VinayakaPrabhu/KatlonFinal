@@ -21,28 +21,52 @@ WebUI.click(findTestObject('Object Repository/Account/Wallet/Process/Adjust/Adju
 
 WebUI.click(findTestObject('Object Repository/Account/Wallet/Process/Adjust/Adjust/a_account_balance_walletWallet'))
 
+WebUI.delay(1)
+
 WebUI.click(findTestObject('Object Repository/Account/Wallet/Process/Adjust/Adjust/mat-cell_0001'))
+
+WebUI.delay(1)
 
 WebUI.click(findTestObject('Object Repository/Account/Wallet/Process/Adjust/Adjust/i_pages'))
 
+WebUI.delay(1)
+
 WebUI.click(findTestObject('Object Repository/Account/Wallet/Process/Adjust/Adjust/div_Adjust'))
 
+WebUI.delay(1)
+
 WebUI.click(findTestObject('Object Repository/Account/Wallet/Process/Adjust/Adjust/div_Amount()'))
+
+WebUI.delay(1)
 
 WebUI.setText(findTestObject('Object Repository/Account/Wallet/Process/Adjust/Adjust/input_Recent Five Transactions_mat-input-13'), 
     GlobalVariable.cash1)
 
+WebUI.delay(1)
+
 WebUI.click(findTestObject('Object Repository/Account/Wallet/Process/Adjust/Adjust/span_Fund Type'))
+
+WebUI.delay(1)
 
 WebUI.click(findTestObject('Object Repository/Account/Wallet/Process/Adjust/Adjust/span_Cash'))
 
+WebUI.delay(1)
+
 WebUI.click(findTestObject('Object Repository/Account/Wallet/Process/Adjust/Adjust/span_Operation Type'))
+
+WebUI.delay(1)
 
 WebUI.click(findTestObject('Object Repository/Account/Wallet/Process/Adjust/Adjust/span_Debit'))
 
+WebUI.delay(1)
+
 WebUI.click(findTestObject('Object Repository/Account/Wallet/Process/Adjust/Adjust/button_Submit'))
 
-WebUI.verifyTextPresent('Zero fund value is not allowed for adjustment', false)
+WebUI.delay(1)
+
+WebUI.verifyTextPresent('Operation failed due to insufficient balance', false)
+
+WebUI.deselectOptionByLabel(findTestObject(null), '', false)
 
 WebUI.click(findTestObject('Object Repository/Account/Wallet/Process/Adjust/Adjust/button_Ok'))
 

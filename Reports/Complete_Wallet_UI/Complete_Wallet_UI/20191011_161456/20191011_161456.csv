@@ -1,0 +1,351 @@
+Suite/Test/Step Name,Browser,Description,Tag,Start time,End time,Duration,Status
+Complete_Wallet_UI,Chrome 77.0.3865.90,Test end to end Wallet UI tests,,2019-10-11 16:14:59,2019-10-11 16:20:53,5m - 53.912s,INCOMPLETE
+,,,,,,,
+Test Cases/Login/AdminLogin_ShouldSucceed,Chrome 77.0.3865.90,Logs in to the machine and closes the browser.,login,2019-10-11 16:14:59,2019-10-11 16:15:11,11.397s,PASSED
+"openBrowser("""")",Chrome 77.0.3865.90,,,2019-10-11 16:15:00,2019-10-11 16:15:04,4.559s,PASSED
+maximizeWindow(),Chrome 77.0.3865.90,,,2019-10-11 16:15:04,2019-10-11 16:15:05,1.272s,PASSED
+navigateToUrl(login_url),Chrome 77.0.3865.90,,,2019-10-11 16:15:05,2019-10-11 16:15:08,2.492s,PASSED
+"setText(findTestObject(""Object Repository/Login_OR/AdminLogin_ShouldSucceed/Page_Unified Wallet/input_Sign in_mat-input-0""), username_admin)",Chrome 77.0.3865.90,,,2019-10-11 16:15:08,2019-10-11 16:15:08,0.359s,PASSED
+"setEncryptedText(findTestObject(""Object Repository/Login_OR/AdminLogin_ShouldSucceed/Page_Unified Wallet/input_Username_mat-input-1""), username_admins_Password)",Chrome 77.0.3865.90,,,2019-10-11 16:15:08,2019-10-11 16:15:09,0.311s,PASSED
+"click(findTestObject(""Object Repository/Login_OR/AdminLogin_ShouldSucceed/Page_Unified Wallet/button_Login""))",Chrome 77.0.3865.90,,,2019-10-11 16:15:09,2019-10-11 16:15:09,0.176s,PASSED
+delay(2),Chrome 77.0.3865.90,,,2019-10-11 16:15:09,2019-10-11 16:15:11,2.021s,PASSED
+,,,,,,,
+Test Cases/Employee/Employee_Role_And_Task/Task Group/Add/Add_Role_new_ShoudlSucceed,Chrome 77.0.3865.90,Add a role should give Created Role message,,2019-10-11 16:15:11,2019-10-11 16:15:29,18.089s,PASSED
+"callTestCase(findTestCase(""Login/AdminLogin_ShouldSucceed""), [:], STOP_ON_FAILURE)",Chrome 77.0.3865.90,,,2019-10-11 16:15:11,2019-10-11 16:15:20,9.097s,PASSED
+"click(findTestObject(""Object Repository/Employee/Employee_Role_And_Task_OR/Task Group_OR/Add_OR/Add_Role_new_shouldSucceed/Add_new_Tgroup/div_more_vert_hamburgerWrapper""), OPTIONAL)",Chrome 77.0.3865.90,,,2019-10-11 16:15:20,2019-10-11 16:15:23,3.143s,PASSED
+"click(findTestObject(""Object Repository/Employee/Employee_Role_And_Task_OR/Task Group_OR/Add_OR/Add_Role_new_shouldSucceed/Add_new_Tgroup/i_account_circle""))",Chrome 77.0.3865.90,,,2019-10-11 16:15:23,2019-10-11 16:15:23,0.116s,PASSED
+"click(findTestObject(""Object Repository/Employee/Employee_Role_And_Task_OR/Task Group_OR/Add_OR/Add_Role_new_shouldSucceed/Add_new_Tgroup/a_assignmentRole And Task""))",Chrome 77.0.3865.90,,,2019-10-11 16:15:23,2019-10-11 16:15:23,0.082s,PASSED
+"click(findTestObject(""Object Repository/Employee/Employee_Role_And_Task_OR/Task Group_OR/Add_OR/Add_Role_new_shouldSucceed/Add_new_Tgroup/div_Task Group""), OPTIONAL)",Chrome 77.0.3865.90,,,2019-10-11 16:15:23,2019-10-11 16:15:24,0.629s,PASSED
+"click(findTestObject(""Object Repository/Employee/Employee_Role_And_Task_OR/Task Group_OR/Add_OR/Add_Role_new_shouldSucceed/Add_new_Tgroup/div_Task Group_1""))",Chrome 77.0.3865.90,,,2019-10-11 16:15:24,2019-10-11 16:15:24,0.112s,PASSED
+delay(1),Chrome 77.0.3865.90,,,2019-10-11 16:15:24,2019-10-11 16:15:25,1.002s,PASSED
+"click(findTestObject(""Object Repository/Employee/Employee_Role_And_Task_OR/Task Group_OR/Add_OR/Add_Role_new_shouldSucceed/Add_new_Tgroup/i_add""))",Chrome 77.0.3865.90,,,2019-10-11 16:15:25,2019-10-11 16:15:25,0.190s,PASSED
+"setText(findTestObject(""Object Repository/Employee/Employee_Role_And_Task_OR/Task Group_OR/Add_OR/Add_Role_new_shouldSucceed/Add_new_Tgroup/input_Create Role_code""), taskgroup_code)",Chrome 77.0.3865.90,,,2019-10-11 16:15:25,2019-10-11 16:15:25,0.152s,PASSED
+"setText(findTestObject(""Object Repository/Employee/Employee_Role_And_Task_OR/Task Group_OR/Add_OR/Add_Role_new_shouldSucceed/Add_new_Tgroup/input_OrganizationCode_name""), taskgroup_name)",Chrome 77.0.3865.90,,,2019-10-11 16:15:25,2019-10-11 16:15:26,0.182s,PASSED
+"setText(findTestObject(""Object Repository/Employee/Employee_Role_And_Task_OR/Task Group_OR/Add_OR/Add_Role_new_shouldSucceed/Add_new_Tgroup/input_Name_description""), taskgroup_description)",Chrome 77.0.3865.90,,,2019-10-11 16:15:26,2019-10-11 16:15:26,0.138s,PASSED
+"click(findTestObject(""Object Repository/Employee/Employee_Role_And_Task_OR/Task Group_OR/Add_OR/Add_Role_new_shouldSucceed/Add_new_Tgroup/div_Search_mat-checkbox-inner-container""))",Chrome 77.0.3865.90,,,2019-10-11 16:15:26,2019-10-11 16:15:26,0.111s,PASSED
+"click(findTestObject(""Object Repository/Employee/Employee_Role_And_Task_OR/Task Group_OR/Add_OR/Add_Role_new_shouldSucceed/Add_new_Tgroup/button_Proceed""))",Chrome 77.0.3865.90,,,2019-10-11 16:15:26,2019-10-11 16:15:26,0.165s,PASSED
+delay(1),Chrome 77.0.3865.90,,,2019-10-11 16:15:26,2019-10-11 16:15:27,1.001s,PASSED
+"click(findTestObject(""Object Repository/Employee/Employee_Role_And_Task_OR/Task Group_OR/Add_OR/Add_Role_new_shouldSucceed/Add_new_Tgroup/div_Search_mat-checkbox-inner-container_1""))",Chrome 77.0.3865.90,,,2019-10-11 16:15:27,2019-10-11 16:15:27,0.083s,PASSED
+"click(findTestObject(""Object Repository/Employee/Employee_Role_And_Task_OR/Task Group_OR/Add_OR/Add_Role_new_shouldSucceed/Add_new_Tgroup/button_Save""))",Chrome 77.0.3865.90,,,2019-10-11 16:15:27,2019-10-11 16:15:27,0.085s,PASSED
+"verifyTextPresent("""", false)",Chrome 77.0.3865.90,,,2019-10-11 16:15:27,2019-10-11 16:15:27,0.151s,PASSED
+"click(findTestObject(""Object Repository/Employee/Employee_Role_And_Task_OR/Task Group_OR/Add_OR/Add_Role_new_shouldSucceed/Add_new_Tgroup/button_Ok""))",Chrome 77.0.3865.90,,,2019-10-11 16:15:27,2019-10-11 16:15:28,0.579s,PASSED
+closeBrowser(),Chrome 77.0.3865.90,,,2019-10-11 16:15:28,2019-10-11 16:15:29,0.886s,PASSED
+,,,,,,,
+Test Cases/Employee/Employee_Role_And_Task/Task Group/Add/Add_Role_existing_ShouldgiveErrorMessage,Chrome 77.0.3865.90,Should give error message,,2019-10-11 16:15:29,2019-10-11 16:15:44,15.239s,PASSED
+"callTestCase(findTestCase(""Login/AdminLogin_ShouldSucceed""), [:], STOP_ON_FAILURE)",Chrome 77.0.3865.90,,,2019-10-11 16:15:29,2019-10-11 16:15:37,8.011s,PASSED
+"click(findTestObject(""Object Repository/Employee/Employee_Role_And_Task_OR/Task Group_OR/Add_OR/Add_Role_Existing_ShouldgiveErorMessage/div_more_vert_hamburgerWrapper""), OPTIONAL)",Chrome 77.0.3865.90,,,2019-10-11 16:15:37,2019-10-11 16:15:37,0.083s,PASSED
+"click(findTestObject(""Object Repository/Employee/Employee_Role_And_Task_OR/Task Group_OR/Add_OR/Add_Role_Existing_ShouldgiveErorMessage/a_account_circleEmployee""))",Chrome 77.0.3865.90,,,2019-10-11 16:15:37,2019-10-11 16:15:37,0.094s,PASSED
+"click(findTestObject(""Object Repository/Employee/Employee_Role_And_Task_OR/Task Group_OR/Add_OR/Add_Role_Existing_ShouldgiveErorMessage/a_assignmentRole And Task""))",Chrome 77.0.3865.90,,,2019-10-11 16:15:37,2019-10-11 16:15:37,0.074s,PASSED
+"click(findTestObject(""Object Repository/Employee/Employee_Role_And_Task_OR/Task Group_OR/Add_OR/Add_Role_Existing_ShouldgiveErorMessage/div_Task Group""))",Chrome 77.0.3865.90,,,2019-10-11 16:15:37,2019-10-11 16:15:38,0.621s,PASSED
+delay(1),Chrome 77.0.3865.90,,,2019-10-11 16:15:38,2019-10-11 16:15:39,1.002s,PASSED
+"click(findTestObject(""Object Repository/Employee/Employee_Role_And_Task_OR/Task Group_OR/Add_OR/Add_Role_Existing_ShouldgiveErorMessage/i_add""))",Chrome 77.0.3865.90,,,2019-10-11 16:15:39,2019-10-11 16:15:39,0.194s,PASSED
+"setText(findTestObject(""Object Repository/Employee/Employee_Role_And_Task_OR/Task Group_OR/Add_OR/Add_Role_Existing_ShouldgiveErorMessage/input_Create Role_code""), taskgroup_code)",Chrome 77.0.3865.90,,,2019-10-11 16:15:39,2019-10-11 16:15:39,0.174s,PASSED
+"setText(findTestObject(""Object Repository/Employee/Employee_Role_And_Task_OR/Task Group_OR/Add_OR/Add_Role_Existing_ShouldgiveErorMessage/input_OrganizationCode_name""), taskgroup_name)",Chrome 77.0.3865.90,,,2019-10-11 16:15:39,2019-10-11 16:15:39,0.151s,PASSED
+"setText(findTestObject(""Object Repository/Employee/Employee_Role_And_Task_OR/Task Group_OR/Add_OR/Add_Role_Existing_ShouldgiveErorMessage/input_Name_description""), taskgroup_description)",Chrome 77.0.3865.90,,,2019-10-11 16:15:39,2019-10-11 16:15:40,0.161s,PASSED
+delay(1),Chrome 77.0.3865.90,,,2019-10-11 16:15:40,2019-10-11 16:15:41,1.003s,PASSED
+"check(findTestObject(""Object Repository/Employee/Employee_Role_And_Task_OR/Task Group_OR/Add_OR/Add_Role_Existing_ShouldgiveErorMessage/div_Search_mat-checkbox-inner-container""))",Chrome 77.0.3865.90,,,2019-10-11 16:15:41,2019-10-11 16:15:41,0.141s,PASSED
+"click(findTestObject(""Object Repository/Employee/Employee_Role_And_Task_OR/Task Group_OR/Add_OR/Add_Role_Existing_ShouldgiveErorMessage/button_Proceed""))",Chrome 77.0.3865.90,,,2019-10-11 16:15:41,2019-10-11 16:15:41,0.093s,PASSED
+delay(1),Chrome 77.0.3865.90,,,2019-10-11 16:15:41,2019-10-11 16:15:42,1.003s,PASSED
+"check(findTestObject(""Object Repository/Employee/Employee_Role_And_Task_OR/Task Group_OR/Add_OR/Add_Role_Existing_ShouldgiveErorMessage/div_Search_mat-checkbox-inner-container_1""))",Chrome 77.0.3865.90,,,2019-10-11 16:15:42,2019-10-11 16:15:42,0.064s,PASSED
+"click(findTestObject(""Object Repository/Employee/Employee_Role_And_Task_OR/Task Group_OR/Add_OR/Add_Role_Existing_ShouldgiveErorMessage/button_Save""))",Chrome 77.0.3865.90,,,2019-10-11 16:15:42,2019-10-11 16:15:42,0.073s,PASSED
+delay(1),Chrome 77.0.3865.90,,,2019-10-11 16:15:42,2019-10-11 16:15:43,1.002s,PASSED
+"verifyTextPresent(""Task Group name already exists"", false)",Chrome 77.0.3865.90,,,2019-10-11 16:15:43,2019-10-11 16:15:43,0.126s,PASSED
+"click(findTestObject(""Object Repository/Employee/Employee_Role_And_Task_OR/Task Group_OR/Add_OR/Add_Role_Existing_ShouldgiveErorMessage/button_OK""))",Chrome 77.0.3865.90,,,2019-10-11 16:15:43,2019-10-11 16:15:43,0.054s,PASSED
+"click(findTestObject(""Object Repository/Employee/Employee_Role_And_Task_OR/Task Group_OR/Add_OR/Add_Role_Existing_ShouldgiveErorMessage/button_Cancel""))",Chrome 77.0.3865.90,,,2019-10-11 16:15:43,2019-10-11 16:15:43,0.070s,PASSED
+closeBrowser(),Chrome 77.0.3865.90,,,2019-10-11 16:15:43,2019-10-11 16:15:44,0.877s,PASSED
+,,,,,,,
+Test Cases/Employee/Employee_Role_And_Task/Task Group/Edit/Edit_ShouldSucceed,Chrome 77.0.3865.90,Should Update succesfully,,2019-10-11 16:15:44,2019-10-11 16:15:56,12.011s,FAILED
+"callTestCase(findTestCase(""Login/AdminLogin_ShouldSucceed""), [:], STOP_ON_FAILURE)",Chrome 77.0.3865.90,,,2019-10-11 16:15:44,2019-10-11 16:15:52,7.977s,PASSED
+"click(findTestObject(""Object Repository/Employee/Employee_Role_And_Task_OR/Task Group_OR/Edit_OR/Edit_should_succeed/div_more_vert_hamburgerWrapper""))",Chrome 77.0.3865.90,,,2019-10-11 16:15:52,2019-10-11 16:15:52,0.078s,PASSED
+"click(findTestObject(""Object Repository/Employee/Employee_Role_And_Task_OR/Task Group_OR/Edit_OR/Edit_should_succeed/a_account_circleEmployee""))",Chrome 77.0.3865.90,,,2019-10-11 16:15:52,2019-10-11 16:15:52,0.075s,PASSED
+"click(findTestObject(""Object Repository/Employee/Employee_Role_And_Task_OR/Task Group_OR/Edit_OR/Edit_should_succeed/a_assignmentRole And Task""))",Chrome 77.0.3865.90,,,2019-10-11 16:15:52,2019-10-11 16:15:52,0.062s,PASSED
+"click(findTestObject(""Object Repository/Employee/Employee_Role_And_Task_OR/Task Group_OR/Edit_OR/Edit_should_succeed/div_Task Group""))",Chrome 77.0.3865.90,,,2019-10-11 16:15:52,2019-10-11 16:15:53,0.620s,PASSED
+"click(findTestObject(""Object Repository/Employee/Employee_Role_And_Task_OR/Task Group_OR/Edit_OR/Edit_should_succeed/mat-cell_TVINC""))",Chrome 77.0.3865.90,,,2019-10-11 16:15:53,2019-10-11 16:15:53,0.138s,PASSED
+delay(1),Chrome 77.0.3865.90,,,2019-10-11 16:15:53,2019-10-11 16:15:54,1.002s,PASSED
+"click(findTestObject(""Object Repository/Employee/Employee_Role_And_Task_OR/Task Group_OR/Edit_OR/Edit_should_succeed/i_edit""))",Chrome 77.0.3865.90,,,2019-10-11 16:15:54,2019-10-11 16:15:54,0.187s,PASSED
+"click(findTestObject(""Object Repository/Employee/Employee_Role_And_Task_OR/Task Group_OR/Edit_OR/Edit_should_succeed/mat-step-header_2Create Role""))",Chrome 77.0.3865.90,,,2019-10-11 16:15:54,2019-10-11 16:15:55,0.204s,PASSED
+delay(1),Chrome 77.0.3865.90,,,2019-10-11 16:15:55,2019-10-11 16:15:56,1.002s,PASSED
+"click(findTestObject(""Object Repository/Employee/Employee_Role_And_Task_OR/Task Group_OR/Edit_OR/Edit_should_succeed/div_Search_mat-checkbox-inner-container""))",Chrome 77.0.3865.90,,,2019-10-11 16:15:56,2019-10-11 16:15:56,0.506s,FAILED
+,,,,,,,
+Test Cases/Employee/Employee_Role_And_Task/Roles/Add/Add_Role_new_ShoudlSucceed,Chrome 77.0.3865.90,Add a role should give Created Role message,,2019-10-11 16:15:56,2019-10-11 16:16:11,15.287s,PASSED
+"callTestCase(findTestCase(""Login/AdminLogin_ShouldSucceed""), [:], STOP_ON_FAILURE)",Chrome 77.0.3865.90,,,2019-10-11 16:15:56,2019-10-11 16:16:05,8.216s,PASSED
+"click(findTestObject(""Object Repository/Employee/Employee_Role_And_Task_OR/Roles_OR/Add_OR/Add_Role_new_Shouldsucceed/Add_new_role/div_more_vert_hamburgerWrapper""), OPTIONAL)",Chrome 77.0.3865.90,,,2019-10-11 16:16:05,2019-10-11 16:16:05,0.072s,PASSED
+"click(findTestObject(""Object Repository/Employee/Employee_Role_And_Task_OR/Roles_OR/Add_OR/Add_Role_new_Shouldsucceed/Add_new_role/i_account_circle""))",Chrome 77.0.3865.90,,,2019-10-11 16:16:05,2019-10-11 16:16:05,0.074s,PASSED
+"click(findTestObject(""Object Repository/Employee/Employee_Role_And_Task_OR/Roles_OR/Add_OR/Add_Role_new_Shouldsucceed/Add_new_role/a_assignmentRole And Task""))",Chrome 77.0.3865.90,,,2019-10-11 16:16:05,2019-10-11 16:16:05,0.064s,PASSED
+delay(1),Chrome 77.0.3865.90,,,2019-10-11 16:16:05,2019-10-11 16:16:06,1.002s,PASSED
+"click(findTestObject(""Object Repository/Employee/Employee_Role_And_Task_OR/Roles_OR/Add_OR/Add_Role_new_Shouldsucceed/Add_new_role/i_add""))",Chrome 77.0.3865.90,,,2019-10-11 16:16:06,2019-10-11 16:16:06,0.119s,PASSED
+"setText(findTestObject(""Object Repository/Employee/Employee_Role_And_Task_OR/Roles_OR/Add_OR/Add_Role_new_Shouldsucceed/Add_new_role/input_Add Role_code""), role_code)",Chrome 77.0.3865.90,,,2019-10-11 16:16:06,2019-10-11 16:16:06,0.122s,PASSED
+"setText(findTestObject(""Object Repository/Employee/Employee_Role_And_Task_OR/Roles_OR/Add_OR/Add_Role_new_Shouldsucceed/Add_new_role/input_Code_name""), role_name)",Chrome 77.0.3865.90,,,2019-10-11 16:16:06,2019-10-11 16:16:06,0.135s,PASSED
+"setText(findTestObject(""Object Repository/Employee/Employee_Role_And_Task_OR/Roles_OR/Add_OR/Add_Role_new_Shouldsucceed/Add_new_role/input_Name_description""), role_description)",Chrome 77.0.3865.90,,,2019-10-11 16:16:06,2019-10-11 16:16:06,0.118s,PASSED
+delay(1),Chrome 77.0.3865.90,,,2019-10-11 16:16:06,2019-10-11 16:16:07,1.001s,PASSED
+"click(findTestObject(""Object Repository/Employee/Employee_Role_And_Task_OR/Roles_OR/Add_OR/Add_Role_new_Shouldsucceed/Add_new_role/div_Search_mat-checkbox-inner-container""))",Chrome 77.0.3865.90,,,2019-10-11 16:16:07,2019-10-11 16:16:07,0.099s,PASSED
+delay(1),Chrome 77.0.3865.90,,,2019-10-11 16:16:07,2019-10-11 16:16:08,1.002s,PASSED
+"click(findTestObject(""Object Repository/Employee/Employee_Role_And_Task_OR/Roles_OR/Add_OR/Add_Role_new_Shouldsucceed/Add_new_role/button_Save""))",Chrome 77.0.3865.90,,,2019-10-11 16:16:08,2019-10-11 16:16:08,0.067s,PASSED
+delay(1),Chrome 77.0.3865.90,,,2019-10-11 16:16:08,2019-10-11 16:16:09,1.001s,PASSED
+"verifyTextPresent(""created successfully"", false)",Chrome 77.0.3865.90,,,2019-10-11 16:16:09,2019-10-11 16:16:10,0.085s,PASSED
+delay(1),Chrome 77.0.3865.90,,,2019-10-11 16:16:10,2019-10-11 16:16:11,1.002s,PASSED
+"click(findTestObject(""Object Repository/Employee/Employee_Role_And_Task_OR/Roles_OR/Add_OR/Add_Role_new_Shouldsucceed/Add_new_role/button_Cancel""))",Chrome 77.0.3865.90,,,2019-10-11 16:16:11,2019-10-11 16:16:11,0.058s,PASSED
+closeBrowser(),Chrome 77.0.3865.90,,,2019-10-11 16:16:11,2019-10-11 16:16:11,0.850s,PASSED
+,,,,,,,
+Test Cases/Employee/Employee_Role_And_Task/Roles/Add/Add_Role_existing_ShouldgiveErrorMessage,Chrome 77.0.3865.90,Should give error message,,2019-10-11 16:16:11,2019-10-11 16:16:28,16.314s,PASSED
+"callTestCase(findTestCase(""Login/AdminLogin_ShouldSucceed""), [:], STOP_ON_FAILURE)",Chrome 77.0.3865.90,,,2019-10-11 16:16:12,2019-10-11 16:16:19,7.722s,PASSED
+"click(findTestObject(""Object Repository/Employee/Employee_Role_And_Task_OR/Roles_OR/Add_OR/Add_Role_existing_ShouldgiveerrorMessage/div_more_vert_hamburgerWrapper""), OPTIONAL)",Chrome 77.0.3865.90,,,2019-10-11 16:16:19,2019-10-11 16:16:19,0.103s,PASSED
+"click(findTestObject(""Object Repository/Employee/Employee_Role_And_Task_OR/Roles_OR/Add_OR/Add_Role_existing_ShouldgiveerrorMessage/a_account_circleEmployee""))",Chrome 77.0.3865.90,,,2019-10-11 16:16:19,2019-10-11 16:16:20,0.095s,PASSED
+"click(findTestObject(""Object Repository/Employee/Employee_Role_And_Task_OR/Roles_OR/Add_OR/Add_Role_existing_ShouldgiveerrorMessage/a_assignmentRole And Task""))",Chrome 77.0.3865.90,,,2019-10-11 16:16:20,2019-10-11 16:16:20,0.262s,PASSED
+delay(1),Chrome 77.0.3865.90,,,2019-10-11 16:16:20,2019-10-11 16:16:21,1.003s,PASSED
+"click(findTestObject(""Object Repository/Employee/Employee_Role_And_Task_OR/Roles_OR/Add_OR/Add_Role_existing_ShouldgiveerrorMessage/i_add""))",Chrome 77.0.3865.90,,,2019-10-11 16:16:21,2019-10-11 16:16:21,0.167s,PASSED
+"setText(findTestObject(""Object Repository/Employee/Employee_Role_And_Task_OR/Roles_OR/Add_OR/Add_Role_existing_ShouldgiveerrorMessage/input_Add Role_code""), role_code)",Chrome 77.0.3865.90,,,2019-10-11 16:16:21,2019-10-11 16:16:21,0.167s,PASSED
+"setText(findTestObject(""Object Repository/Employee/Employee_Role_And_Task_OR/Roles_OR/Add_OR/Add_Role_existing_ShouldgiveerrorMessage/input_Code_name""), role_name)",Chrome 77.0.3865.90,,,2019-10-11 16:16:21,2019-10-11 16:16:21,0.136s,PASSED
+"setText(findTestObject(""Object Repository/Employee/Employee_Role_And_Task_OR/Roles_OR/Add_OR/Add_Role_existing_ShouldgiveerrorMessage/input_Name_description""), role_description)",Chrome 77.0.3865.90,,,2019-10-11 16:16:21,2019-10-11 16:16:21,0.127s,PASSED
+delay(1),Chrome 77.0.3865.90,,,2019-10-11 16:16:21,2019-10-11 16:16:22,1.002s,PASSED
+"check(findTestObject(""Object Repository/Employee/Employee_Role_And_Task_OR/Roles_OR/Add_OR/Add_Role_existing_ShouldgiveerrorMessage/div_Search_mat-checkbox-inner-container""))",Chrome 77.0.3865.90,,,2019-10-11 16:16:22,2019-10-11 16:16:22,0.074s,PASSED
+delay(1),Chrome 77.0.3865.90,,,2019-10-11 16:16:22,2019-10-11 16:16:23,1.002s,PASSED
+"click(findTestObject(""Object Repository/Employee/Employee_Role_And_Task_OR/Roles_OR/Add_OR/Add_Role_existing_ShouldgiveerrorMessage/button_Save""))",Chrome 77.0.3865.90,,,2019-10-11 16:16:23,2019-10-11 16:16:24,0.080s,PASSED
+delay(1),Chrome 77.0.3865.90,,,2019-10-11 16:16:24,2019-10-11 16:16:25,1.003s,PASSED
+"verifyTextPresent(""Role code already exists "", false)",Chrome 77.0.3865.90,,,2019-10-11 16:16:25,2019-10-11 16:16:25,0.129s,PASSED
+delay(1),Chrome 77.0.3865.90,,,2019-10-11 16:16:25,2019-10-11 16:16:26,1.002s,PASSED
+"click(findTestObject(""Object Repository/Employee/Employee_Role_And_Task_OR/Roles_OR/Add_OR/Add_Role_existing_ShouldgiveerrorMessage/button_OK""))",Chrome 77.0.3865.90,,,2019-10-11 16:16:26,2019-10-11 16:16:26,0.086s,PASSED
+delay(1),Chrome 77.0.3865.90,,,2019-10-11 16:16:26,2019-10-11 16:16:27,1.002s,PASSED
+"click(findTestObject(""Object Repository/Employee/Employee_Role_And_Task_OR/Roles_OR/Add_OR/Add_Role_existing_ShouldgiveerrorMessage/button_Cancel""))",Chrome 77.0.3865.90,,,2019-10-11 16:16:27,2019-10-11 16:16:27,0.126s,PASSED
+closeBrowser(),Chrome 77.0.3865.90,,,2019-10-11 16:16:27,2019-10-11 16:16:28,0.854s,PASSED
+,,,,,,,
+Test Cases/Employee/Employee_Role_And_Task/Roles/Edit/Edit_Role_ShouldSucceed,Chrome 77.0.3865.90,Deleting a role should succeed.,,2019-10-11 16:16:28,2019-10-11 16:16:49,20.929s,PASSED
+"callTestCase(findTestCase(""Login/AdminLogin_ShouldSucceed""), [:], STOP_ON_FAILURE)",Chrome 77.0.3865.90,,,2019-10-11 16:16:28,2019-10-11 16:16:35,7.197s,PASSED
+"click(findTestObject(""Object Repository/Employee/Employee_Role_And_Task_OR/Roles_OR/Edit_OR/Edit_Role_ShouldSucceed/edit_role/div_more_vert_hamburgerWrapper""), OPTIONAL)",Chrome 77.0.3865.90,,,2019-10-11 16:16:35,2019-10-11 16:16:35,0.191s,PASSED
+"click(findTestObject(""Object Repository/Employee/Employee_Role_And_Task_OR/Roles_OR/Edit_OR/Edit_Role_ShouldSucceed/edit_role/a_account_circleEmployee""))",Chrome 77.0.3865.90,,,2019-10-11 16:16:35,2019-10-11 16:16:35,0.152s,PASSED
+"click(findTestObject(""Object Repository/Employee/Employee_Role_And_Task_OR/Roles_OR/Edit_OR/Edit_Role_ShouldSucceed/edit_role/a_assignmentRole And Task""))",Chrome 77.0.3865.90,,,2019-10-11 16:16:35,2019-10-11 16:16:36,0.169s,PASSED
+delay(1),Chrome 77.0.3865.90,,,2019-10-11 16:16:36,2019-10-11 16:16:37,1.003s,PASSED
+"click(findTestObject(""Object Repository/Employee/Employee_Role_And_Task_OR/Roles_OR/Edit_OR/Edit_Role_ShouldSucceed/edit_role/mat-cell_RVINC""))",Chrome 77.0.3865.90,,,2019-10-11 16:16:37,2019-10-11 16:16:41,4.659s,PASSED
+delay(1),Chrome 77.0.3865.90,,,2019-10-11 16:16:41,2019-10-11 16:16:42,1.003s,PASSED
+"click(findTestObject(""Object Repository/Employee/Employee_Role_And_Task_OR/Roles_OR/Edit_OR/Edit_Role_ShouldSucceed/edit_role/i_edit""))",Chrome 77.0.3865.90,,,2019-10-11 16:16:42,2019-10-11 16:16:42,0.109s,PASSED
+delay(1),Chrome 77.0.3865.90,,,2019-10-11 16:16:42,2019-10-11 16:16:43,1.003s,PASSED
+"click(findTestObject(""Object Repository/Employee/Employee_Role_And_Task_OR/Roles_OR/Edit_OR/Edit_Role_ShouldSucceed/edit_role/div_Search_mat-checkbox-inner-container""))",Chrome 77.0.3865.90,,,2019-10-11 16:16:43,2019-10-11 16:16:43,0.078s,PASSED
+delay(1),Chrome 77.0.3865.90,,,2019-10-11 16:16:43,2019-10-11 16:16:45,1.002s,PASSED
+"check(findTestObject(""Employee/Employee_Role_And_Task_OR/Roles_OR/Edit_OR/Edit_Role_ShouldSucceed/edit_role/mat-pseudo-checkbox_Selected 0_mat-pseudo-checkbox""))",Chrome 77.0.3865.90,,,2019-10-11 16:16:45,2019-10-11 16:16:45,0.079s,PASSED
+delay(1),Chrome 77.0.3865.90,,,2019-10-11 16:16:45,2019-10-11 16:16:46,1.001s,PASSED
+"click(findTestObject(""Object Repository/Employee/Employee_Role_And_Task_OR/Roles_OR/Edit_OR/Edit_Role_ShouldSucceed/edit_role/button_Save""))",Chrome 77.0.3865.90,,,2019-10-11 16:16:46,2019-10-11 16:16:46,0.078s,PASSED
+delay(1),Chrome 77.0.3865.90,,,2019-10-11 16:16:46,2019-10-11 16:16:47,1.003s,PASSED
+"verifyTextPresent(""updated successfully"", false)",Chrome 77.0.3865.90,,,2019-10-11 16:16:47,2019-10-11 16:16:47,0.109s,PASSED
+delay(1),Chrome 77.0.3865.90,,,2019-10-11 16:16:47,2019-10-11 16:16:48,1.003s,PASSED
+"click(findTestObject(""Object Repository/Employee/Employee_Role_And_Task_OR/Roles_OR/Edit_OR/Edit_Role_ShouldSucceed/edit_role/button_Cancel""))",Chrome 77.0.3865.90,,,2019-10-11 16:16:48,2019-10-11 16:16:48,0.088s,PASSED
+closeBrowser(),Chrome 77.0.3865.90,,,2019-10-11 16:16:48,2019-10-11 16:16:49,0.818s,PASSED
+,,,,,,,
+Test Cases/Employee/Employee/Add Employee/Add_new_Employee_ShouldgiveSuceed,Chrome 77.0.3865.90,Should give error message,,2019-10-11 16:16:49,2019-10-11 16:17:05,16.807s,PASSED
+"callTestCase(findTestCase(""Login/AdminLogin_ShouldSucceed""), [:], STOP_ON_FAILURE)",Chrome 77.0.3865.90,,,2019-10-11 16:16:49,2019-10-11 16:16:56,6.989s,PASSED
+"click(findTestObject(""Object Repository/Employee/Employee/Add Employee_OR/Add_new_Employee_ShouldSucceed/div_more_vert_hamburgerWrapper""), OPTIONAL)",Chrome 77.0.3865.90,,,2019-10-11 16:16:56,2019-10-11 16:16:56,0.180s,PASSED
+"click(findTestObject(""Object Repository/Employee/Employee/Add Employee_OR/Add_new_Employee_ShouldSucceed/i_account_circle""))",Chrome 77.0.3865.90,,,2019-10-11 16:16:56,2019-10-11 16:16:56,0.142s,PASSED
+"click(findTestObject(""Object Repository/Employee/Employee/Add Employee_OR/Add_new_Employee_ShouldSucceed/a_account_circleEmployee""))",Chrome 77.0.3865.90,,,2019-10-11 16:16:56,2019-10-11 16:16:56,0.151s,PASSED
+delay(1),Chrome 77.0.3865.90,,,2019-10-11 16:16:56,2019-10-11 16:16:57,1.003s,PASSED
+"click(findTestObject(""Object Repository/Employee/Employee/Add Employee_OR/Add_new_Employee_ShouldSucceed/i_add""))",Chrome 77.0.3865.90,,,2019-10-11 16:16:57,2019-10-11 16:16:57,0.132s,PASSED
+delay(1),Chrome 77.0.3865.90,,,2019-10-11 16:16:57,2019-10-11 16:16:58,1.001s,PASSED
+"setText(findTestObject(""Object Repository/Employee/Employee/Add Employee_OR/Add_new_Employee_ShouldSucceed/input_Employee Access_mat-input-3""), employee_id)",Chrome 77.0.3865.90,,,2019-10-11 16:16:58,2019-10-11 16:16:59,0.147s,PASSED
+"setText(findTestObject(""Object Repository/Employee/Employee/Add Employee_OR/Add_new_Employee_ShouldSucceed/input_Employee Id_mat-input-4""), employee_login_name)",Chrome 77.0.3865.90,,,2019-10-11 16:16:59,2019-10-11 16:16:59,0.115s,PASSED
+"setText(findTestObject(""Object Repository/Employee/Employee/Add Employee_OR/Add_new_Employee_ShouldSucceed/input_Login Name_mat-input-5""), employee_email)",Chrome 77.0.3865.90,,,2019-10-11 16:16:59,2019-10-11 16:16:59,0.138s,PASSED
+"setText(findTestObject(""Object Repository/Employee/Employee/Add Employee_OR/Add_new_Employee_ShouldSucceed/input_Email_mat-input-6""), employee_f_name)",Chrome 77.0.3865.90,,,2019-10-11 16:16:59,2019-10-11 16:16:59,0.119s,PASSED
+"setText(findTestObject(""Object Repository/Employee/Employee/Add Employee_OR/Add_new_Employee_ShouldSucceed/input_First Name_mat-input-7""), employee_m_name)",Chrome 77.0.3865.90,,,2019-10-11 16:16:59,2019-10-11 16:16:59,0.110s,PASSED
+"setText(findTestObject(""Object Repository/Employee/Employee/Add Employee_OR/Add_new_Employee_ShouldSucceed/input_Middle Name_mat-input-8""), employee_l_name)",Chrome 77.0.3865.90,,,2019-10-11 16:16:59,2019-10-11 16:16:59,0.131s,PASSED
+delay(1),Chrome 77.0.3865.90,,,2019-10-11 16:16:59,2019-10-11 16:17:00,1.002s,PASSED
+"click(findTestObject(""Object Repository/Employee/Employee/Add Employee_OR/Add_new_Employee_ShouldSucceed/button_Proceed""))",Chrome 77.0.3865.90,,,2019-10-11 16:17:00,2019-10-11 16:17:00,0.117s,PASSED
+delay(1),Chrome 77.0.3865.90,,,2019-10-11 16:17:00,2019-10-11 16:17:01,1.003s,PASSED
+"click(findTestObject(""Object Repository/Employee/Employee/Add Employee_OR/Add_new_Employee_ShouldSucceed/div_Search_mat-checkbox-inner-container""))",Chrome 77.0.3865.90,,,2019-10-11 16:17:01,2019-10-11 16:17:01,0.061s,PASSED
+delay(1),Chrome 77.0.3865.90,,,2019-10-11 16:17:01,2019-10-11 16:17:02,1.003s,PASSED
+"click(findTestObject(""Object Repository/Employee/Employee/Add Employee_OR/Add_new_Employee_ShouldSucceed/button_Save""))",Chrome 77.0.3865.90,,,2019-10-11 16:17:02,2019-10-11 16:17:02,0.069s,PASSED
+delay(1),Chrome 77.0.3865.90,,,2019-10-11 16:17:02,2019-10-11 16:17:03,1.003s,PASSED
+"verifyTextPresent(""saved successfully"", false)",Chrome 77.0.3865.90,,,2019-10-11 16:17:03,2019-10-11 16:17:04,0.088s,PASSED
+delay(1),Chrome 77.0.3865.90,,,2019-10-11 16:17:04,2019-10-11 16:17:05,1.001s,PASSED
+"click(findTestObject(""Object Repository/Employee/Employee/Add Employee_OR/Add_new_Employee_ShouldSucceed/button_Ok""))",Chrome 77.0.3865.90,,,2019-10-11 16:17:05,2019-10-11 16:17:05,0.072s,PASSED
+closeBrowser(),Chrome 77.0.3865.90,,,2019-10-11 16:17:05,2019-10-11 16:17:05,0.850s,PASSED
+,,,,,,,
+Test Cases/Employee/Employee/Add Employee/Add_existing_Employee_ShoudlgiveErrorMessage1,Chrome 77.0.3865.90,Add a role should give Created Role message,,2019-10-11 16:17:05,2019-10-11 16:17:25,19.415s,PASSED
+"callTestCase(findTestCase(""Login/AdminLogin_ShouldSucceed""), [:], STOP_ON_FAILURE)",Chrome 77.0.3865.90,,,2019-10-11 16:17:06,2019-10-11 16:17:13,7.334s,PASSED
+"click(findTestObject(""Object Repository/Employee/Employee/Add Employee_OR/Add_Existing_Employee_ShouldgiveErrorMessage1/Page_Unified Wallet/i_account_circle""))",Chrome 77.0.3865.90,,,2019-10-11 16:17:13,2019-10-11 16:17:13,0.126s,PASSED
+"click(findTestObject(""Object Repository/Employee/Employee/Add Employee_OR/Add_Existing_Employee_ShouldgiveErrorMessage1/Page_Unified Wallet/a_account_circleEmployee""))",Chrome 77.0.3865.90,,,2019-10-11 16:17:13,2019-10-11 16:17:13,0.095s,PASSED
+delay(1),Chrome 77.0.3865.90,,,2019-10-11 16:17:13,2019-10-11 16:17:14,1.003s,PASSED
+"click(findTestObject(""Object Repository/Employee/Employee/Add Employee_OR/Add_Existing_Employee_ShouldgiveErrorMessage1/Page_Unified Wallet/i_add""))",Chrome 77.0.3865.90,,,2019-10-11 16:17:14,2019-10-11 16:17:16,1.643s,PASSED
+delay(1),Chrome 77.0.3865.90,,,2019-10-11 16:17:16,2019-10-11 16:17:17,1.002s,PASSED
+"setText(findTestObject(""Object Repository/Employee/Employee/Add Employee_OR/Add_Existing_Employee_ShouldgiveErrorMessage1/Page_Unified Wallet/input_Employee Access_mat-input-3""), employee_id)",Chrome 77.0.3865.90,,,2019-10-11 16:17:17,2019-10-11 16:17:17,0.147s,PASSED
+"setText(findTestObject(""Object Repository/Employee/Employee/Add Employee_OR/Add_Existing_Employee_ShouldgiveErrorMessage1/Page_Unified Wallet/input_Employee Id_mat-input-4""), employee_login_name)",Chrome 77.0.3865.90,,,2019-10-11 16:17:17,2019-10-11 16:17:17,0.129s,PASSED
+"setText(findTestObject(""Object Repository/Employee/Employee/Add Employee_OR/Add_Existing_Employee_ShouldgiveErrorMessage1/Page_Unified Wallet/input_Login Name_mat-input-5""), employee_email)",Chrome 77.0.3865.90,,,2019-10-11 16:17:17,2019-10-11 16:17:17,0.147s,PASSED
+"setText(findTestObject(""Object Repository/Employee/Employee/Add Employee_OR/Add_Existing_Employee_ShouldgiveErrorMessage1/Page_Unified Wallet/input_Email_mat-input-6""), employee_f_name)",Chrome 77.0.3865.90,,,2019-10-11 16:17:17,2019-10-11 16:17:17,0.118s,PASSED
+"setText(findTestObject(""Object Repository/Employee/Employee/Add Employee_OR/Add_Existing_Employee_ShouldgiveErrorMessage1/Page_Unified Wallet/input_Middle Name_mat-input-8""), employee_m_name)",Chrome 77.0.3865.90,,,2019-10-11 16:17:17,2019-10-11 16:17:18,0.126s,PASSED
+delay(1),Chrome 77.0.3865.90,,,2019-10-11 16:17:18,2019-10-11 16:17:19,1.001s,PASSED
+"click(findTestObject(""Object Repository/Employee/Employee/Add Employee_OR/Add_Existing_Employee_ShouldgiveErrorMessage1/Page_Unified Wallet/button_Proceed""))",Chrome 77.0.3865.90,,,2019-10-11 16:17:19,2019-10-11 16:17:19,0.084s,PASSED
+delay(1),Chrome 77.0.3865.90,,,2019-10-11 16:17:19,2019-10-11 16:17:20,1.002s,PASSED
+"check(findTestObject(""Employee/Employee/Add Employee_OR/Add_Existing_Employee_ShouldgiveErrorMessage1/Page_Unified Wallet/div_Search_mat-checkbox-inner-container""))",Chrome 77.0.3865.90,,,2019-10-11 16:17:20,2019-10-11 16:17:20,0.091s,PASSED
+delay(1),Chrome 77.0.3865.90,,,2019-10-11 16:17:20,2019-10-11 16:17:21,1.002s,PASSED
+"click(findTestObject(""Employee/Employee/Add Employee_OR/Add_Existing_Employee_ShouldgiveErrorMessage1/Page_Unified Wallet/button_Save""))",Chrome 77.0.3865.90,,,2019-10-11 16:17:21,2019-10-11 16:17:21,0.069s,PASSED
+delay(1),Chrome 77.0.3865.90,,,2019-10-11 16:17:21,2019-10-11 16:17:22,1.001s,PASSED
+"verifyTextPresent(""Employee ID already exists "", false)",Chrome 77.0.3865.90,,,2019-10-11 16:17:22,2019-10-11 16:17:22,0.134s,PASSED
+delay(1),Chrome 77.0.3865.90,,,2019-10-11 16:17:22,2019-10-11 16:17:23,1.002s,PASSED
+"click(findTestObject(""Object Repository/Employee/Employee/Add Employee_OR/Add_Existing_Employee_ShouldgiveErrorMessage1/Page_Unified Wallet/button_OK""))",Chrome 77.0.3865.90,,,2019-10-11 16:17:23,2019-10-11 16:17:23,0.060s,PASSED
+delay(1),Chrome 77.0.3865.90,,,2019-10-11 16:17:23,2019-10-11 16:17:24,1.001s,PASSED
+"click(findTestObject(""Object Repository/Employee/Employee/Add Employee_OR/Add_Existing_Employee_ShouldgiveErrorMessage1/Page_Unified Wallet/button_Cancel""))",Chrome 77.0.3865.90,,,2019-10-11 16:17:24,2019-10-11 16:17:24,0.063s,PASSED
+closeBrowser(),Chrome 77.0.3865.90,,,2019-10-11 16:17:24,2019-10-11 16:17:25,0.868s,PASSED
+,,,,,,,
+Test Cases/Employee/Employee/Edit/Edit_Employee_ShouldSucceed,Chrome 77.0.3865.90,Should Update succesfully,,2019-10-11 16:17:25,2019-10-11 16:17:46,20.866s,PASSED
+"callTestCase(findTestCase(""Login/AdminLogin_ShouldSucceed""), [:], STOP_ON_FAILURE)",Chrome 77.0.3865.90,,,2019-10-11 16:17:25,2019-10-11 16:17:32,7.181s,PASSED
+"click(findTestObject(""Object Repository/Employee/Employee/Edit_OR/div_more_vert_hamburgerWrapper""), OPTIONAL)",Chrome 77.0.3865.90,,,2019-10-11 16:17:32,2019-10-11 16:17:36,3.669s,PASSED
+"click(findTestObject(""Object Repository/Employee/Employee/Edit_OR/i_account_circle""))",Chrome 77.0.3865.90,,,2019-10-11 16:17:36,2019-10-11 16:17:36,0.073s,PASSED
+"click(findTestObject(""Object Repository/Employee/Employee/Edit_OR/a_account_circleEmployee""))",Chrome 77.0.3865.90,,,2019-10-11 16:17:36,2019-10-11 16:17:36,0.064s,PASSED
+delay(1),Chrome 77.0.3865.90,,,2019-10-11 16:17:36,2019-10-11 16:17:37,1.001s,PASSED
+"click(findTestObject(""Object Repository/Employee/Employee/Edit_OR/mat-cell_1000""))",Chrome 77.0.3865.90,,,2019-10-11 16:17:37,2019-10-11 16:17:37,0.081s,PASSED
+delay(1),Chrome 77.0.3865.90,,,2019-10-11 16:17:37,2019-10-11 16:17:38,1.001s,PASSED
+"click(findTestObject(""Object Repository/Employee/Employee/Edit_OR/i_edit""))",Chrome 77.0.3865.90,,,2019-10-11 16:17:38,2019-10-11 16:17:38,0.136s,PASSED
+delay(1),Chrome 77.0.3865.90,,,2019-10-11 16:17:38,2019-10-11 16:17:39,1.001s,PASSED
+"click(findTestObject(""Object Repository/Employee/Employee/Edit_OR/button_Proceed""))",Chrome 77.0.3865.90,,,2019-10-11 16:17:39,2019-10-11 16:17:39,0.072s,PASSED
+delay(1),Chrome 77.0.3865.90,,,2019-10-11 16:17:39,2019-10-11 16:17:40,1.002s,PASSED
+"click(findTestObject(""Object Repository/Employee/Employee/Edit_OR/div_Search_mat-checkbox-inner-container""))",Chrome 77.0.3865.90,,,2019-10-11 16:17:40,2019-10-11 16:17:40,0.054s,PASSED
+"click(findTestObject(""Object Repository/Employee/Employee/Edit_OR/div_RVINN""))",Chrome 77.0.3865.90,,,2019-10-11 16:17:40,2019-10-11 16:17:40,0.081s,PASSED
+"click(findTestObject(""Object Repository/Employee/Employee/Edit_OR/button_Save""))",Chrome 77.0.3865.90,,,2019-10-11 16:17:40,2019-10-11 16:17:41,0.081s,PASSED
+delay(1),Chrome 77.0.3865.90,,,2019-10-11 16:17:41,2019-10-11 16:17:42,1.003s,PASSED
+"verifyTextPresent(""will be updated. Do you want to proceed?"", false)",Chrome 77.0.3865.90,,,2019-10-11 16:17:42,2019-10-11 16:17:42,0.111s,PASSED
+delay(1),Chrome 77.0.3865.90,,,2019-10-11 16:17:42,2019-10-11 16:17:43,1.002s,PASSED
+"click(findTestObject(""Object Repository/Employee/Employee/Edit_OR/button_Ok""))",Chrome 77.0.3865.90,,,2019-10-11 16:17:43,2019-10-11 16:17:43,0.058s,PASSED
+delay(1),Chrome 77.0.3865.90,,,2019-10-11 16:17:43,2019-10-11 16:17:44,1.001s,PASSED
+"verifyTextPresent(""updated successfully"", false)",Chrome 77.0.3865.90,,,2019-10-11 16:17:44,2019-10-11 16:17:44,0.072s,PASSED
+delay(1),Chrome 77.0.3865.90,,,2019-10-11 16:17:44,2019-10-11 16:17:45,1.002s,PASSED
+"click(findTestObject(""Object Repository/Employee/Employee/Edit_OR/button_OK (1)""))",Chrome 77.0.3865.90,,,2019-10-11 16:17:45,2019-10-11 16:17:45,0.061s,PASSED
+closeBrowser(),Chrome 77.0.3865.90,,,2019-10-11 16:17:45,2019-10-11 16:17:46,0.894s,PASSED
+,,,,,,,
+Test Cases/Login/Employee_first_time_Login_ShouldSucceed,Chrome 77.0.3865.90,,,2019-10-11 16:17:46,2019-10-11 16:17:59,12.903s,FAILED
+"openBrowser("""")",Chrome 77.0.3865.90,,,2019-10-11 16:17:46,2019-10-11 16:17:49,2.751s,PASSED
+navigateToUrl(login_url),Chrome 77.0.3865.90,,,2019-10-11 16:17:49,2019-10-11 16:17:50,1.136s,PASSED
+maximizeWindow(),Chrome 77.0.3865.90,,,2019-10-11 16:17:50,2019-10-11 16:17:52,1.844s,PASSED
+"setText(findTestObject(""Object Repository/Login_OR/employee_login/input_Sign in_mat-input-0""), employee_login_name)",Chrome 77.0.3865.90,,,2019-10-11 16:17:52,2019-10-11 16:17:52,0.121s,PASSED
+"setEncryptedText(findTestObject(""Object Repository/Login_OR/employee_login/input_Username_mat-input-1""), username_admins_Password)",Chrome 77.0.3865.90,,,2019-10-11 16:17:52,2019-10-11 16:17:52,0.113s,PASSED
+"click(findTestObject(""Object Repository/Login_OR/employee_login/button_Login""))",Chrome 77.0.3865.90,,,2019-10-11 16:17:52,2019-10-11 16:17:52,0.114s,PASSED
+delay(1),Chrome 77.0.3865.90,,,2019-10-11 16:17:52,2019-10-11 16:17:53,1.002s,PASSED
+"setEncryptedText(findTestObject(""Object Repository/Login_OR/employee_login/input_First login after user account creationpassword reset Please change the password_mat-input-2""), username_admins_Password)",Chrome 77.0.3865.90,,,2019-10-11 16:17:53,2019-10-11 16:17:59,5.452s,FAILED
+,,,,,,,
+Test Cases/Login/Employee_Inactive_Login_ShouldGiveErrorMessage,Chrome 77.0.3865.90,,,2019-10-11 16:17:59,2019-10-11 16:18:06,7.807s,FAILED
+"openBrowser("""")",Chrome 77.0.3865.90,,,2019-10-11 16:17:59,2019-10-11 16:18:03,3.923s,PASSED
+navigateToUrl(login_url),Chrome 77.0.3865.90,,,2019-10-11 16:18:03,2019-10-11 16:18:04,0.848s,PASSED
+maximizeWindow(),Chrome 77.0.3865.90,,,2019-10-11 16:18:04,2019-10-11 16:18:05,1.157s,PASSED
+"setText(findTestObject(""Object Repository/Login_OR/Employee_Inactive_Login_ShouldGiveErrormessage_OR/Page_Unified Wallet/input_Sign in_mat-input-0""), employee_login_name)",Chrome 77.0.3865.90,,,2019-10-11 16:18:05,2019-10-11 16:18:05,0.112s,PASSED
+"setEncryptedText(findTestObject(""Object Repository/Login_OR/Employee_Inactive_Login_ShouldGiveErrormessage_OR/Page_Unified Wallet/input_Username_mat-input-1""), employee_new_password)",Chrome 77.0.3865.90,,,2019-10-11 16:18:05,2019-10-11 16:18:05,0.080s,PASSED
+"click(findTestObject(""Object Repository/Login_OR/Employee_Inactive_Login_ShouldGiveErrormessage_OR/Page_Unified Wallet/button_Login""))",Chrome 77.0.3865.90,,,2019-10-11 16:18:05,2019-10-11 16:18:05,0.114s,PASSED
+delay(1),Chrome 77.0.3865.90,,,2019-10-11 16:18:05,2019-10-11 16:18:06,1.001s,PASSED
+"verifyTextPresent(""User is inactive "", false)",Chrome 77.0.3865.90,,,2019-10-11 16:18:06,2019-10-11 16:18:06,0.373s,FAILED
+,,,,,,,
+Test Cases/Login/Wrong_username_Should_giveEror,Chrome 77.0.3865.90,,,2019-10-11 16:18:07,2019-10-11 16:18:14,7.799s,FAILED
+"openBrowser("""")",Chrome 77.0.3865.90,,,2019-10-11 16:18:07,2019-10-11 16:18:10,3.419s,PASSED
+navigateToUrl(login_url),Chrome 77.0.3865.90,,,2019-10-11 16:18:10,2019-10-11 16:18:11,1.181s,PASSED
+maximizeWindow(),Chrome 77.0.3865.90,,,2019-10-11 16:18:11,2019-10-11 16:18:12,1.122s,PASSED
+"setText(findTestObject(""Object Repository/Login_OR/Wrong_username_ShouldgiveError/input_Sign in_mat-input-0""), wrong_username)",Chrome 77.0.3865.90,,,2019-10-11 16:18:12,2019-10-11 16:18:13,0.142s,PASSED
+"setEncryptedText(findTestObject(""Object Repository/Login_OR/Wrong_username_ShouldgiveError/input_Username_mat-input-1""), username_admins_Password)",Chrome 77.0.3865.90,,,2019-10-11 16:18:13,2019-10-11 16:18:13,0.265s,PASSED
+"click(findTestObject(""Object Repository/Login_OR/Wrong_username_ShouldgiveError/button_Login""))",Chrome 77.0.3865.90,,,2019-10-11 16:18:13,2019-10-11 16:18:13,0.109s,PASSED
+delay(1),Chrome 77.0.3865.90,,,2019-10-11 16:18:13,2019-10-11 16:18:14,1.004s,PASSED
+"verifyTextPresent("" Invalid username "", false)",Chrome 77.0.3865.90,,,2019-10-11 16:18:14,2019-10-11 16:18:14,0.394s,FAILED
+,,,,,,,
+Test Cases/Login/Wrong_Password_ShouldgiveError,Chrome 77.0.3865.90,Make sure the employee is not locked before testing,,2019-10-11 16:18:14,2019-10-11 16:18:21,7.141s,FAILED
+"openBrowser("""")",Chrome 77.0.3865.90,,,2019-10-11 16:18:14,2019-10-11 16:18:18,3.353s,PASSED
+navigateToUrl(login_url),Chrome 77.0.3865.90,,,2019-10-11 16:18:18,2019-10-11 16:18:19,0.744s,PASSED
+maximizeWindow(),Chrome 77.0.3865.90,,,2019-10-11 16:18:19,2019-10-11 16:18:20,1.162s,PASSED
+"setText(findTestObject(""Object Repository/Login_OR/Wrong_Password_ShouldgiveError/input_Sign in_mat-input-0""), employee_login_name)",Chrome 77.0.3865.90,,,2019-10-11 16:18:20,2019-10-11 16:18:20,0.138s,PASSED
+"setEncryptedText(findTestObject(""Object Repository/Login_OR/Wrong_Password_ShouldgiveError/input_Username_mat-input-1""), wrong_password)",Chrome 77.0.3865.90,,,2019-10-11 16:18:20,2019-10-11 16:18:20,0.071s,PASSED
+"click(findTestObject(""Object Repository/Login_OR/Wrong_Password_ShouldgiveError/button_Login""))",Chrome 77.0.3865.90,,,2019-10-11 16:18:20,2019-10-11 16:18:20,0.111s,PASSED
+delay(1),Chrome 77.0.3865.90,,,2019-10-11 16:18:20,2019-10-11 16:18:21,1.001s,PASSED
+"verifyTextPresent("" Invalid password "", false)",Chrome 77.0.3865.90,,,2019-10-11 16:18:21,2019-10-11 16:18:21,0.386s,FAILED
+,,,,,,,
+Test Cases/Employee/Employee/Active_an_InActive_employee/active_an_Inactive_employee_Shouldsucceed,Chrome 77.0.3865.90,,,2019-10-11 16:18:21,2019-10-11 16:18:39,17.744s,FAILED
+"callTestCase(findTestCase(""Login/AdminLogin_ShouldSucceed""), [:], STOP_ON_FAILURE)",Chrome 77.0.3865.90,,,2019-10-11 16:18:22,2019-10-11 16:18:29,7.716s,PASSED
+"click(findTestObject(""Object Repository/Employee/Employee/Active_an_Inactive_employee_OR/Inactive_employee_activationShouldsucceed_OR/Page_Unified Wallet/div_more_vert_hamburgerWrapper""), OPTIONAL)",Chrome 77.0.3865.90,,,2019-10-11 16:18:29,2019-10-11 16:18:35,5.536s,PASSED
+"click(findTestObject(""Object Repository/Employee/Employee/Active_an_Inactive_employee_OR/Inactive_employee_activationShouldsucceed_OR/Page_Unified Wallet/a_account_circleEmployee""))",Chrome 77.0.3865.90,,,2019-10-11 16:18:35,2019-10-11 16:18:35,0.617s,PASSED
+"click(findTestObject(""Object Repository/Employee/Employee/Active_an_Inactive_employee_OR/Inactive_employee_activationShouldsucceed_OR/Page_Unified Wallet/a_account_circleEmployee_1""))",Chrome 77.0.3865.90,,,2019-10-11 16:18:35,2019-10-11 16:18:36,0.090s,PASSED
+delay(1),Chrome 77.0.3865.90,,,2019-10-11 16:18:36,2019-10-11 16:18:37,1.003s,PASSED
+"click(findTestObject(""Object Repository/Employee/Employee/Active_an_Inactive_employee_OR/Inactive_employee_activationShouldsucceed_OR/Page_Unified Wallet/mat-cell_0001""))",Chrome 77.0.3865.90,,,2019-10-11 16:18:37,2019-10-11 16:18:37,0.104s,PASSED
+delay(1),Chrome 77.0.3865.90,,,2019-10-11 16:18:37,2019-10-11 16:18:38,1.002s,PASSED
+"click(findTestObject(""Object Repository/Employee/Employee/Active_an_Inactive_employee_OR/Inactive_employee_activationShouldsucceed_OR/Page_Unified Wallet/i_block""))",Chrome 77.0.3865.90,,,2019-10-11 16:18:38,2019-10-11 16:18:38,0.088s,PASSED
+delay(1),Chrome 77.0.3865.90,,,2019-10-11 16:18:38,2019-10-11 16:18:39,1.002s,PASSED
+"verifyTextPresent(""will be changed to Active. Do you want to proceed?"", false)",Chrome 77.0.3865.90,,,2019-10-11 16:18:39,2019-10-11 16:18:39,0.404s,FAILED
+,,,,,,,
+Test Cases/Employee/Employee/Reset_Password_Of_Employee/ResetPassword_and_Login_ShouldSucceed,Chrome 77.0.3865.90,,,2019-10-11 16:18:39,2019-10-11 16:18:56,16.975s,FAILED
+"callTestCase(findTestCase(""Login/AdminLogin_ShouldSucceed""), [:], STOP_ON_FAILURE)",Chrome 77.0.3865.90,,,2019-10-11 16:18:39,2019-10-11 16:18:47,7.963s,PASSED
+"click(findTestObject(""Object Repository/Employee/Employee/Reset_Password_Of_Employee_OR/div_more_vert_hamburgerWrapper""), OPTIONAL)",Chrome 77.0.3865.90,,,2019-10-11 16:18:47,2019-10-11 16:18:50,2.606s,PASSED
+"click(findTestObject(""Object Repository/Employee/Employee/Reset_Password_Of_Employee_OR/a_account_circleEmployee""), OPTIONAL)",Chrome 77.0.3865.90,,,2019-10-11 16:18:50,2019-10-11 16:18:50,0.389s,PASSED
+"click(findTestObject(""Object Repository/Employee/Employee/Reset_Password_Of_Employee_OR/a_account_circleEmployee_1""), OPTIONAL)",Chrome 77.0.3865.90,,,2019-10-11 16:18:50,2019-10-11 16:18:51,0.393s,PASSED
+"click(findTestObject(""Object Repository/Employee/Employee/Reset_Password_Of_Employee_OR/mat-cell_0001""))",Chrome 77.0.3865.90,,,2019-10-11 16:18:51,2019-10-11 16:18:56,5.449s,FAILED
+,,,,,,,
+Test Cases/Login/Lock_an_emloyee,Chrome 77.0.3865.90,,,2019-10-11 16:18:56,2019-10-11 16:19:30,34.215s,FAILED
+"callTestCase(findTestCase(""Login/employee_login""), [:], STOP_ON_FAILURE)",Chrome 77.0.3865.90,,,2019-10-11 16:18:56,2019-10-11 16:19:03,6.483s,PASSED
+for (def i : (0..2)),Chrome 77.0.3865.90,,,2019-10-11 16:19:03,2019-10-11 16:19:25,22.535s,PASSED
+"openBrowser("""")",Chrome 77.0.3865.90,,,2019-10-11 16:19:25,2019-10-11 16:19:29,3.313s,PASSED
+navigateToUrl(login_url),Chrome 77.0.3865.90,,,2019-10-11 16:19:29,2019-10-11 16:19:30,0.984s,PASSED
+"setText(findTestObject(""Object Repository/Login_OR/Employee_login_verify/input_Sign in_mat-input-0""), employee_login_name)",Chrome 77.0.3865.90,,,2019-10-11 16:19:30,2019-10-11 16:19:30,0.138s,PASSED
+"setEncryptedText(findTestObject(""Object Repository/Login_OR/Employee_login_verify/input_Username_mat-input-1""), employee_resetPassword)",Chrome 77.0.3865.90,,,2019-10-11 16:19:30,2019-10-11 16:19:30,0.164s,PASSED
+"click(findTestObject(""Object Repository/Login_OR/Employee_login_verify/button_Login""))",Chrome 77.0.3865.90,,,2019-10-11 16:19:30,2019-10-11 16:19:30,0.053s,PASSED
+"verifyTextPresent(""User account is locked"", false)",Chrome 77.0.3865.90,,,2019-10-11 16:19:30,2019-10-11 16:19:30,0.360s,FAILED
+,,,,,,,
+Test Cases/Login/Employee_Inactive_Login_ShouldGiveErrorMessage,Chrome 77.0.3865.90,,,2019-10-11 16:19:30,2019-10-11 16:19:38,7.199s,FAILED
+"openBrowser("""")",Chrome 77.0.3865.90,,,2019-10-11 16:19:30,2019-10-11 16:19:34,3.555s,PASSED
+navigateToUrl(login_url),Chrome 77.0.3865.90,,,2019-10-11 16:19:34,2019-10-11 16:19:35,0.823s,PASSED
+maximizeWindow(),Chrome 77.0.3865.90,,,2019-10-11 16:19:35,2019-10-11 16:19:36,1.153s,PASSED
+"setText(findTestObject(""Object Repository/Login_OR/Employee_Inactive_Login_ShouldGiveErrormessage_OR/Page_Unified Wallet/input_Sign in_mat-input-0""), employee_login_name)",Chrome 77.0.3865.90,,,2019-10-11 16:19:36,2019-10-11 16:19:36,0.098s,PASSED
+"setEncryptedText(findTestObject(""Object Repository/Login_OR/Employee_Inactive_Login_ShouldGiveErrormessage_OR/Page_Unified Wallet/input_Username_mat-input-1""), employee_new_password)",Chrome 77.0.3865.90,,,2019-10-11 16:19:36,2019-10-11 16:19:36,0.096s,PASSED
+"click(findTestObject(""Object Repository/Login_OR/Employee_Inactive_Login_ShouldGiveErrormessage_OR/Page_Unified Wallet/button_Login""))",Chrome 77.0.3865.90,,,2019-10-11 16:19:36,2019-10-11 16:19:36,0.108s,PASSED
+delay(1),Chrome 77.0.3865.90,,,2019-10-11 16:19:36,2019-10-11 16:19:37,1.002s,PASSED
+"verifyTextPresent(""User is inactive "", false)",Chrome 77.0.3865.90,,,2019-10-11 16:19:37,2019-10-11 16:19:38,0.358s,FAILED
+,,,,,,,
+Test Cases/Employee/Employee_Role_And_Task/Roles/Delete/Delete_Roles_before_employee_Shouldgiveerror,Chrome 77.0.3865.90,,,2019-10-11 16:19:38,2019-10-11 16:19:56,18.508s,PASSED
+"callTestCase(findTestCase(""Login/AdminLogin_ShouldSucceed""), [:], STOP_ON_FAILURE)",Chrome 77.0.3865.90,,,2019-10-11 16:19:38,2019-10-11 16:19:46,7.968s,PASSED
+"click(findTestObject(""Object Repository/Employee/Employee_Role_And_Task_OR/Roles_OR/Delete_OR/Delete_role_before_employee_shouldgiveerror_OR/div_more_vert_hamburgerWrapper""), OPTIONAL)",Chrome 77.0.3865.90,,,2019-10-11 16:19:46,2019-10-11 16:19:48,2.616s,PASSED
+"click(findTestObject(""Object Repository/Employee/Employee_Role_And_Task_OR/Roles_OR/Delete_OR/Delete_role_before_employee_shouldgiveerror_OR/a_account_circleEmployee""))",Chrome 77.0.3865.90,,,2019-10-11 16:19:48,2019-10-11 16:19:48,0.091s,PASSED
+"click(findTestObject(""Object Repository/Employee/Employee_Role_And_Task_OR/Roles_OR/Delete_OR/Delete_role_before_employee_shouldgiveerror_OR/a_assignmentRole And Task""))",Chrome 77.0.3865.90,,,2019-10-11 16:19:48,2019-10-11 16:19:49,0.081s,PASSED
+delay(1),Chrome 77.0.3865.90,,,2019-10-11 16:19:49,2019-10-11 16:19:50,1.002s,PASSED
+"click(findTestObject(""Object Repository/Employee/Employee_Role_And_Task_OR/Roles_OR/Delete_OR/Delete_role_before_employee_shouldgiveerror_OR/mat-cell_RVINC""))",Chrome 77.0.3865.90,,,2019-10-11 16:19:50,2019-10-11 16:19:50,0.080s,PASSED
+delay(1),Chrome 77.0.3865.90,,,2019-10-11 16:19:50,2019-10-11 16:19:51,1.002s,PASSED
+"click(findTestObject(""Object Repository/Employee/Employee_Role_And_Task_OR/Roles_OR/Delete_OR/Delete_role_before_employee_shouldgiveerror_OR/i_delete""))",Chrome 77.0.3865.90,,,2019-10-11 16:19:51,2019-10-11 16:19:51,0.102s,PASSED
+delay(1),Chrome 77.0.3865.90,,,2019-10-11 16:19:51,2019-10-11 16:19:52,1.004s,PASSED
+"verifyTextPresent(""Do you want to delete RVINN Role?"", false)",Chrome 77.0.3865.90,,,2019-10-11 16:19:52,2019-10-11 16:19:52,0.098s,PASSED
+delay(1),Chrome 77.0.3865.90,,,2019-10-11 16:19:52,2019-10-11 16:19:53,1.001s,PASSED
+"click(findTestObject(""Object Repository/Employee/Employee_Role_And_Task_OR/Roles_OR/Delete_OR/Delete_role_before_employee_shouldgiveerror_OR/button_Ok""))",Chrome 77.0.3865.90,,,2019-10-11 16:19:53,2019-10-11 16:19:53,0.079s,PASSED
+delay(1),Chrome 77.0.3865.90,,,2019-10-11 16:19:53,2019-10-11 16:19:54,1.003s,PASSED
+"verifyTextPresent(""Cannot delete a role associated with employees"", false)",Chrome 77.0.3865.90,,,2019-10-11 16:19:54,2019-10-11 16:19:54,0.109s,PASSED
+delay(1),Chrome 77.0.3865.90,,,2019-10-11 16:19:54,2019-10-11 16:19:55,1.002s,PASSED
+"click(findTestObject(""Object Repository/Employee/Employee_Role_And_Task_OR/Roles_OR/Delete_OR/Delete_role_before_employee_shouldgiveerror_OR/button_OK (1)""))",Chrome 77.0.3865.90,,,2019-10-11 16:19:55,2019-10-11 16:19:55,0.078s,PASSED
+closeBrowser(),Chrome 77.0.3865.90,,,2019-10-11 16:19:55,2019-10-11 16:19:56,1.020s,PASSED
+,,,,,,,
+Test Cases/Employee/Employee/Delete/Delete_Employee_ShouldSucceed,Chrome 77.0.3865.90,Deleting a role should succeed.,,2019-10-11 16:19:56,2019-10-11 16:20:06,10.193s,FAILED
+"callTestCase(findTestCase(""Login/AdminLogin_ShouldSucceed""), [:], STOP_ON_FAILURE)",Chrome 77.0.3865.90,,,2019-10-11 16:19:56,2019-10-11 16:20:04,7.311s,PASSED
+"click(findTestObject(""Object Repository/Employee/Employee/Delete_OR/Delete_Employee_ShouldSucceed/Page_Unified Wallet/div_more_vert_hamburgerWrapper""), OPTIONAL)",Chrome 77.0.3865.90,,,2019-10-11 16:20:04,2019-10-11 16:20:05,1.701s,PASSED
+"click(findTestObject(""Object Repository/Employee/Employee/Delete_OR/Delete_Employee_ShouldSucceed/Page_Unified Wallet/a_account_circleEmployee""))",Chrome 77.0.3865.90,,,2019-10-11 16:20:05,2019-10-11 16:20:06,0.601s,PASSED
+"click(findTestObject(""Object Repository/Employee/Employee/Delete_OR/Delete_Employee_ShouldSucceed/Page_Unified Wallet/a_account_circleEmployee_1""))",Chrome 77.0.3865.90,,,2019-10-11 16:20:06,2019-10-11 16:20:06,0.388s,FAILED
+,,,,,,,
+Test Cases/Employee/Employee_Role_And_Task/Task Group/Delete/Delete_RoleActive_ShouldFail,Chrome 77.0.3865.90,Deleting a role should succeed.,,2019-10-11 16:20:06,2019-10-11 16:20:21,14.242s,FAILED
+"callTestCase(findTestCase(""Login/AdminLogin_ShouldSucceed""), [:], STOP_ON_FAILURE)",Chrome 77.0.3865.90,,,2019-10-11 16:20:07,2019-10-11 16:20:15,8.850s,PASSED
+"click(findTestObject(""Object Repository/Employee/Employee_Role_And_Task_OR/Task Group_OR/Delete_OR/Delete_RoleActive_ShouldGiveErrorMessage/div_more_vert_hamburgerWrapper""), OPTIONAL)",Chrome 77.0.3865.90,,,2019-10-11 16:20:15,2019-10-11 16:20:20,4.647s,PASSED
+"click(findTestObject(""Object Repository/Employee/Employee_Role_And_Task_OR/Task Group_OR/Delete_OR/Delete_RoleActive_ShouldGiveErrorMessage/a_account_circleEmployee""))",Chrome 77.0.3865.90,,,2019-10-11 16:20:20,2019-10-11 16:20:20,0.087s,PASSED
+"click(findTestObject(""Object Repository/Employee/Employee_Role_And_Task_OR/Task Group_OR/Delete_OR/Delete_RoleActive_ShouldGiveErrorMessage/a_assignmentRole And Task""))",Chrome 77.0.3865.90,,,2019-10-11 16:20:20,2019-10-11 16:20:21,0.418s,FAILED
+,,,,,,,
+Test Cases/Employee/Employee_Role_And_Task/Roles/Delete/Delete_Roles_ShouldSucceed,Chrome 77.0.3865.90,,,2019-10-11 16:20:21,2019-10-11 16:20:35,14.388s,FAILED
+"callTestCase(findTestCase(""Login/AdminLogin_ShouldSucceed""), [:], STOP_ON_FAILURE)",Chrome 77.0.3865.90,,,2019-10-11 16:20:21,2019-10-11 16:20:29,8.250s,PASSED
+"click(findTestObject(""Object Repository/Employee/Employee_Role_And_Task_OR/Roles_OR/Delete_OR/div_more_vert_hamburgerWrapper""), OPTIONAL)",Chrome 77.0.3865.90,,,2019-10-11 16:20:29,2019-10-11 16:20:29,0.076s,PASSED
+"click(findTestObject(""Object Repository/Employee/Employee_Role_And_Task_OR/Roles_OR/Delete_OR/a_account_circleEmployee""))",Chrome 77.0.3865.90,,,2019-10-11 16:20:29,2019-10-11 16:20:29,0.092s,PASSED
+"click(findTestObject(""Object Repository/Employee/Employee_Role_And_Task_OR/Roles_OR/Delete_OR/a_assignmentRole And Task""))",Chrome 77.0.3865.90,,,2019-10-11 16:20:29,2019-10-11 16:20:29,0.087s,PASSED
+delay(1),Chrome 77.0.3865.90,,,2019-10-11 16:20:29,2019-10-11 16:20:30,1.002s,PASSED
+"click(findTestObject(""Object Repository/Employee/Employee_Role_And_Task_OR/Roles_OR/Delete_OR/mat-cell_1112""))",Chrome 77.0.3865.90,,,2019-10-11 16:20:30,2019-10-11 16:20:30,0.076s,PASSED
+delay(1),Chrome 77.0.3865.90,,,2019-10-11 16:20:30,2019-10-11 16:20:31,1.002s,PASSED
+"click(findTestObject(""Object Repository/Employee/Employee_Role_And_Task_OR/Roles_OR/Delete_OR/i_delete""))",Chrome 77.0.3865.90,,,2019-10-11 16:20:31,2019-10-11 16:20:31,0.097s,PASSED
+delay(1),Chrome 77.0.3865.90,,,2019-10-11 16:20:31,2019-10-11 16:20:32,1.001s,PASSED
+"verifyTextPresent(""Do you want to delete"", false)",Chrome 77.0.3865.90,,,2019-10-11 16:20:32,2019-10-11 16:20:32,0.093s,PASSED
+delay(1),Chrome 77.0.3865.90,,,2019-10-11 16:20:32,2019-10-11 16:20:33,1.001s,PASSED
+"click(findTestObject(""Object Repository/Employee/Employee_Role_And_Task_OR/Roles_OR/Delete_OR/button_Ok""))",Chrome 77.0.3865.90,,,2019-10-11 16:20:33,2019-10-11 16:20:34,0.047s,PASSED
+delay(1),Chrome 77.0.3865.90,,,2019-10-11 16:20:34,2019-10-11 16:20:35,1.002s,PASSED
+"verifyTextPresent(""deleted successfully"", false)",Chrome 77.0.3865.90,,,2019-10-11 16:20:35,2019-10-11 16:20:35,0.394s,FAILED
+,,,,,,,
+Test Cases/Employee/Employee_Role_And_Task/Task Group/Delete/Delete_RoleInactive_ShouldSucceed,Chrome 77.0.3865.90,,,2019-10-11 16:20:35,2019-10-11 16:20:53,18.156s,FAILED
+"callTestCase(findTestCase(""Login/AdminLogin_ShouldSucceed""), [:], STOP_ON_FAILURE)",Chrome 77.0.3865.90,,,2019-10-11 16:20:35,2019-10-11 16:20:43,7.797s,PASSED
+"click(findTestObject(""Object Repository/Employee/Employee_Role_And_Task_OR/Task Group_OR/Delete_OR/Delete_RoleInactive_ShouldSucceed/div_more_vert_hamburgerWrapper""))",Chrome 77.0.3865.90,,,2019-10-11 16:20:43,2019-10-11 16:20:47,3.625s,PASSED
+"click(findTestObject(""Object Repository/Employee/Employee_Role_And_Task_OR/Task Group_OR/Delete_OR/Delete_RoleInactive_ShouldSucceed/a_account_circleEmployee""))",Chrome 77.0.3865.90,,,2019-10-11 16:20:47,2019-10-11 16:20:47,0.084s,PASSED
+"click(findTestObject(""Object Repository/Employee/Employee_Role_And_Task_OR/Task Group_OR/Delete_OR/Delete_RoleInactive_ShouldSucceed/a_assignmentRole And Task""))",Chrome 77.0.3865.90,,,2019-10-11 16:20:47,2019-10-11 16:20:47,0.083s,PASSED
+"click(findTestObject(""Object Repository/Employee/Employee_Role_And_Task_OR/Task Group_OR/Delete_OR/Delete_RoleInactive_ShouldSucceed/div_Task Group""))",Chrome 77.0.3865.90,,,2019-10-11 16:20:47,2019-10-11 16:20:47,0.633s,PASSED
+delay(1),Chrome 77.0.3865.90,,,2019-10-11 16:20:47,2019-10-11 16:20:48,1.002s,PASSED
+"click(findTestObject(""Object Repository/Employee/Employee_Role_And_Task_OR/Task Group_OR/Delete_OR/Delete_RoleInactive_ShouldSucceed/mat-cell_TVINC""))",Chrome 77.0.3865.90,,,2019-10-11 16:20:48,2019-10-11 16:20:48,0.106s,PASSED
+delay(1),Chrome 77.0.3865.90,,,2019-10-11 16:20:48,2019-10-11 16:20:49,1.001s,PASSED
+"click(findTestObject(""Object Repository/Employee/Employee_Role_And_Task_OR/Task Group_OR/Delete_OR/Delete_RoleInactive_ShouldSucceed/i_delete""))",Chrome 77.0.3865.90,,,2019-10-11 16:20:49,2019-10-11 16:20:50,0.090s,PASSED
+delay(1),Chrome 77.0.3865.90,,,2019-10-11 16:20:50,2019-10-11 16:20:51,1.002s,PASSED
+"verifyTextPresent(""Do you want to delete"", false)",Chrome 77.0.3865.90,,,2019-10-11 16:20:51,2019-10-11 16:20:51,0.103s,PASSED
+delay(1),Chrome 77.0.3865.90,,,2019-10-11 16:20:51,2019-10-11 16:20:52,1.003s,PASSED
+"click(findTestObject(""Object Repository/Employee/Employee_Role_And_Task_OR/Task Group_OR/Delete_OR/Delete_RoleInactive_ShouldSucceed/button_Ok""))",Chrome 77.0.3865.90,,,2019-10-11 16:20:52,2019-10-11 16:20:52,0.063s,PASSED
+delay(1),Chrome 77.0.3865.90,,,2019-10-11 16:20:52,2019-10-11 16:20:53,1.002s,PASSED
+"verifyTextPresent(""deleted successfully"", false)",Chrome 77.0.3865.90,,,2019-10-11 16:20:53,2019-10-11 16:20:53,0.404s,FAILED
