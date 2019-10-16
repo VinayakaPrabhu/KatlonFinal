@@ -15,12 +15,20 @@ import internal.GlobalVariable as GlobalVariable
 
 WebUI.callTestCase(findTestCase('Login/AdminLogin_ShouldSucceed'), [:], FailureHandling.STOP_ON_FAILURE)
 
+WebUI.delay(1)
+
 WebUI.click(findTestObject('Object Repository/Employee/Employee_Role_And_Task_OR/Task Group_OR/Add_OR/Add_Role_Existing_ShouldgiveErorMessage/div_more_vert_hamburgerWrapper'), 
     FailureHandling.OPTIONAL)
 
+WebUI.delay(1)
+
 WebUI.click(findTestObject('Object Repository/Employee/Employee_Role_And_Task_OR/Task Group_OR/Add_OR/Add_Role_Existing_ShouldgiveErorMessage/a_account_circleEmployee'))
 
+WebUI.delay(1)
+
 WebUI.click(findTestObject('Object Repository/Employee/Employee_Role_And_Task_OR/Task Group_OR/Add_OR/Add_Role_Existing_ShouldgiveErorMessage/a_assignmentRole And Task'))
+
+WebUI.delay(1)
 
 WebUI.click(findTestObject('Object Repository/Employee/Employee_Role_And_Task_OR/Task Group_OR/Add_OR/Add_Role_Existing_ShouldgiveErorMessage/div_Task Group'))
 

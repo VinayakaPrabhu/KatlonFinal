@@ -15,8 +15,12 @@ import internal.GlobalVariable as GlobalVariable
 
 WebUI.callTestCase(findTestCase('Login/AdminLogin_ShouldSucceed'), [:], FailureHandling.STOP_ON_FAILURE)
 
+WebUI.delay(1)
+
 WebUI.click(findTestObject('Object Repository/Employee/Employee_Role_And_Task_OR/Task Group_OR/Add_OR/Add_Role_new_shouldSucceed/Add_new_Tgroup/div_more_vert_hamburgerWrapper'), 
     FailureHandling.OPTIONAL)
+
+WebUI.delay(1)
 
 WebUI.click(findTestObject('Object Repository/Employee/Employee_Role_And_Task_OR/Task Group_OR/Add_OR/Add_Role_new_shouldSucceed/Add_new_Tgroup/i_account_circle'))
 

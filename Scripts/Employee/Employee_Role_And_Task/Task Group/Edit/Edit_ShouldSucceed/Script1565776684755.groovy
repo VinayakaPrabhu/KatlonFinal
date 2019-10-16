@@ -33,6 +33,9 @@ WebUI.click(findTestObject('Object Repository/Employee/Employee_Role_And_Task_OR
 
 WebUI.delay(1)
 
+WebUI.waitForElementClickable(findTestObject('Object Repository/Employee/Employee_Role_And_Task_OR/Task Group_OR/Edit_OR/Edit_should_succeed/div_Search_mat-checkbox-inner-container'), 
+    1)
+
 WebUI.click(findTestObject('Object Repository/Employee/Employee_Role_And_Task_OR/Task Group_OR/Edit_OR/Edit_should_succeed/div_Search_mat-checkbox-inner-container'))
 
 WebUI.delay(1)

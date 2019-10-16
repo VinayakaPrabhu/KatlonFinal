@@ -15,24 +15,7 @@ import internal.GlobalVariable as GlobalVariable
 
 WebUI.openBrowser('')
 
-WebUI.navigateToUrl(GlobalVariable.login_url)
-
-WebUI.maximizeWindow()
-
-WebUI.setText(findTestObject('Object Repository/Login_OR/Wrong_Password_ShouldgiveError/input_Sign in_mat-input-0'), GlobalVariable.employee_login_name)
-
-WebUI.setEncryptedText(findTestObject('Object Repository/Login_OR/Wrong_Password_ShouldgiveError/input_Username_mat-input-1'), 
-    GlobalVariable.wrong_password)
-
-WebUI.click(findTestObject('Object Repository/Login_OR/Wrong_Password_ShouldgiveError/button_Login'))
-
-WebUI.delay(2)
-
-WebUI.verifyTextPresent('Invalid password ', false)
-
-WebUI.delay(1)
-
-WebUI.click(findTestObject('Object Repository/Login_OR/Wrong_Password_ShouldgiveError/button_OK'))
+WebUI.navigateToUrl('https://www.google.com/')
 
 WebUI.closeBrowser()
 

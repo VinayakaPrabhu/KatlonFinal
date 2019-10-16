@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>opens browser and closes it</description>
+   <name>dummy test caes</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>bbd5484f-1875-407a-b55d-d344712e7612</testCaseGuid>
+</TestCaseEntity>

@@ -15,11 +15,19 @@ import internal.GlobalVariable as GlobalVariable
 
 WebUI.callTestCase(findTestCase('Login/AdminLogin_ShouldSucceed'), [:], FailureHandling.STOP_ON_FAILURE)
 
+WebUI.delay(1)
+
 WebUI.click(findTestObject('Object Repository/Employee/Employee_Role_And_Task_OR/Task Group_OR/Delete_OR/Delete_RoleInactive_ShouldSucceed/div_more_vert_hamburgerWrapper'))
+
+WebUI.delay(1)
 
 WebUI.click(findTestObject('Object Repository/Employee/Employee_Role_And_Task_OR/Task Group_OR/Delete_OR/Delete_RoleInactive_ShouldSucceed/a_account_circleEmployee'))
 
+WebUI.delay(1)
+
 WebUI.click(findTestObject('Object Repository/Employee/Employee_Role_And_Task_OR/Task Group_OR/Delete_OR/Delete_RoleInactive_ShouldSucceed/a_assignmentRole And Task'))
+
+WebUI.delay(1)
 
 WebUI.click(findTestObject('Object Repository/Employee/Employee_Role_And_Task_OR/Task Group_OR/Delete_OR/Delete_RoleInactive_ShouldSucceed/div_Task Group'))
 

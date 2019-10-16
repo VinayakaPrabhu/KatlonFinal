@@ -15,7 +15,15 @@ import internal.GlobalVariable as GlobalVariable
 
 WebUI.callTestCase(findTestCase('Login/AdminLogin_ShouldSucceed'), [:], FailureHandling.STOP_ON_FAILURE)
 
+WebUI.delay(1)
+
+WebUI.click(findTestObject('Object Repository/Employee/Employee/unlock_employee/div_more_vert_hamburgerWrapper'))
+
+WebUI.delay(1)
+
 WebUI.click(findTestObject('Object Repository/Employee/Employee/Add Employee_OR/Add_Existing_Employee_ShouldgiveErrorMessage1/Page_Unified Wallet/i_account_circle'))
+
+WebUI.delay(1)
 
 WebUI.click(findTestObject('Object Repository/Employee/Employee/Add Employee_OR/Add_Existing_Employee_ShouldgiveErrorMessage1/Page_Unified Wallet/a_account_circleEmployee'))
 
